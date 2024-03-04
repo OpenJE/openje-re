@@ -19,9 +19,9 @@ class ActionDie : public Action
     //: Methods
     public:
         void f_a() override;
-        void f_d() override;
-        void f_e() override;
-        void f_f() override;
+        void f_d( int a2 ) override;
+        void f_e( unsigned int a2, int a3 ) override;
+        void f_f( int a2 ) override;
 };
 
 #endif // CPP_HEADERS_ACTIONDIE_HPP_

@@ -14,7 +14,6 @@
 
 //: Methods
     void ActionFloatingSpeechText::f_a() {}
-    void ActionFloatingSpeechText::f_d() {}
-    void ActionFloatingSpeechText::f_e() {}
-    void ActionFloatingSpeechText::f_f() {}
-    void ActionFloatingSpeechText::f_e() {}
+    void ActionFloatingSpeechText::f_d( int a2 ) {}
+    void ActionFloatingSpeechText::f_e( unsigned int a2, int a3 ) {}
+    void ActionFloatingSpeechText::f_f( int a2 ) {}
