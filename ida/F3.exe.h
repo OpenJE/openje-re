@@ -947,7 +947,7 @@ struct _RTTICompleteObjectLocator
 //: Action
     struct Action_vtable
     {
-        Action *(__thiscall *sub_4010E0)(Action *block, char a2); // Constructor
+        Action *(__thiscall *sub_4010E0)(Action *Block, char a2); // Constructor
         void *__purecall_0;
         void *__purecall_1;
         char (__thiscall *wrap_purecall_0)(Action *this);
@@ -967,7 +967,7 @@ struct _RTTICompleteObjectLocator
 //: ActionAnim
     struct ActionAnim_vtable
     {
-        ActionAnim *(__thiscall *sub_405350)(ActionAnim *this, char a2);
+        ActionAnim *(__thiscall *sub_405350)(ActionAnim *Block, char a2);
         char (__thiscall *sub_5A9260)(ActionAnim *this);
         char (__thiscall *sub_5A9270)(ActionAnim *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionAnim *this);
@@ -987,7 +987,7 @@ struct _RTTICompleteObjectLocator
 //: ActionDie
     struct ActionDie_vtable
     {
-        ActionDie *(__thiscall *sub_405350)(ActionDie *this, char a2);
+        ActionDie *(__thiscall *sub_405350)(ActionDie *Block, char a2);
         char (__thiscall *sub_404B60)(ActionDie *this);
         void *nullsub_2;
         char (__thiscall *Action::wrap_purecall_0)(ActionDie *this);
@@ -1007,7 +1007,7 @@ struct _RTTICompleteObjectLocator
 //: ActionEquip
     struct ActionEquip_vtable
     {
-        ActionEquip *(__thiscall *sub_404B60)(ActionEquip *this, char a2);
+        ActionEquip *(__thiscall *sub_404B60)(ActionEquip *Block, char a2);
         void *nullsub_2;
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_404BB0)(int a1);
@@ -1026,7 +1026,7 @@ struct _RTTICompleteObjectLocator
 //: ActionFloatingSpeechText
     struct ActionFloatingSpeechText_vtable
     {
-        ActionFloatingSpeechText *(__thiscall *sub_405350)(ActionFloatingSpeechText *this, char a2);
+        ActionFloatingSpeechText *(__thiscall *sub_405350)(ActionFloatingSpeechText *Block, char a2);
         char (__thiscall *sub_55FBA0)(ActionFloatingSpeechText *this);
         void *nullsub_2;
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
@@ -1047,7 +1047,7 @@ struct _RTTICompleteObjectLocator
 //: ActionIdle
     struct ActionIdle_vtable
     {
-        ActionIdle *(__thiscall *sub_405350)(ActionIdle *this, char a2);
+        ActionIdle *(__thiscall *sub_405350)(ActionIdle *Block, char a2);
         char (__thiscall *sub_404B60)(ActionIdle *this);
         int nullsub_2;
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
@@ -1067,7 +1067,7 @@ struct _RTTICompleteObjectLocator
 //: ActionMessage
     struct ActionMessage_vtable
     {
-        ActionMessage *(__thiscall *sub_405350)(ActionMessage *this, char a2);
+        ActionMessage *(__thiscall *sub_405350)(ActionMessage *Block, char a2);
         char (__thiscall *sub_404B60)(_BYTE *this);
         int nullsub_2;
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
