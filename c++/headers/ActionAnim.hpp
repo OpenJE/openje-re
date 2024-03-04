@@ -1,4 +1,4 @@
-// Copyright 2024 Shane Mulcahy
+// Copyright 2024 OpenJE
 
 #ifndef CPP_HEADERS_ACTIONANIM_HPP_
 #define CPP_HEADERS_ACTIONANIM_HPP_
@@ -18,11 +18,11 @@ class ActionAnim : public Action
 
     //: Methods
     public:
-        void v_a() override;
-        void v_b() override;
-        void v_d() override;
-        void v_e() override;
-        void v_f() override;
+        void f_a() override;
+        void f_b() override;
+        void f_d() override;
+        void f_e() override;
+        void f_f() override;
 };
 
 #endif // CPP_HEADERS_ACTIONANIM_HPP_

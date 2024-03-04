@@ -1,4 +1,4 @@
-// Copyright 2024 Shane Mulcahy
+// Copyright 2024 OpenJE
 
 //: Project Headers
 #include "c++/headers/Action.hpp"
@@ -13,8 +13,8 @@
     ActionAnim::~ActionAnim() {}
 
 //: Methods
-    void ActionAnim::v_a() {}
-    void ActionAnim::v_b() {}
-    void ActionAnim::v_d() {}
-    void ActionAnim::v_e() {}
-    void ActionAnim::v_f() {}
+    void ActionAnim::f_a() {}
+    void ActionAnim::f_b() {}
+    void ActionAnim::f_d() {}
+    void ActionAnim::f_e() {}
+    void ActionAnim::f_f() {}

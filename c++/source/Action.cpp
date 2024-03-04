@@ -1,4 +1,4 @@
-// Copyright 2024 Shane Mulcahy
+// Copyright 2024 OpenJE
 
 //: This Headers
 #include "c++/headers/Action.hpp"

@@ -1,27 +1,26 @@
 // Copyright 2024 OpenJE
 
-#ifndef CPP_HEADERS_ACTIONDIE_HPP_
-#define CPP_HEADERS_ACTIONDIE_HPP_
+#ifndef CPP_HEADERS_ACTIONEQUIP_HPP_
+#define CPP_HEADERS_ACTIONEQUIP_HPP_
 
 //: Project Headers
 #include "c++/headers/Action.hpp"
 
-class ActionDie : public Action
+class ActionEquip : public Action
 {
     //: Constructors
     public:
-        ActionDie();
+        ActionEquip();
 
     //: Destructors
     public:
-        ~ActionDie();
+        ~ActionEquip();
 
     //: Methods
     public:
-        void f_a() override;
+        void f_c() override;
         void f_d() override;
         void f_e() override;
-        void f_f() override;
 };
 
-#endif // CPP_HEADERS_ACTIONDIE_HPP_
+#endif // CPP_HEADERS_ACTIONEQUIP_HPP_
