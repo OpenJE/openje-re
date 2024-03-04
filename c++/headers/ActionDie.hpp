@@ -6,18 +6,15 @@
 //: Project Headers
 #include "c++/headers/Action.hpp"
 
-class ActionDie : public Action
+struct ActionDie : Action
 {
     //: Constructors
-    public:
         ActionDie();
 
     //: Destructors
-    public:
         ~ActionDie();
 
     //: Methods
-    public:
         void f_a() override;
         void f_d( int a2 ) override;
         void f_e( unsigned int a2, int a3 ) override;
