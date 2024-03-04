@@ -3,18 +3,15 @@
 #ifndef CPP_HEADERS_ACTION_HPP_
 #define CPP_HEADERS_ACTION_HPP_
 
-class Action
+struct Action
 {
     //: Constructors
-    public:
         Action();
 
     //: Destructors
-    public:
         ~Action();
 
     //: Methods
-    public:
         virtual void f_a() = 0;
         virtual void f_b() = 0;
         virtual void f_c() = 0;

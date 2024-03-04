@@ -989,7 +989,7 @@ struct _RTTICompleteObjectLocator
     {
         ActionDie *(__thiscall *sub_405350)(ActionDie *Block, char a2);
         char (__thiscall *sub_404B60)(ActionDie *this);
-        void *nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionDie *this);
         int (__thiscall *sub_55FB30)(ActionDie *this, int a2);
         int (__stdcall *sub_5638D0)(int a1, int a2);
@@ -1008,7 +1008,7 @@ struct _RTTICompleteObjectLocator
     struct ActionEquip_vtable
     {
         ActionEquip *(__thiscall *sub_404B60)(ActionEquip *Block, char a2);
-        void *nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_404BB0)(int a1);
         int (__stdcall *sub_5638D0)(int a1, int a2);
@@ -1028,12 +1028,12 @@ struct _RTTICompleteObjectLocator
     {
         ActionFloatingSpeechText *(__thiscall *sub_405350)(ActionFloatingSpeechText *Block, char a2);
         char (__thiscall *sub_55FBA0)(ActionFloatingSpeechText *this);
-        void *nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_404BB0)(int a1);
         int (__thiscall *sub_55FBB0)(ActionFloatingSpeechText *this, unsigned int a2, int a3);
         int (__stdcall *sub_404BB0)(int a1);
-        void *nullsub_2_1;
+        void (__thiscall *nullsub_2_1)(void *this);
     };
     struct ActionFloatingSpeechText_members
     {
@@ -1049,7 +1049,7 @@ struct _RTTICompleteObjectLocator
     {
         ActionIdle *(__thiscall *sub_405350)(ActionIdle *Block, char a2);
         char (__thiscall *sub_404B60)(ActionIdle *this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_404BB0)(int a1);
         int (__thiscall *sub_5A9070)(ActionEquip *this, int a2, int a3);
@@ -1069,7 +1069,7 @@ struct _RTTICompleteObjectLocator
     {
         ActionMessage *(__thiscall *sub_405350)(ActionMessage *Block, char a2);
         char (__thiscall *sub_404B60)(_BYTE *this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__thiscall *sub_5A9080)(int this, int a2);
         int (__thiscall *sub_5A9070)(_BYTE *this, int a2, int a3);
@@ -1099,7 +1099,7 @@ struct _RTTICompleteObjectLocator
         _DWORD *(__stdcall *sub_406E90)(_DWORD *a1, _DWORD *a2);
         char (__thiscall *sub_55B370)(_BYTE **this);
         char (__thiscall *sub_55B3B0)(_BYTE **this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
     };
     struct ActionMoveTo_members
     {
@@ -1115,7 +1115,7 @@ struct _RTTICompleteObjectLocator
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
         char (__thiscall *sub_407200)(_BYTE *this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_404BB0)(int a1);
         int (__userpurge *sub_563550@<eax>)(int a1@<ecx>, int a2@<edi>, int a3, int a4);
@@ -1139,7 +1139,7 @@ struct _RTTICompleteObjectLocator
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
         char (__thiscall *sub_404B60)(_BYTE *this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_404BB0)(int a1);
         int (__stdcall *sub_5638D0)(int a1, int a2);
@@ -1159,7 +1159,7 @@ struct _RTTICompleteObjectLocator
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
         char (__thiscall *sub_404B60)(_BYTE *this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_404BB0)(int a1);
         int (__stdcall *sub_5638D0)(int a1, int a2);
@@ -1179,7 +1179,7 @@ struct _RTTICompleteObjectLocator
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
         char (__thiscall *sub_404B60)(_BYTE *this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__thiscall *sub_5601C0)(_DWORD *this, int a2);
         int (__thiscall *sub_5601D0)(int this, unsigned int a2, int a3);
@@ -1199,7 +1199,7 @@ struct _RTTICompleteObjectLocator
     {
         int _DWORD *(__thiscall *sub_405350)(int Block, char a2);
         int _do_always_noconv_codecvt_base_std__MBE_NXZ;
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
         int (__stdcall *sub_5A28E0)(int a1);
         int (__thiscall *sub_5A28F0)(int this, int a2, int a3);
@@ -1220,10 +1220,10 @@ struct _RTTICompleteObjectLocator
         void *(__thiscall *sub_59BCA0)(void *Block, char a2);
         int (__thiscall *sub_59B1E0)(_DWORD *this);
         void (__thiscall *sub_59AFE0)(void **this);
-        int nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
         void (__stdcall *sub_59B120)(int a1, int a2, void *Block, int a4, int a5, int a6, int a7, unsigned int a8, int a9);
-        int nullsub_2_1;
-        int nullsub_2_2;
+        void (__thiscall *nullsub_2_1)(void *this);
+        void (__thiscall *nullsub_2_2)(void *this);
     };
     struct AnimationCache_members
     {
@@ -1353,7 +1353,7 @@ struct _RTTICompleteObjectLocator
         int (__thiscall *sub_4B0040)(int this, int a2);
         int (__thiscall *sub_4B0160)(int this, int a2);
         int (__thiscall *sub_4B0280)(void **this, int a2);
-        nullsub_5;
+        void (__thiscall *nullsub_5)(void *this);
         int (__thiscall *sub_41F410)(_BYTE *this, _DWORD *a2);
         char (__thiscall *sub_4AF810)(_BYTE *this, char a2);
         char (__thiscall *sub_4AF820)(_BYTE *this);
@@ -1418,12 +1418,12 @@ struct _RTTICompleteObjectLocator
         double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
         int (__thiscall *sub_41CFE0)(_DWORD *this, int a2, int *a3);
         int (__thiscall *sub_4172B0)(_DWORD *this);
-        nullsub_2;
+        void (__thiscall *nullsub_2)(void *this);
     };
     struct CActionbarInterface_members
     {
     };
-    struct CActionbarInterface
+    struct CActionbarInterface // CActionbarInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CActionbarInterface_vtable *vtable;
         CActionbarInterface_members members;
@@ -1432,11 +1432,17 @@ struct _RTTICompleteObjectLocator
 //: CCharacterGenerationInterface
     struct CCharacterGenerationInterface_vtable
     {
+        char *(__thiscall *sub_42C690)(_DWORD *this, char a2);
+        double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
+        int (__stdcall *sub_430750)(int a1, int a2);
+        int (__thiscall *sub_42C6C0)(_DWORD *this);
+        int (__thiscall *sub_42C6A0)(_DWORD *this);
+        char (__stdcall *sub_42C6B0)(int a1, int a2, int a3);
     };
     struct CCharacterGenerationInterface_members
     {
     };
-    struct CCharacterGenerationInterface
+    struct CCharacterGenerationInterface // CCharacterGenerationInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CCharacterGenerationInterface_vtable *vtable;
         CCharacterGenerationInterface_members members;
@@ -1445,11 +1451,17 @@ struct _RTTICompleteObjectLocator
 //: CConsoleInterface
     struct CConsoleInterface_vtable
     {
+        char *(__thiscall *sub_59DCE0)(_DWORD *this, char a2);
+        double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
+        int (__stdcall *sub_59EC10)(int a1, int a2);
+        void (__thiscall *nullsub_2)(void *this);
+        void (__thiscall *nullsub_2_1)(void *this);
+        char (__stdcall *Video::sub_580360)(int a1, int a2, int a3);
     };
     struct CConsoleInterface_members
     {
     }
-    struct CConsoleInterface
+    struct CConsoleInterface // CConsoleInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CConsoleInterface_vtable *vtable;
         CConsoleInterface_members members;
@@ -1458,11 +1470,17 @@ struct _RTTICompleteObjectLocator
 //: CDebugInterface
     struct CDebugInterface_vtable
     {
+        char *(__thiscall *sub_557D40)(_DWORD *this, char a2);
+        double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
+        int (__stdcall *sub_558DC0)(int a1, int a2);
+        void (__thiscall *nullsub_2)(void *this);
+        void (__thiscall *nullsub_2_1)(void *this);
+        char (__stdcall *Video::sub_580360)(int a1, int a2, int a3);
     };
     struct CDebugInterface_members
     {
     };
-    struct CDebugInterface
+    struct CDebugInterface // CDebugInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CDebugInterface_vtable *vtable;
         CDebugInterface_members members;
@@ -1471,11 +1489,17 @@ struct _RTTICompleteObjectLocator
 //: CDebugToolsInterface
     struct CDebugToolsInterface_vtable
     {
+        char *(__thiscall *sub_5B5D20)(_DWORD *this, char a2);
+        double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
+        int (__userpurge *sub_5B7750@<eax>)(int a1@<ecx>, int a2@<ebx>, _DWORD *a3, int *a4);
+        void (__thiscall *nullsub_2)(void *this);
+        void (__thiscall *nullsub_2_1)(void *this);
+        char (__stdcall *Video::sub_580360)(int a1, int a2, int a3);
     };
     struct CDebugToolsInterface_members
     {
     };
-    struct CDebugToolsInterface
+    struct CDebugToolsInterface // CDebugToolsInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CDebugToolsInterface_vtable *vtable;
         CDebugToolsInterface_members members;
@@ -1484,11 +1508,17 @@ struct _RTTICompleteObjectLocator
 //: CEngineInterface
     struct CEngineInterface_vtable
     {
+        void *(__thiscall *sub_5803C0)(void *Block, char a2);
+        double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
+        int (__stdcall *sub_5803E0)(int a1, int *a2);
+        void (__thiscall *nullsub_2)(void *this);
+        void (__thiscall *nullsub_2_1)(void *this);
+        char (__stdcall *Video::sub_580360)(int a1, int a2, int a3);
     };
     struct CEngineInterface_members
     {
     };
-    struct CEngineInterface
+    struct CEngineInterface // CEngineInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CEngineInterface_vtable *vtable;
         CEngineInterface_members members;
@@ -1497,11 +1527,17 @@ struct _RTTICompleteObjectLocator
 //: CEscapeMenuInterface
     struct CEscapeMenuInterface_vtable
     {
+        char *(__thiscall *sub_433910)(_DWORD *this, char a2);
+        double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
+        int (__thiscall *sub_434110)(_DWORD *this, _DWORD *a2, _DWORD *a3);
+        void (__thiscall *nullsub_2)(void *this);
+        void (__thiscall *nullsub_2)(void *this);
+        char (__stdcall *sub_433920)(int a1, int a2, int a3);
     };
     struct CEscapeMenuInterface_members
     {
     };
-    struct CEscapeMenuInterface
+    struct CEscapeMenuInterface // CEscapeMenuInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CEscapeMenuInterface_vtable *vtable;
         CEscapeMenuInterface_members members;
@@ -1514,7 +1550,7 @@ struct _RTTICompleteObjectLocator
     struct CFeedbackInterface_members
     {
     };
-    struct CFeedbackInterface
+    struct CFeedbackInterface // CFeedbackInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CFeedbackInterface_vtable *vtable;
         CFeedbackInterface_members members;
@@ -1527,7 +1563,7 @@ struct _RTTICompleteObjectLocator
     struct CFloatingLabel_members
     {
     };
-    struct CFloatingLabel
+    struct CFloatingLabel // CFloatingLabel: GUI::Label, GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         CFloatingLabel_vtable *vtable;
         CFloatingLabel_members members;
@@ -1540,7 +1576,7 @@ struct _RTTICompleteObjectLocator
     struct CFloatingTextInterface_members
     {
     };
-    struct CFloatingTextInterface
+    struct CFloatingTextInterface // CFloatingTextInterface: CEngineInterface, GUI::Interface, GUI::HeapTracker;
     {
         CFloatingTextInterface_vtable *vtable;
         CFloatingTextInterface_members members;
@@ -1553,7 +1589,7 @@ struct _RTTICompleteObjectLocator
     struct CFontTestInterface_members
     {
     };
-    struct CFontTestInterface
+    struct CFontTestInterface // CFontTestInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CFontTestInterface_vtable *vtable;
         CFontTestInterface_members members;
@@ -1566,7 +1602,7 @@ struct _RTTICompleteObjectLocator
     struct CGameFloatingTextInterface_members
     {
     };
-    struct CGameFloatingTextInterface
+    struct CGameFloatingTextInterface // CGameFloatingTextInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker, CFloatingTextInterface, CEngineInterface, GUI::Interface, GUI::HeapTracker;
     {
         CGameFloatingTextInterface_vtable *vtable;
         CGameFloatingTextInterface_members members;
@@ -1579,7 +1615,7 @@ struct _RTTICompleteObjectLocator
     struct CGameInterface_members
     {
     };
-    struct CGameInterface
+    struct CGameInterface // CGameInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CGameInterface_vtable *vtable;
         CGameInterface_members members;
@@ -1592,7 +1628,7 @@ struct _RTTICompleteObjectLocator
     struct CInventoryInterface_members
     {
     };
-    struct CInventoryInterface
+    struct CInventoryInterface // CInventoryInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CInventoryInterface_vtable *vtable;
         CInventoryInterface_members members;
@@ -1605,7 +1641,7 @@ struct _RTTICompleteObjectLocator
     struct CJumplist_members
     {
     };
-    struct CJumplist
+    struct CJumplist // CJumplist: CSoundFile;
     {
         CJumplist_vtable *vtable;
         CJumplist_members members;
@@ -1618,7 +1654,7 @@ struct _RTTICompleteObjectLocator
     struct CLoadMapInterface_members
     {
     };
-    struct CLoadMapInterface
+    struct CLoadMapInterface // CLoadMapInterface: GUI::Interface, GUI::HeapTracker;
     {
         CLoadMapInterface_vtable *vtable;
         CLoadMapInterface_members members;
@@ -1631,7 +1667,7 @@ struct _RTTICompleteObjectLocator
     struct CLoadingBarInterface_members
     {
     };
-    struct CLoadingBarInterface
+    struct CLoadingBarInterface // CLoadingBarInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CLoadingBarInterface_vtable *vtable;
         CLoadingBarInterface_members members;
@@ -1644,7 +1680,7 @@ struct _RTTICompleteObjectLocator
     struct CMainmenuInterface_members
     {
     };
-    struct CMainmenuInterface
+    struct CMainmenuInterface // CMainmenuInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CMainmenuInterface_vtable *vtable;
         CMainmenuInterface_members members;
@@ -1657,7 +1693,7 @@ struct _RTTICompleteObjectLocator
     struct CMasterGrouplist_members
     {
     };
-    struct CMasterGrouplist
+    struct CMasterGrouplist // CMasterGrouplist: CSoundFile;
     {
         CMasterGrouplist_vtable *vtable;
         CMasterGrouplist_members members;
@@ -1670,7 +1706,7 @@ struct _RTTICompleteObjectLocator
     struct CMasterJumplist_members
     {
     };
-    struct CMasterJumplist
+    struct CMasterJumplist // CMasterJumplist: CMasterJumplist: CSoundFile;
     {
         CMasterJumplist_vtable *vtable;
         CMasterJumplist_members members;
@@ -1683,7 +1719,7 @@ struct _RTTICompleteObjectLocator
     struct CMessageBoxInterface_members
     {
     };
-    struct CMessageBoxInterface
+    struct CMessageBoxInterface // CMessageBoxInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CMessageBoxInterface_vtable *vtable;
         CMessageBoxInterface_members members;
@@ -1696,7 +1732,7 @@ struct _RTTICompleteObjectLocator
     struct CMiniMapInterface_members
     {
     };
-    struct CMiniMapInterface
+    struct CMiniMapInterface // CMiniMapInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CMiniMapInterface_vtable *vtable;
         CMiniMapInterface_members members;
@@ -1709,7 +1745,7 @@ struct _RTTICompleteObjectLocator
     struct CMusic_members
     {
     };
-    struct CMusic
+    struct CMusic // CMusic: CSound;
     {
         CMusic_vtable *vtable;
         CMusic_members members;
@@ -1722,7 +1758,7 @@ struct _RTTICompleteObjectLocator
     struct CNASInterface_members
     {
     };
-    struct CNASInterface
+    struct CNASInterface // CNASInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CNASInterface_vtable *vtable;
         CNASInterface_members members;
@@ -1735,7 +1771,7 @@ struct _RTTICompleteObjectLocator
     struct COptionsGameInterface_members
     {
     };
-    struct COptionsGameInterface
+    struct COptionsGameInterface // COptionsGameInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         COptionsGameInterface_vtable *vtable;
         COptionsGameInterface_members members;
@@ -1748,7 +1784,7 @@ struct _RTTICompleteObjectLocator
     struct COptionsHotKeysInterface_members
     {
     };
-    struct COptionsHotKeysInterface
+    struct COptionsHotKeysInterface // COptionsHotKeysInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         COptionsHotKeysInterface_vtable *vtable;
         COptionsHotKeysInterface_members members;
@@ -1761,7 +1797,7 @@ struct _RTTICompleteObjectLocator
     struct COptionsInterface_members
     {
     };
-    struct COptionsInterface
+    struct COptionsInterface // COptionsInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         COptionsInterface_vtable *vtable;
         COptionsInterface_members members;
@@ -1774,7 +1810,7 @@ struct _RTTICompleteObjectLocator
     struct COptionsLoadInterface_members
     {
     };
-    struct COptionsLoadInterface
+    struct COptionsLoadInterface // COptionsLoadInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         COptionsLoadInterface_vtable *vtable;
         COptionsLoadInterface_members members;
@@ -1787,7 +1823,7 @@ struct _RTTICompleteObjectLocator
     struct COptionsMultiplayerInterface_members
     {
     };
-    struct COptionsMultiplayerInterface
+    struct COptionsMultiplayerInterface // COptionsMultiplayerInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         COptionsMultiplayerInterface_vtable *vtable;
         COptionsMultiplayerInterface_members members;
@@ -1800,7 +1836,7 @@ struct _RTTICompleteObjectLocator
     struct COptionsVideoInterface_members
     {
     };
-    struct COptionsVideoInterface
+    struct COptionsVideoInterface // COptionsVideoInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         COptionsVideoInterface_vtable *vtable;
         COptionsVideoInterface_members members;
@@ -1813,7 +1849,7 @@ struct _RTTICompleteObjectLocator
     struct CPipBoyAddNoteInterface_members
     {
     };
-    struct CPipBoyAddNoteInterface
+    struct CPipBoyAddNoteInterface // CPipBoyAddNoteInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CPipBoyAddNoteInterface_vtable *vtable;
         CPipBoyAddNoteInterface_members members;
@@ -1826,7 +1862,7 @@ struct _RTTICompleteObjectLocator
     struct CPipBoyInterface_members
     {
     };
-    struct CPipBoyInterface
+    struct CPipBoyInterface // CPipBoyInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CPipBoyInterface_vtable *vtable;
         CPipBoyInterface_members members;
@@ -1839,7 +1875,7 @@ struct _RTTICompleteObjectLocator
     struct CSMenuInterface_members
     {
     };
-    struct CSMenuInterface
+    struct CSMenuInterface // CSMenuInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         CSMenuInterface_vtable *vtable;
         CSMenuInterface_members members;
@@ -1852,7 +1888,7 @@ struct _RTTICompleteObjectLocator
     struct CSMenuLabel_members
     {
     };
-    struct CSMenuLabel
+    struct CSMenuLabel // CSMenuLabel: GUI::Label, GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         CSMenuLabel_vtable *vtable;
         CSMenuLabel_members members;
@@ -1865,7 +1901,7 @@ struct _RTTICompleteObjectLocator
     struct CSound_members
     {
     };
-    struct CSound
+    struct CSound // CSound CSound:
     {
         CSound_vtable *vtable;
         CSound_members members;
@@ -1878,7 +1914,7 @@ struct _RTTICompleteObjectLocator
     struct CSoundFile_members
     {
     };
-    struct CSoundFile
+    struct CSoundFile // CSoundFile:
     {
         CSoundFile_vtable *vtable;
         CSoundFile_members members;
@@ -1891,10 +1927,75 @@ struct _RTTICompleteObjectLocator
     struct CSoundGroup_members
     {
     };
-    struct CSoundGroup
+    struct CSoundGroup // CSoundGroup: CSoundFile;
     {
         CSoundGroup_vtable *vtable;
         CSoundGroup_members members;
+    };
+
+//: CSoundPresetInfo
+    struct CSoundPresetInfo_vtable
+    {
+    }
+    struct CSoundPresetInfo_members
+    {
+    }
+    struct CSoundPresetInfo // CSoundPresetInfo: CSoundFile;
+    {
+        CSoundPresetInfo_vtable *vtable;
+        CSoundPresetInfo_members members;
+    }
+
+//: CSoundSystem
+    struct CSoundSystem_vtable
+    {
+    };
+    struct CSoundSystem_members
+    {
+    };
+    struct CSoundSystem // CSoundSystem:
+    {
+        CSoundSystem_vtable *vtable;
+        CSoundSystem_members members;
+    };
+
+//: CStore
+    struct CStore_vtable
+    {
+    };
+    struct CStore_members
+    {
+    };
+    struct CStore // CStore:
+    {
+        CStore_vtable *vtable;
+        CStore_members members;
+    };
+
+//: CStoreItem
+    struct CStoreItem_vtable
+    {
+    };
+    struct CStoreItem_members
+    {
+    };
+    struct CStoreItem // CStoreItem:
+    {
+        CStoreItem_vtable *vtable;
+        CStoreItem_members members;
+    };
+
+//: CTextEditInterface
+    struct CTextEditInterface_vtable
+    {
+    };
+    struct CTextEditInterface_members
+    {
+    };
+    struct CTextEditInterface // CTextEditInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+    {
+        CTextEditInterface_vtable *vtable;
+        CTextEditInterface_members members;
     };
 
 //: CWorldContainerInterface
@@ -1904,7 +2005,7 @@ struct _RTTICompleteObjectLocator
     struct CWorldContainerInterface_members
     {
     };
-    struct CWorldContainerInterface
+    struct CWorldContainerInterface // CWorldContainerInterface: CWorldContainerInterface: GUI::Interface, GUI::HeapTracker;
     {
         CWorldContainerInterface_vtable *vtable;
         CWorldContainerInterface_members members;
@@ -1917,7 +2018,7 @@ struct _RTTICompleteObjectLocator
     struct CameraControl_members
     {
     };
-    struct CameraControl
+    struct CameraControl // struct CameraControl:
     {
         CameraControl_vtable *vtable;
         CameraControl_members members;
@@ -1930,7 +2031,7 @@ struct _RTTICompleteObjectLocator
     struct Client_members
     {
     };
-    struct Client
+    struct Client // Client: net::client, net::base;
     {
         Client_vtable *vtable;
         Client_members members;
@@ -1943,7 +2044,7 @@ struct _RTTICompleteObjectLocator
     struct Client::Server_members
     {
     };
-    struct Client::Server
+    struct Client::Server // Client::Server: struct net::client::server, net::connection;
     {
         Client::Server_vtable *vtable;
         Client::Server_members members;
@@ -1956,7 +2057,7 @@ struct _RTTICompleteObjectLocator
     struct Combat_members
     {
     };
-    struct Combat
+    struct Combat // struct Combat:
     {
         Combat_vtable *vtable;
         Combat_members members;
@@ -1969,7 +2070,7 @@ struct _RTTICompleteObjectLocator
     struct Common::Chunk_members
     {
     };
-    struct Common::Chunk
+    struct Common::Chunk // struct Common::Chunk:
     {
         Common::Chunk_vtable *vtable;
         Common::Chunk_members members;
@@ -1982,7 +2083,7 @@ struct _RTTICompleteObjectLocator
     struct Common::Exception_members
     {
     };
-    struct Common::Exception
+    struct Common::Exception // struct Common::Exception:
     {
         Common::Exception_vtable *vtable;
         Common::Exception_members members;
@@ -1995,7 +2096,7 @@ struct _RTTICompleteObjectLocator
     struct Common::Polygon_members
     {
     };
-    struct Common::Polygon
+    struct Common::Polygon // struct Common::Polygon:
     {
         Common::Polygon_vtable *vtable;
         Common::Polygon_members members;
@@ -2008,7 +2109,7 @@ struct _RTTICompleteObjectLocator
     struct Condition_members
     {
     };
-    struct Condition
+    struct Condition // struct Condition: struct Effect;
     {
         Condition_vtable *vtable;
         Condition_members members;
@@ -2021,7 +2122,7 @@ struct _RTTICompleteObjectLocator
     struct CounterControl_members
     {
     };
-    struct CounterControl
+    struct CounterControl // CounterControl:
     {
         CounterControl_vtable *vtable;
         CounterControl_members members;
@@ -2034,7 +2135,7 @@ struct _RTTICompleteObjectLocator
     struct CursorManager_members
     {
     };
-    struct CursorManager
+    struct CursorManager // struct CursorManager:
     {
         CursorManager_vtable *vtable;
         CursorManager_members members;
@@ -2047,7 +2148,7 @@ struct _RTTICompleteObjectLocator
     struct DialogueInterface_members
     {
     };
-    struct DialogueInterface
+    struct DialogueInterface // DialogueInterface: CEngineInterface, GUI::Interface, GUI::HeapTracker;
     {
         DialogueInterface_vtable *vtable;
         DialogueInterface_members members;
@@ -2060,7 +2161,7 @@ struct _RTTICompleteObjectLocator
     struct DialogueManager_members
     {
     };
-    struct DialogueManager
+    struct DialogueManager // DialogueManager:
     {
         DialogueManager_vtable *vtable;
         DialogueManager_members members;
@@ -2073,7 +2174,7 @@ struct _RTTICompleteObjectLocator
     struct DialogueWindow_members
     {
     };
-    struct DialogueWindow
+    struct DialogueWindow // DialogueWindow: GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         DialogueWindow_vtable *vtable;
         DialogueWindow_members members;
@@ -2086,7 +2187,7 @@ struct _RTTICompleteObjectLocator
     struct DynamicObject_members
     {
     };
-    struct DynamicObject
+    struct DynamicObject // struct DynamicObject:
     {
         DynamicObject_vtable *vtable;
         DynamicObject_members members;
@@ -2099,7 +2200,7 @@ struct _RTTICompleteObjectLocator
     struct EditTokenInterface_members
     {
     };
-    struct EditTokenInterface
+    struct EditTokenInterface // EditTokenInterface: CEngineInterface, GUI::Interface, GUI::HeapTracker;
     {
         EditTokenInterface_vtable *vtable;
         EditTokenInterface_members members;
@@ -2126,7 +2227,7 @@ struct _RTTICompleteObjectLocator
     struct Effect_members
     {
     };
-    struct Effect
+    struct Effect // struct Effect:
     {
         Effect_vtable *vtable;
         Effect_members members;
@@ -2139,7 +2240,7 @@ struct _RTTICompleteObjectLocator
     struct EffectTreeCircleTrigger_members
     {
     };
-    struct EffectTreeCircleTrigger
+    struct EffectTreeCircleTrigger // struct EffectTreeCircleTrigger: struct EffectTreeTrigger, struct Trigger;
     {
         EffectTreeCircleTrigger_vtable *vtable;
         EffectTreeCircleTrigger_members members;
@@ -2152,7 +2253,7 @@ struct _RTTICompleteObjectLocator
     struct EffectTreeRingTrigger_members
     {
     };
-    struct EffectTreeRingTrigger
+    struct EffectTreeRingTrigger // struct EffectTreeRingTrigger: struct EffectTreeTrigger, struct Trigger;
     {
         EffectTreeRingTrigger_vtable *vtable;
         EffectTreeRingTrigger_members members;
@@ -2165,7 +2266,7 @@ struct _RTTICompleteObjectLocator
     struct EffectTreeSemiCircleTrigger_members
     {
     };
-    struct EffectTreeSemiCircleTrigger
+    struct EffectTreeSemiCircleTrigger // struct EffectTreeSemiCircleTrigger: struct EffectTreeTrigger, struct Trigger;
     {
         EffectTreeSemiCircleTrigger_vtable *vtable;
         EffectTreeSemiCircleTrigger_members members;
@@ -2178,7 +2279,7 @@ struct _RTTICompleteObjectLocator
     struct EffectTreeTrigger_members
     {
     };
-    struct EffectTreeTrigger
+    struct EffectTreeTrigger // struct EffectTreeTrigger: struct Trigger;
     {
         EffectTreeTrigger_vtable *vtable;
         EffectTreeTrigger_members members;
@@ -2191,7 +2292,7 @@ struct _RTTICompleteObjectLocator
     struct Encyclopedia_members
     {
     };
-    struct Encyclopedia
+    struct Encyclopedia // struct Encyclopedia:
     {
         Encyclopedia_vtable *vtable;
         Encyclopedia_members members;
@@ -2204,7 +2305,7 @@ struct _RTTICompleteObjectLocator
     struct Entity_members
     {
     };
-    struct Entity
+    struct Entity // struct Entity: struct DynamicObject;
     {
         Entity_vtable *vtable;
         Entity_members members;
@@ -2217,7 +2318,7 @@ struct _RTTICompleteObjectLocator
     struct FadeManager_members
     {
     };
-    struct FadeManager
+    struct FadeManager // struct FadeManager:
     {
         FadeManager_vtable *vtable;
         FadeManager_members members;
@@ -2230,7 +2331,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_BaseAttribute_members
     {
     };
-    struct G3D_BaseAttribute
+    struct G3D_BaseAttribute // G3D_BaseAttribute:
     {
         G3D_BaseAttribute_vtable *vtable;
         G3D_BaseAttribute_members members;
@@ -2243,7 +2344,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_BaseLight_members
     {
     };
-    struct G3D_BaseLight
+    struct G3D_BaseLight // G3D_BaseLight: G3D_BaseAttribute;
     {
         G3D_BaseLight_vtable *vtable;
         G3D_BaseLight_members members;
@@ -2256,7 +2357,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_Camera_members
     {
     };
-    struct G3D_Camera
+    struct G3D_Camera // G3D_Camera: G3D_BaseAttribute;
     {
         G3D_Camera_vtable *vtable;
         G3D_Camera_members members;
@@ -2269,7 +2370,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_DirectionalLight_members
     {
     };
-    struct G3D_DirectionalLight
+    struct G3D_DirectionalLight // G3D_DirectionalLight: G3D_BaseLight, G3D_BaseAttribute;
     {
         G3D_DirectionalLight_vtable *vtable;
         G3D_DirectionalLight_members members;
@@ -2282,7 +2383,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_LightmapSurfaceAttribute_members
     {
     };
-    struct G3D_LightmapSurfaceAttribute
+    struct G3D_LightmapSurfaceAttribute // G3D_LightmapSurfaceAttribute: G3D_BaseAttribute;
     {
         G3D_LightmapSurfaceAttribute_vtable *vtable;
         G3D_LightmapSurfaceAttribute_members members;
@@ -2295,7 +2396,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_LineSystem_members
     {
     };
-    struct G3D_LineSystem
+    struct G3D_LineSystem // G3D_LineSystem: G3D_BaseAttribute;
     {
         G3D_LineSystem_vtable *vtable;
         G3D_LineSystem_members members;
@@ -2308,7 +2409,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_Mesh_members
     {
     };
-    struct G3D_Mesh
+    struct G3D_Mesh // G3D_Mesh: G3D_BaseAttribute;
     {
         G3D_Mesh_members members;
     };
@@ -2320,7 +2421,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_Node_members
     {
     };
-    struct G3D_Node
+    struct G3D_Node // G3D_Node:
     {
         G3D_Node_vtable *vtable;
         G3D_Node_members members;
@@ -2333,7 +2434,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_OcclusionZones_members
     {
     };
-    struct G3D_OcclusionZones
+    struct G3D_OcclusionZones // G3D_OcclusionZones: G3D_BaseAttribute;
     {
         G3D_OcclusionZones_vtable *vtable;
         G3D_OcclusionZones_members members;
@@ -2346,7 +2447,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_ParticleEmitter_members
     {
     };
-    struct G3D_ParticleEmitter
+    struct G3D_ParticleEmitter // G3D_ParticleEmitter: G3D_BaseAttribute;
     {
         G3D_ParticleEmitter_vtable *vtable;
         G3D_ParticleEmitter_members members;
@@ -2359,7 +2460,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_PointLight_members
     {
     };
-    struct G3D_PointLight
+    struct G3D_PointLight // G3D_PointLight: G3D_BaseLight, G3D_BaseAttribute;
     {
         G3D_PointLight_vtables *vtable;
         G3D_PointLight_members members;
@@ -2372,7 +2473,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_SpotLight_members
     {
     };
-    struct G3D_SpotLight
+    struct G3D_SpotLight // G3D_SpotLight: G3D_PointLight, G3D_BaseLight, G3D_BaseAttribute;
     {
         G3D_SpotLight_vtable *vtable;
         G3D_SpotLight_members members;
@@ -2385,7 +2486,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_Transform_members
     {
     };
-    struct G3D_Transform
+    struct G3D_Transform // G3D_Transform:
     {
         G3D_Transform_vtable *vtable;
         G3D_Transform_members members;
@@ -2398,7 +2499,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_Water_members
     {
     };
-    struct G3D_Water
+    struct G3D_Water // G3D_Water: G3D_BaseAttribute;
     {
         G3D_Water_vtable *vtable;
         G3D_Water_members members;
@@ -2411,7 +2512,7 @@ struct _RTTICompleteObjectLocator
     struct G3D_WaterTile_members
     {
     };
-    struct G3D_WaterTile
+    struct G3D_WaterTile // G3D_WaterTile: G3D_Mesh, G3D_BaseAttribute;
     {
         G3D_WaterTile_vtable *vtable;
         G3D_WaterTile_members members;
@@ -2424,7 +2525,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Base_members
     {
     };
-    struct GUI::Base
+    struct GUI::Base // GUI::Base:
     {
         GUI::Base_vtable *vtable;
         GUI::Base_members members;
@@ -2437,7 +2538,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Button_members
     {
     };
-    struct GUI::Button
+    struct GUI::Button // GUI::Button: GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         GUI::Button_vtable *vtable;
         GUI::Button_members members;
@@ -2450,7 +2551,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::CPktManager_members
     {
     };
-    struct GUI::CPktManager
+    struct GUI::CPktManager // GUI::CPktManager:
     {
         GUI::CPktManager_vtable *vtable;
         GUI::CPktManager_members members;
@@ -2463,7 +2564,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Edit_members
     {
     };
-    struct GUI::Edit
+    struct GUI::Edit // GUI::Edit: GUI::Label, GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         GUI::Edit_vtable *vtable;
         GUI::Edit_members members;
@@ -2476,7 +2577,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Font_members
     {
     };
-    struct GUI::Font
+    struct GUI::Font // GUI::Font:
     {
         GUI::Font_vtable *vtable;
         GUI::Font_members members;
@@ -2489,7 +2590,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::FontPage_members
     {
     };
-    struct GUI::FontPage
+    struct GUI::FontPage // GUI::FontPage:
     {
         GUI::FontPage_vtable *vtable;
         GUI::FontPage_members members;
@@ -2502,7 +2603,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Fragment_members
     {
     };
-    struct GUI::Fragment
+    struct GUI::Fragment // GUI::Fragment: GUI::Base;
     {
         GUI::Fragment_vtable *vtable;
         GUI::Fragment_members members;
@@ -2515,7 +2616,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::HeapTracker_members
     {
     };
-    struct GUI::HeapTracker
+    struct GUI::HeapTracker // GUI::HeapTracker:
     {
         GUI::HeapTracker_vtable *vtable;
         GUI::HeapTracker_members members;
@@ -2528,7 +2629,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Interface_members
     {
     };
-    struct GUI::Interface
+    struct GUI::Interface // GUI::Interface: GUI::HeapTracker;
     {
         GUI::Interface_vtable *vtable;
         GUI::Interface_members members;
@@ -2541,7 +2642,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Label_members
     {
     };
-    struct GUI::Label
+    struct GUI::Label // GUI::Label: GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         GUI::Label_vtable *vtable;
         GUI::Label_members members;
@@ -2554,7 +2655,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::LineSystem_members
     {
     };
-    struct GUI::LineSystem
+    struct GUI::LineSystem // GUI::LineSystem:
     {
         GUI::LineSystem_vtable *vtable;
         GUI::LineSystem_members members;
@@ -2567,7 +2668,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Manager_members
     {
     };
-    struct GUI::Manager
+    struct GUI::Manager // GUI::Manager:
     {
         GUI::Manager_vtable *vtable;
         GUI::Manager_members members;
@@ -2580,7 +2681,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Picture_members
     {
     };
-    struct GUI::Picture
+    struct GUI::Picture // GUI::Picture: GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         GUI::Picture_vtable *vtable;
         GUI::Picture_members members;
@@ -2593,7 +2694,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::ScrollBar_members
     {
     };
-    struct GUI::ScrollBar
+    struct GUI::ScrollBar // GUI::ScrollBar:
     {
         GUI::ScrollBar_vtable *vtable;
         GUI::ScrollBar_members members;
@@ -2606,7 +2707,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Skin_members
     {
     };
-    struct GUI::Skin
+    struct GUI::Skin // GUI::Skin:
     {
         GUI::Skin_vtable *vtable;
         GUI::Skin_members members;
@@ -2619,7 +2720,7 @@ struct _RTTICompleteObjectLocator
     struct GUI::Window_members
     {
     };
-    struct GUI::Window
+    struct GUI::Window // GUI::Window: GUI::Base, GUI::HeapTracker;
     {
         GUI::Window_vtable *vtable;
         GUI::Window_members members;
@@ -2639,7 +2740,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionAttack_members
     {
     };
-    struct GameActionAttack
+    struct GameActionAttack // struct GameActionAttack: struct Action;
     {
         GameActionAttack_vtable *vtable;
         GameActionAttack_members members;
@@ -2652,7 +2753,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionDie_members
     {
     };
-    struct GameActionDie
+    struct GameActionDie // struct GameActionDie: struct ActionDie, struct Action;
     {
         GameActionDie_vtable *vtable;
         GameActionDie_members members;
@@ -2665,7 +2766,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionEquip_members
     {
     };
-    struct GameActionEquip
+    struct GameActionEquip // struct GameActionEquip: struct ActionEquip, struct Action;
     {
         GameActionEquip_vtable *vtable;
         GameActionEquip_members members;
@@ -2678,7 +2779,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionFloatingSpeechText_members
     {
     };
-    struct GameActionFloatingSpeechText
+    struct GameActionFloatingSpeechText // struct GameActionFloatingSpeechText: struct ActionFloatingSpeechText, struct Action;
     {
         GameActionFloatingSpeechText_vtable *vtable;
         GameActionFloatingSpeechText_members members;
@@ -2691,7 +2792,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionGive_members
     {
     };
-    struct GameActionGive
+    struct GameActionGive // struct GameActionGive: struct Action;
     {
         GameActionGive_vtable *vtable;
         GameActionGive_members members;
@@ -2704,7 +2805,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionIdle_members
     {
     };
-    struct GameActionIdle
+    struct GameActionIdle // struct GameActionIdle: struct ActionIdle, struct Action;
     {
         GameActionIdle_vtable *vtable;
         GameActionIdle_members members;
@@ -2717,7 +2818,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionInitiateDialogue_members
     {
     };
-    struct GameActionInitiateDialogue
+    struct GameActionInitiateDialogue // struct GameActionInitiateDialogue: struct Action;
     {
         GameActionInitiateDialogue_vtable *vtable;
         GameActionInitiateDialogue_members members;
@@ -2730,7 +2831,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionMoveTo_members
     {
     };
-    struct GameActionMoveTo
+    struct GameActionMoveTo // struct GameActionMoveTo: struct ActionMoveTo, struct Action;
     {
         GameActionMoveTo_vtable *vtable;
         GameActionMoveTo_members members;
@@ -2743,7 +2844,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionOperateContainer_members
     {
     };
-    struct GameActionOperateContainer
+    struct GameActionOperateContainer // struct GameActionOperateContainer: struct Action;
     {
         GameActionOperateContainer_vtable *vtable;
         GameActionOperateContainer_members members;
@@ -2756,7 +2857,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionOperateDoor_members
     {
     };
-    struct GameActionOperateDoor
+    struct GameActionOperateDoor // struct GameActionOperateDoor: struct Action;
     {
         GameActionOperateDoor_vtable *vtable;
         GameActionOperateDoor_members members;
@@ -2769,7 +2870,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionPickUp_members
     {
     };
-    struct GameActionPickUp
+    struct GameActionPickUp // struct GameActionPickUp: struct ActionPickUp, struct Action;
     {
         GameActionPickUp_vtable *vtable;
         GameActionPickUp_members members;
@@ -2782,7 +2883,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionReload_members
     {
     };
-    struct GameActionReload
+    struct GameActionReload // struct GameActionReload: struct Action;
     {
         GameActionReload_vtable *vtable;
         GameActionReload_members members;
@@ -2795,7 +2896,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionSetActiveWeapon_members
     {
     };
-    struct GameActionSetActiveWeapon
+    struct GameActionSetActiveWeapon // struct GameActionSetActiveWeapon: struct ActionSetActiveWeapon, struct Action;
     {
         GameActionSetActiveWeapon_vtable *vtable;
         GameActionSetActiveWeapon_members members;
@@ -2808,7 +2909,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionUnequip_members
     {
     };
-    struct GameActionUnequip
+    struct GameActionUnequip // struct GameActionUnequip: struct ActionUnequip, struct Action;
     {
         GameActionUnequip_vtable *vtable;
         GameActionUnequip_members members;
@@ -2821,7 +2922,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionUseSkill_members
     {
     };
-    struct GameActionUseSkill
+    struct GameActionUseSkill // GameActionUseSkill: struct Action;
     {
         GameActionUseSkill_vtable *vtable;
         GameActionUseSkill_members members;
@@ -2834,7 +2935,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionWait_members
     {
     };
-    struct GameActionWait
+    struct GameActionWait // struct GameActionWait: struct ActionWait, struct Action;
     {
         GameActionWait_vtable *vtable;
         GameActionWait_members members;
@@ -2847,7 +2948,7 @@ struct _RTTICompleteObjectLocator
     struct GameActionWander_members
     {
     };
-    struct GameActionWander
+    struct GameActionWander // struct GameActionWander: struct ActionWander, struct Action;
     {
         GameActionWander_vtable *vtable;
         GameActionWander_members members;
@@ -2860,7 +2961,7 @@ struct _RTTICompleteObjectLocator
     struct GameAmmo_members
     {
     };
-    struct GameAmmo
+    struct GameAmmo // struct GameAmmo: struct GameItem, struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameAmmo_vtable *vtable;
         GameAmmo_members members;
@@ -2873,7 +2974,7 @@ struct _RTTICompleteObjectLocator
     struct GameAnimationCache_members
     {
     };
-    struct GameAnimationCache
+    struct GameAnimationCache // GameAnimationCache: AnimationCache, struct IComponent;
     {
         GameAnimationCache_vtable *vtable;
         GameAnimationCache_members members;
@@ -2886,7 +2987,7 @@ struct _RTTICompleteObjectLocator
     struct GameArmor_members
     {
     };
-    struct GameArmor
+    struct GameArmor // struct GameArmor: struct GameItem, struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameArmor_vtable *vtable;
         GameArmor_members members;
@@ -2899,7 +3000,7 @@ struct _RTTICompleteObjectLocator
     struct GameAudio_members
     {
     };
-    struct GameAudio
+    struct GameAudio // struct GameAudio: struct Audio;
     {
         GameAudio_vtable *vtable;
         GameAudio_members members;
@@ -2912,7 +3013,7 @@ struct _RTTICompleteObjectLocator
     struct GameCSMenuInterface_members
     {
     };
-    struct GameCSMenuInterface
+    struct GameCSMenuInterface // GameCSMenuInterface: CGameInterface, CEngineInterface, GUI::Interface, GUI::HeapTracker, CSMenuInterface, CEngineInterface, GUI::Interface, GUI::HeapTracker;
     {
         GameCSMenuInterface_vtable *vtable;
         GameCSMenuInterface_members members;
@@ -2925,7 +3026,7 @@ struct _RTTICompleteObjectLocator
     struct GameCSSkillMenuInterface_members
     {
     };
-    struct GameCSSkillMenuInterface
+    struct GameCSSkillMenuInterface // GameCSSkillMenuInterface: CGameInterface, CEngineInterface, GUI::Interface, GUI::HeapTracker, CSMenuInterface, CEngineInterface, GUI::Interface, GUI::HeapTracker;
     {
         GameCSSkillMenuInterface_vtable *vtable;
         GameCSSkillMenuInterface_members members;
@@ -2938,7 +3039,7 @@ struct _RTTICompleteObjectLocator
     struct GameClient_members
     {
     };
-    struct GameClient
+    struct GameClient // struct GameClient: Client, net::client, net::base;
     {
         GameClient_vtable *vtable;
         GameClient_members members;
@@ -2951,7 +3052,7 @@ struct _RTTICompleteObjectLocator
     struct GameContainer_members
     {
     };
-    struct GameContainer
+    struct GameContainer // struct GameContainer: struct GameUsableObject, struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameContainer_vtable *vtable;
         GameContainer_members members;
@@ -2964,7 +3065,7 @@ struct _RTTICompleteObjectLocator
     struct GameCreature_members
     {
     };
-    struct GameCreature
+    struct GameCreature // struct GameCreature: struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameCreature_vtable *vtable;
         GameCreature_members members;
@@ -2977,7 +3078,7 @@ struct _RTTICompleteObjectLocator
     struct GameCursorManager_members
     {
     };
-    struct GameCursorManager
+    struct GameCursorManager // struct GameCursorManager: struct CursorManager;
     {
         GameCursorManager_vtable *vtable;
         GameCursorManager_members members;
@@ -2990,7 +3091,7 @@ struct _RTTICompleteObjectLocator
     struct GameDialogueInterface_members
     {
     };
-    struct GameDialogueInterface
+    struct GameDialogueInterface // GameDialogueInterface: CGameInterface, CEngineInterface, GUI::Interface, GUI::HeapTracker, DialogueInterface, CEngineInterface, GUI::Interface, GUI::HeapTracker;
     {
         GameDialogueInterface_vtable *vtable;
         GameDialogueInterface_members members;
@@ -3003,7 +3104,7 @@ struct _RTTICompleteObjectLocator
     struct GameDialogueWindow_members
     {
     };
-    struct GameDialogueWindow
+    struct GameDialogueWindow // GameDialogueWindow: DialogueWindow, GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         GameDialogueWindow_vtable *vtable;
         GameDialogueWindow_members members;
@@ -3016,7 +3117,7 @@ struct _RTTICompleteObjectLocator
     struct GameDoor_members
     {
     };
-    struct GameDoor
+    struct GameDoor // struct GameDoor: struct GameUsableObject, struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameDoor_vtable *vtable;
         GameDoor_members members;
@@ -3029,7 +3130,7 @@ struct _RTTICompleteObjectLocator
     struct GameEffect_members
     {
     };
-    struct GameEffect
+    struct GameEffect // struct GameEffect: struct Effect;
     {
         GameEffect_vtable *vtable;
         GameEffect_members members;
@@ -3042,7 +3143,7 @@ struct _RTTICompleteObjectLocator
     struct GameEffectDamage_members
     {
     };
-    struct GameEffectDamage
+    struct GameEffectDamage // struct GameEffectDamage: struct GameEffect, struct Effect;
     {
         GameEffectDamage_vtable *vtable;
         GameEffectDamage_members members;
@@ -3055,7 +3156,7 @@ struct _RTTICompleteObjectLocator
     struct GameEncyclopedia_members
     {
     };
-    struct GameEncyclopedia
+    struct GameEncyclopedia // struct GameEncyclopedia: struct Encyclopedia;
     {
         GameEncyclopedia_vtable *vtable;
         GameEncyclopedia_members members;
@@ -3068,7 +3169,7 @@ struct _RTTICompleteObjectLocator
     struct GameEntity_members
     {
     };
-    struct GameEntity
+    struct GameEntity // struct GameEntity: struct Entity, struct DynamicObject;
     {
         GameEntity_vtable *vtable;
         GameEntity_members members;
@@ -3081,7 +3182,7 @@ struct _RTTICompleteObjectLocator
     struct GameHotKeys_members
     {
     };
-    struct GameHotKeys
+    struct GameHotKeys // struct GameHotKeys: struct HotKeys;
     {
         GameHotKeys_vtable *vtable;
         GameHotKeys_members members;
@@ -3094,7 +3195,7 @@ struct _RTTICompleteObjectLocator
     struct GameInterfaces_members
     {
     };
-    struct GameInterfaces
+    struct GameInterfaces // struct GameInterfaces: struct Interfaces;
     {
         GameInterfaces_vtable *vtable;
         GameInterfaces_members members;
@@ -3107,7 +3208,7 @@ struct _RTTICompleteObjectLocator
     struct GameInventory_members
     {
     };
-    struct GameInventory
+    struct GameInventory // struct GameInventory: struct Inventory;
     {
         GameInventory_vtable *vtable;
         GameInventory_members members;
@@ -3120,7 +3221,7 @@ struct _RTTICompleteObjectLocator
     struct GameItem_members
     {
     };
-    struct GameItem
+    struct GameItem // struct GameItem: struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameItem_vtable *vtable;
         GameItem_members members;
@@ -3133,7 +3234,7 @@ struct _RTTICompleteObjectLocator
     struct GameJournal_members
     {
     };
-    struct GameJournal
+    struct GameJournal // struct GameJournal: struct Journal;
     {
         GameJournal_vtable *vtable;
         GameJournal_members members;
@@ -3146,7 +3247,7 @@ struct _RTTICompleteObjectLocator
     struct GameMap_members
     {
     };
-    struct GameMap
+    struct GameMap // struct GameMap: struct Map;
     {
         GameMap_vtable *vtable;
         GameMap_members members;
@@ -3159,7 +3260,7 @@ struct _RTTICompleteObjectLocator
     struct GameNetwork_members
     {
     };
-    struct GameNetwork
+    struct GameNetwork // struct GameNetwork: struct Network, struct IComponent;
     {
         GameNetwork_vtable *vtable;
         GameNetwork_members members;
@@ -3172,7 +3273,7 @@ struct _RTTICompleteObjectLocator
     struct GameParty_members
     {
     };
-    struct GameParty
+    struct GameParty // struct GameParty: struct Party;
     {
         GameParty_vtable *vtable;
         GameParty_members members;
@@ -3185,7 +3286,7 @@ struct _RTTICompleteObjectLocator
     struct GamePathManager_members
     {
     };
-    struct GamePathManager
+    struct GamePathManager // GamePathManager: PathManager;
     {
         GamePathManager_vtable *vtable;
         GamePathManager_members members;
@@ -3198,7 +3299,7 @@ struct _RTTICompleteObjectLocator
     struct GamePlayer_members
     {
     };
-    struct GamePlayer
+    struct GamePlayer // struct GamePlayer: struct GameCreature, struct GameEntity, struct Entity, struct DynamicObject;
     {
         GamePlayer_vtable *vtable;
         GamePlayer_members members;
@@ -3211,7 +3312,7 @@ struct _RTTICompleteObjectLocator
     struct GameProjectile_members
     {
     };
-    struct GameProjectile
+    struct GameProjectile // struct GameProjectile: struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameProjectile_vtable *vtable;
         GameProjectile_members members;
@@ -3224,7 +3325,7 @@ struct _RTTICompleteObjectLocator
     struct GameScripting_members
     {
     };
-    struct GameScripting
+    struct GameScripting // struct GameScripting: struct Scripting, struct IComponent;
     {
         GameScripting_vtable *vtable;
         GameScripting_members members;
@@ -3237,7 +3338,7 @@ struct _RTTICompleteObjectLocator
     struct GameServer_members
     {
     };
-    struct GameServer
+    struct GameServer // struct GameServer: Server, net::server, net::base;
     {
         GameServer_vtable *vtable;
         GameServer_members members;
@@ -3250,7 +3351,7 @@ struct _RTTICompleteObjectLocator
     struct GameStoreManager_members
     {
     };
-    struct GameStoreManager
+    struct GameStoreManager // struct GameStoreManager: struct StoreManager;
     {
         GameStoreManager_vtable *vtable;
         GameStoreManager_members members;
@@ -3263,7 +3364,7 @@ struct _RTTICompleteObjectLocator
     struct GameUsableObject_members
     {
     };
-    struct GameUsableObject
+    struct GameUsableObject // struct GameUsableObject: struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameUsableObject_vtable *vtable;
         GameUsableObject_members members;
@@ -3276,7 +3377,7 @@ struct _RTTICompleteObjectLocator
     struct GameWeapon_members
     {
     };
-    struct GameWeapon
+    struct GameWeapon // struct GameWeapon: struct GameItem, struct GameEntity, struct Entity, struct DynamicObject;
     {
         GameWeapon_vtable *vtable;
         GameWeapon_members members;
@@ -3289,7 +3390,7 @@ struct _RTTICompleteObjectLocator
     struct GameWorld_members
     {
     };
-    struct GameWorld
+    struct GameWorld // struct GameWorld: struct World, struct IComponent, struct IWorldServer, struct IWorld, struct IWorldClient, struct IWorld;
     {
         GameWorld_vtable *vtable;
         GameWorld_members members;
@@ -3302,7 +3403,7 @@ struct _RTTICompleteObjectLocator
     struct GameWorldMap_members
     {
     };
-    struct GameWorldMap
+    struct GameWorldMap // struct GameWorldMap: struct WorldMap;
     {
         GameWorldMap_vtable *vtable;
         GameWorldMap_members members;
@@ -3315,7 +3416,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_AfterImageInfo_members
     {
     };
-    struct Gfx_AfterImageInfo
+    struct Gfx_AfterImageInfo // Gfx_AfterImageInfo: Gfx_ParticleInfoBase;
     {
         Gfx_AfterImageInfo_vtable *vtable;
         Gfx_AfterImageInfo_members members;
@@ -3328,7 +3429,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_BaseObject_members
     {
     };
-    struct Gfx_BaseObject
+    struct Gfx_BaseObject // Gfx_BaseObject:
     {
         Gfx_BaseObject_vtable *vtable;
         Gfx_BaseObject_members members;
@@ -3341,7 +3442,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_BasePacketData_members
     {
     };
-    struct Gfx_BasePacketData
+    struct Gfx_BasePacketData // Gfx_BasePacketData:
     {
         Gfx_BasePacketData_vtable *vtable;
         Gfx_BasePacketData_members members;
@@ -3354,7 +3455,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_CamCtrl_members
     {
     };
-    struct Gfx_CamCtrl
+    struct Gfx_CamCtrl // Gfx_CamCtrl:
     {
         Gfx_CamCtrl_vtable *vtable;
         Gfx_CamCtrl_members members;
@@ -3367,7 +3468,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_CamCtrl_Orbit_members
     {
     };
-    struct Gfx_CamCtrl_Orbit
+    struct Gfx_CamCtrl_Orbit // Gfx_CamCtrl_Orbit: Gfx_CamCtrl;
     {
         Gfx_CamCtrl_Orbit_vtable *vtable;
         Gfx_CamCtrl_Orbit_members members;
@@ -3380,7 +3481,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_Camera_members
     {
     };
-    struct Gfx_Camera
+    struct Gfx_Camera // Gfx_Camera: Gfx_BaseObject;
     {
         Gfx_Camera_vtable *vtable;
         Gfx_Camera_members members;
@@ -3393,7 +3494,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_CubeTex_members
     {
     };
-    struct Gfx_CubeTex
+    struct Gfx_CubeTex // Gfx_CubeTex: Gfx_Texture;
     {
         Gfx_CubeTex_vtable *vtable;
         Gfx_CubeTex_members members;
@@ -3406,7 +3507,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_Engine_members
     {
     };
-    struct Gfx_Engine
+    struct Gfx_Engine // Gfx_Engine: Gfx_System_Interface, Singleton<Gfx_System_Interface>;
     {
         Gfx_Engine_vtable *vtable;
         Gfx_Engine_members members;
@@ -3419,7 +3520,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_HeightFog_members
     {
     };
-    struct Gfx_HeightFog
+    struct Gfx_HeightFog // Gfx_HeightFog: Gfx_BaseObject;
     {
         Gfx_HeightFog_vtable *vtable;
         Gfx_HeightFog_members members;
@@ -3432,7 +3533,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_IndexBuffer_members
     {
     };
-    struct Gfx_IndexBuffer
+    struct Gfx_IndexBuffer // Gfx_IndexBuffer:
     {
         Gfx_IndexBuffer_vtable *vtable;
         Gfx_IndexBuffer_members members;
@@ -3445,7 +3546,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_Light_members
     {
     };
-    struct Gfx_Light
+    struct Gfx_Light // Gfx_Light: Gfx_BaseObject;
     {
         Gfx_Light_vtable *vtable;
         Gfx_Light_members members;
@@ -3458,7 +3559,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_LineSystem_members
     {
     };
-    struct Gfx_LineSystem
+    struct Gfx_LineSystem // Gfx_LineSystem: Gfx_NodeAttribute;
     {
         Gfx_LineSystem_vtable *vtable;
         Gfx_LineSystem_members members;
@@ -3471,7 +3572,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_ModelBone_members
     {
     };
-    struct Gfx_ModelBone
+    struct Gfx_ModelBone // Gfx_ModelBone: Gfx_BaseObject;
     {
         Gfx_ModelBone_vtable *vtable;
         Gfx_ModelBone_members members;
@@ -3484,7 +3585,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_ModelInstance_members
     {
     };
-    struct Gfx_ModelInstance
+    struct Gfx_ModelInstance // Gfx_ModelInstance: Gfx_BaseObject;
     {
         Gfx_ModelInstance_vtable *vtable;
         Gfx_ModelInstance_members members;
@@ -3497,7 +3598,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_ModelMesh_members
     {
     };
-    struct Gfx_ModelMesh
+    struct Gfx_ModelMesh // Gfx_ModelMesh: Gfx_NodeAttribute;
     {
         Gfx_ModelMesh_vtable *vtable;
         Gfx_ModelMesh_members members;
@@ -3510,7 +3611,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_ModelMeshPkt_members
     {
     };
-    struct Gfx_ModelMeshPkt
+    struct Gfx_ModelMeshPkt // Gfx_ModelMeshPkt: Gfx_NodeAttribute;
     {
         Gfx_ModelMeshPkt_vtable *vtable;
         Gfx_ModelMeshPkt_members members;
@@ -3523,7 +3624,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_NodeAttribute_members
     {
     };
-    struct Gfx_NodeAttribute
+    struct Gfx_NodeAttribute // Gfx_NodeAttribute:
     {
         Gfx_NodeAttribute_vtable *vtable;
         Gfx_NodeAttribute_members members;
@@ -3536,7 +3637,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_PacketData_members
     {
     };
-    struct Gfx_PacketData
+    struct Gfx_PacketData // Gfx_PacketData: Gfx_BasePacketData;
     {
         Gfx_PacketData_vtable *vtable;
         Gfx_PacketData_members members;
@@ -3549,7 +3650,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_ParticleInfo_members
     {
     };
-    struct Gfx_ParticleInfo
+    struct Gfx_ParticleInfo // Gfx_ParticleInfo: Gfx_ParticleInfoBase;
     {
         Gfx_ParticleInfo_vtable *vtable;
         Gfx_ParticleInfo_members members;
@@ -3562,7 +3663,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_ParticleInfoBase_members
     {
     };
-    struct Gfx_ParticleInfoBase
+    struct Gfx_ParticleInfoBase // Gfx_ParticleInfoBase:
     {
         Gfx_ParticleInfoBase_vtable *vtable;
         Gfx_ParticleInfoBase_members members;
@@ -3575,7 +3676,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_ParticleSystem_members
     {
     };
-    struct Gfx_ParticleSystem
+    struct Gfx_ParticleSystem // Gfx_ParticleSystem: Gfx_NodeAttribute;
     {
         Gfx_ParticleSystem_vtable *vtable;
         Gfx_ParticleSystem_members members;
@@ -3588,7 +3689,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_B_EM_members
     {
     };
-    struct Gfx_RS_B_EM
+    struct Gfx_RS_B_EM // Gfx_RS_B_EM: Gfx_RenderStyle;
     {
         Gfx_RS_B_EM_vtable *vtable;
         Gfx_RS_B_EM_members members;
@@ -3601,7 +3702,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_B_LM_members
     {
     };
-    struct Gfx_RS_B_LM
+    struct Gfx_RS_B_LM // Gfx_RS_B_LM: Gfx_RenderStyle;
     {
         Gfx_RS_B_LM_vtable *vtable;
         Gfx_RS_B_LM_members members;
@@ -3614,7 +3715,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_B_LM_FOW_members
     {
     };
-    struct Gfx_RS_B_LM_FOW
+    struct Gfx_RS_B_LM_FOW // Gfx_RS_B_LM_FOW: Gfx_RenderStyle;
     {
         Gfx_RS_B_LM_FOW_vtable *vtable;
         Gfx_RS_B_LM_FOW_members members;
@@ -3627,7 +3728,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_B_LM_HFog_FOW_members
     {
     };
-    struct Gfx_RS_B_LM_HFog_FOW
+    struct Gfx_RS_B_LM_HFog_FOW // Gfx_RS_B_LM_HFog_FOW: Gfx_RenderStyle;
     {
         Gfx_RS_B_LM_HFog_FOW_vtable *vtable;
         Gfx_RS_B_LM_HFog_FOW_members members;
@@ -3640,7 +3741,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_B_LM_HeightFog_members
     {
     };
-    struct Gfx_RS_B_LM_HeightFog
+    struct Gfx_RS_B_LM_HeightFog // Gfx_RS_B_LM_HeightFog: Gfx_RenderStyle;
     {
         Gfx_RS_B_LM_HeightFog_vtable *vtable;
         Gfx_RS_B_LM_HeightFog_members members;
@@ -3653,7 +3754,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_Base_members
     {
     };
-    struct Gfx_RS_Base
+    struct Gfx_RS_Base // Gfx_RS_Base: Gfx_RenderStyle;
     {
         Gfx_RS_Base_vtable *vtable;
         Gfx_RS_Base_members members;
@@ -3666,7 +3767,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_Base_FOW_members
     {
     };
-    struct Gfx_RS_Base_FOW
+    struct Gfx_RS_Base_FOW // Gfx_RS_Base_FOW: Gfx_RenderStyle;
     {
         Gfx_RS_Base_FOW_vtable *vtable;
         Gfx_RS_Base_FOW_members members;
@@ -3679,7 +3780,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_Base_HFog_FOW_members
     {
     };
-    struct Gfx_RS_Base_HFog_FOW
+    struct Gfx_RS_Base_HFog_FOW // Gfx_RS_Base_HFog_FOW: Gfx_RenderStyle;
     {
         Gfx_RS_Base_HFog_FOW_vtable *vtable;
         Gfx_RS_Base_HFog_FOW_members members;
@@ -3692,7 +3793,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_Base_HeightFog_members
     {
     };
-    struct Gfx_RS_Base_HeightFog
+    struct Gfx_RS_Base_HeightFog // Gfx_RS_Base_HeightFog: Gfx_RenderStyle;
     {
         Gfx_RS_Base_HeightFog_vtable *vtable;
         Gfx_RS_Base_HeightFog_members members;
@@ -3705,7 +3806,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_Expand_members
     {
     };
-    struct Gfx_RS_Expand
+    struct Gfx_RS_Expand // Gfx_RS_Expand: Gfx_RenderStyle;
     {
         Gfx_RS_Expand_vtable *vtable;
         Gfx_RS_Expand_members members;
@@ -3718,7 +3819,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_SK_B_LM_members
     {
     };
-    struct Gfx_RS_SK_B_LM
+    struct Gfx_RS_SK_B_LM // Gfx_RS_SK_B_LM: Gfx_RenderStyle;
     {
         Gfx_RS_SK_B_LM_vtable *vtable;
         Gfx_RS_SK_B_LM_members members;
@@ -3731,7 +3832,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_SK_B_LM_FOW_members
     {
     };
-    struct Gfx_RS_SK_B_LM_FOW
+    struct Gfx_RS_SK_B_LM_FOW // Gfx_RS_SK_B_LM_FOW: Gfx_RenderStyle;
     {
         Gfx_RS_SK_B_LM_FOW_vtable *vtable;
         Gfx_RS_SK_B_LM_FOW_members members;
@@ -3744,7 +3845,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_SK_B_LM_HFog_FOW_members
     {
     };
-    struct Gfx_RS_SK_B_LM_HFog_FOW
+    struct Gfx_RS_SK_B_LM_HFog_FOW // Gfx_RS_SK_B_LM_HFog_FOW: Gfx_RenderStyle;
     {
         Gfx_RS_SK_B_LM_HFog_FOW_vtable *vtable;
         Gfx_RS_SK_B_LM_HFog_FOW_members members;
@@ -3757,7 +3858,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RS_SK_B_LM_HeightFog_members
     {
     };
-    struct Gfx_RS_SK_B_LM_HeightFog
+    struct Gfx_RS_SK_B_LM_HeightFog // Gfx_RS_SK_B_LM_HeightFog: Gfx_RenderStyle;
     {
         Gfx_RS_SK_B_LM_HeightFog_vtable *vtable;
         Gfx_RS_SK_B_LM_HeightFog_members members;
@@ -3770,7 +3871,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_RenderStyle_members
     {
     };
-    struct Gfx_RenderStyle
+    struct Gfx_RenderStyle // Gfx_RenderStyle:
     {
         Gfx_RenderStyle_vtable *vtable;
         Gfx_RenderStyle_members members;
@@ -3783,7 +3884,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_SkinMesh_members
     {
     };
-    struct Gfx_SkinMesh
+    struct Gfx_SkinMesh // Gfx_SkinMesh: Gfx_NodeAttribute;
     {
         Gfx_SkinMesh_vtable *vtable;
         Gfx_SkinMesh_members members;
@@ -3796,7 +3897,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_SkinMeshPkt_members
     {
     };
-    struct Gfx_SkinMeshPkt
+    struct Gfx_SkinMeshPkt // Gfx_SkinMeshPkt: Gfx_NodeAttribute;
     {
         Gfx_SkinMeshPkt_vtable *vtable;
         Gfx_SkinMeshPkt_members members;
@@ -3809,7 +3910,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_StreamingIndexBuffer_members
     {
     };
-    struct Gfx_StreamingIndexBuffer
+    struct Gfx_StreamingIndexBuffer // Gfx_StreamingIndexBuffer: Gfx_IndexBuffer;
     {
         Gfx_StreamingIndexBuffer_vtable *vtable;
         Gfx_StreamingIndexBuffer_members members;
@@ -3822,7 +3923,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_StreamingVertexBuffer_members
     {
     };
-    struct Gfx_StreamingVertexBuffer
+    struct Gfx_StreamingVertexBuffer // Gfx_StreamingVertexBuffer: Gfx_VertexBuffer;
     {
         Gfx_StreamingVertexBuffer_vtable *vtable;
         Gfx_StreamingVertexBuffer_members members;
@@ -3835,7 +3936,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_System_Interface_members
     {
     };
-    struct Gfx_System_Interface
+    struct Gfx_System_Interface // Gfx_System_Interface: Singleton<Gfx_System_Interface>;
     {
         Gfx_System_Interface_vtable *vtable;
         Gfx_System_Interface_members members;
@@ -3848,7 +3949,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_Texture_members
     {
     };
-    struct Gfx_Texture
+    struct Gfx_Texture // Gfx_Texture:
     {
         Gfx_Texture_vtable *vtable;
         Gfx_Texture_members members;
@@ -3861,7 +3962,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_VertexBuffer_members
     {
     };
-    struct Gfx_VertexBuffer
+    struct Gfx_VertexBuffer // Gfx_VertexBuffer:
     {
         Gfx_VertexBuffer_vtable *vtable;
         Gfx_VertexBuffer_members members;
@@ -3874,7 +3975,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_Water_members
     {
     };
-    struct Gfx_Water
+    struct Gfx_Water // Gfx_Water: Gfx_NodeAttribute;
     {
         Gfx_Water_vtable *vtable;
         Gfx_Water_members members;
@@ -3887,7 +3988,7 @@ struct _RTTICompleteObjectLocator
     struct Gfx_WaterTile_members
     {
     };
-    struct Gfx_WaterTile
+    struct Gfx_WaterTile // Gfx_WaterTile: Gfx_NodeAttribute;
     {
         Gfx_WaterTile_vtable *vtable;
         Gfx_WaterTile_members members;
@@ -3900,7 +4001,7 @@ struct _RTTICompleteObjectLocator
     struct Graphics_members
     {
     };
-    struct Graphics
+    struct Graphics // struct Graphics:
     {
         Graphics_vtable *vtable;
         Graphics_members members;
@@ -3913,7 +4014,7 @@ struct _RTTICompleteObjectLocator
     struct Gregorian_members
     {
     };
-    struct Gregorian
+    struct Gregorian // struct Gregorian: struct ICalendar;
     {
         Gregorian_vtable *vtable;
         Gregorian_members members;
@@ -3923,7 +4024,7 @@ struct _RTTICompleteObjectLocator
     struct HotKeyOption_vtable
     {
     };
-    struct HotKeyOption_members
+    struct HotKeyOption_members // HotKeyOption:
     {
     };
     struct HotKeyOption
@@ -3939,7 +4040,7 @@ struct _RTTICompleteObjectLocator
     struct HotKeyWindowFormat_members
     {
     };
-    struct HotKeyWindowFormat
+    struct HotKeyWindowFormat // HotKeyWindowFormat:
     {
         HotKeyWindowFormat_vtable *vtable;
         HotKeyWindowFormat_members members;
@@ -3952,7 +4053,7 @@ struct _RTTICompleteObjectLocator
     struct HotKeys_members
     {
     };
-    struct HotKeys
+    struct HotKeys // struct HotKeys:
     {
         HotKeys_vtable *vtable;
         HotKeys_members members;
@@ -3965,7 +4066,7 @@ struct _RTTICompleteObjectLocator
     struct Input_members
     {
     };
-    struct Input
+    struct Input // struct Input:
     {
         Input_vtable *vtable;
         Input_members members;
@@ -3978,7 +4079,7 @@ struct _RTTICompleteObjectLocator
     struct Input_Win32_members
     {
     };
-    struct Input_Win32
+    struct Input_Win32 // struct Input_Win32: struct Input;
     {
         Input_Win32_vtable *vtable;
         Input_Win32_members members;
@@ -3991,7 +4092,7 @@ struct _RTTICompleteObjectLocator
     struct Interfaces_members
     {
     };
-    struct Interfaces
+    struct Interfaces // struct Interfaces:
     {
         Interfaces_vtable *vtable;
         Interfaces_members members;
@@ -4004,7 +4105,7 @@ struct _RTTICompleteObjectLocator
     struct Inventory_members
     {
     };
-    struct Inventory
+    struct Inventory // struct Inventory:
     {
         Inventory_vtable *vtable;
         Inventory_members members;
@@ -4017,7 +4118,7 @@ struct _RTTICompleteObjectLocator
     struct Journal_members
     {
     };
-    struct Journal
+    struct Journal // struct Journal:
     {
         Journal_vtable *vtable;
         Journal_members members;
@@ -4030,7 +4131,7 @@ struct _RTTICompleteObjectLocator
     struct JournalEntry_members
     {
     };
-    struct JournalEntry
+    struct JournalEntry // JournalEntry:
     {
         JournalEntry_vtable *vtable;
         JournalEntry_members members;
@@ -4043,7 +4144,7 @@ struct _RTTICompleteObjectLocator
     struct Map_members
     {
     };
-    struct Map
+    struct Map // struct Map:
     {
         Map_vtable *vtable;
         Map_members members;
@@ -4056,7 +4157,7 @@ struct _RTTICompleteObjectLocator
     struct MapEffect_members
     {
     };
-    struct MapEffect
+    struct MapEffect // MapEffect:
     {
         MapEffect_vtable *vtable;
         MapEffect_members members;
@@ -4069,7 +4170,7 @@ struct _RTTICompleteObjectLocator
     struct MapMaskManager_members
     {
     };
-    struct MapMaskManager
+    struct MapMaskManager // MapMaskManager:
     {
         MapMaskManager_vtable *vtable;
         MapMaskManager_members members;
@@ -4082,7 +4183,7 @@ struct _RTTICompleteObjectLocator
     struct MapSound_members
     {
     };
-    struct MapSound
+    struct MapSound // MapSound:
     {
         MapSound_vtable *vtable;
         MapSound_members members;
@@ -4095,7 +4196,7 @@ struct _RTTICompleteObjectLocator
     struct MemorySystem_members
     {
     };
-    struct MemorySystem
+    struct MemorySystem // MemorySystem: struct IComponent;
     {
         MemorySystem_vtable *vtable;
         MemorySystem_members members;
@@ -4108,7 +4209,7 @@ struct _RTTICompleteObjectLocator
     struct ModelCache_members
     {
     };
-    struct ModelCache
+    struct ModelCache // ModelCache: struct IComponent;
     {
         ModelCache_vtable *vtable;
         ModelCache_members members;
@@ -4121,7 +4222,7 @@ struct _RTTICompleteObjectLocator
     struct ModelInstance_members
     {
     };
-    struct ModelInstance
+    struct ModelInstance // ModelInstance:
     {
         ModelInstance_vtable *vtable;
         ModelInstance_members members;
@@ -4134,7 +4235,7 @@ struct _RTTICompleteObjectLocator
     struct NavPoint_members
     {
     };
-    struct NavPoint
+    struct NavPoint // NavPoint:
     {
         NavPoint_vtable *vtable;
         NavPoint_members members;
@@ -4147,7 +4248,7 @@ struct _RTTICompleteObjectLocator
     struct Network_members
     {
     };
-    struct Network
+    struct Network // struct Network: struct IComponent;
     {
         Network_vtable *vtable;
         Network_members members;
@@ -4160,7 +4261,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE__members
     {
     };
-    struct OCTREE_
+    struct OCTREE_ // struct OCTREE_: struct OCTREE;
     {
         OCTREE__vtable *vtable;
         OCTREE__members members;
@@ -4173,7 +4274,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE_Camera__members
     {
     };
-    struct OCTREE_Camera_
+    struct OCTREE_Camera_ // struct OCTREE_Camera_: struct OCTREE_Camera;
     {
         OCTREE_Camera__vtable *vtable;
         OCTREE_Camera__members members;
@@ -4186,7 +4287,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE_Crcl2D_members
     {
     };
-    struct OCTREE_Crcl2D
+    struct OCTREE_Crcl2D // struct OCTREE_Crcl2D: struct OCTREE_Shape_, struct OCTREE_Shape;
     {
         OCTREE_Crcl2D_vtable *vtable;
         OCTREE_Crcl2D_members members;
@@ -4199,7 +4300,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE_Pie2D_members
     {
     };
-    struct OCTREE_Pie2D
+    struct OCTREE_Pie2D // struct OCTREE_Pie2D: struct OCTREE_Shape_, struct OCTREE_Shape;
     {
         OCTREE_Pie2D_vtable *vtable;
         OCTREE_Pie2D_members members;
@@ -4212,7 +4313,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE_Rect2D_members
     {
     };
-    struct OCTREE_Rect2D
+    struct OCTREE_Rect2D // struct OCTREE_Rect2D: struct OCTREE_Shape_, struct OCTREE_Shape;
     {
         OCTREE_Rect2D_vtable *vtable;
         OCTREE_Rect2D_members members;
@@ -4225,7 +4326,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE_Ring2D_members
     {
     };
-    struct OCTREE_Ring2D
+    struct OCTREE_Ring2D // struct OCTREE_Ring2D: struct OCTREE_Shape_, struct OCTREE_Shape;
     {
         OCTREE_Ring2D_vtable *vtable;
         OCTREE_Ring2D_members members;
@@ -4238,7 +4339,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE_Scene__members
     {
     };
-    struct OCTREE_Scene_
+    struct OCTREE_Scene_ // struct OCTREE_Ring2D: struct OCTREE_Shape_, struct OCTREE_Shape;
     {
         OCTREE_Scene__vtable *vtable;
         OCTREE_Scene__members members;
@@ -4251,7 +4352,7 @@ struct _RTTICompleteObjectLocator
     struct OCTREE_Tri2D_members
     {
     };
-    struct OCTREE_Tri2D
+    struct OCTREE_Tri2D // struct OCTREE_Tri2D: struct OCTREE_Shape_, struct OCTREE_Shape;
     {
         OCTREE_Tri2D_vtable *vtable;
         OCTREE_Tri2D_members members;
@@ -4264,7 +4365,7 @@ struct _RTTICompleteObjectLocator
     struct OptionCheckBox_members
     {
     };
-    struct OptionCheckBox
+    struct OptionCheckBox // OptionCheckBox: OptionDial;
     {
         OptionCheckBox_vtable *vtable;
         OptionCheckBox_members members;
@@ -4277,7 +4378,7 @@ struct _RTTICompleteObjectLocator
     struct OptionDial_members
     {
     };
-    struct OptionDial
+    struct OptionDial // OptionDial:
     {
         OptionDial_vtable *vtable;
         OptionDial_members members;
@@ -4290,7 +4391,7 @@ struct _RTTICompleteObjectLocator
     struct OptionScrollBar_members
     {
     };
-    struct OptionScrollBar
+    struct OptionScrollBar // OptionScrollBar:
     {
         OptionScrollBar_vtable *vtable;
         OptionScrollBar_members members;
@@ -4303,7 +4404,7 @@ struct _RTTICompleteObjectLocator
     struct OptionSwitch_members
     {
     };
-    struct OptionSwitch
+    struct OptionSwitch // OptionSwitch: OptionDial;
     {
         OptionSwitch_vtable *vtable;
         OptionSwitch_members members;
@@ -4316,7 +4417,7 @@ struct _RTTICompleteObjectLocator
     struct POIPicture_members
     {
     };
-    struct POIPicture
+    struct POIPicture // POIPicture: GUI::Picture, GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         POIPicture_vtable *vtable;
         POIPicture_members members;
@@ -4329,7 +4430,7 @@ struct _RTTICompleteObjectLocator
     struct POIWaypoint_members
     {
     };
-    struct POIWaypoint
+    struct POIWaypoint // POIWaypoint: GUI::Label, GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         POIWaypoint_vtable *vtable;
         POIWaypoint_members members;
@@ -4342,7 +4443,7 @@ struct _RTTICompleteObjectLocator
     struct Party_members
     {
     };
-    struct Party
+    struct Party // struct Party:
     {
         Party_vtable *vtable;
         Party_members members;
@@ -4355,7 +4456,7 @@ struct _RTTICompleteObjectLocator
     struct PathManager_members
     {
     };
-    struct PathManager
+    struct PathManager // PathManager:
     {
         PathManager_vtable *vtable;
         PathManager_members members;
@@ -4368,7 +4469,7 @@ struct _RTTICompleteObjectLocator
     struct PopUpButton_members
     {
     };
-    struct PopUpButton
+    struct PopUpButton // PopUpButton:
     {
         PopUpButton_vtable *vtable;
         PopUpButton_members members;
@@ -4381,7 +4482,7 @@ struct _RTTICompleteObjectLocator
     struct Processor_members
     {
     };
-    struct Processor
+    struct Processor // struct Processor:
     {
         Processor_vtable *vtable;
         Processor_members members;
@@ -4394,7 +4495,7 @@ struct _RTTICompleteObjectLocator
     struct RLECircle<struct Entity *>_members
     {
     };
-    struct RLECircle<struct Entity *>
+    struct RLECircle<struct Entity *> // RLECircle<Entity *>: RLEPrimitive<Entity *>;
     {
         RLECircle<struct Entity *>_vtable *vtable;
         RLECircle<struct Entity *>_members members;
@@ -4407,7 +4508,7 @@ struct _RTTICompleteObjectLocator
     struct RLEConvexQuad<struct Entity *>_members
     {
     };
-    struct RLEConvexQuad<struct Entity *>
+    struct RLEConvexQuad<struct Entity *> // RLEConvexQuad<Entity *>: RLEPrimitive<Entity *>;
     {
         RLEConvexQuad<struct Entity *>_vtable *vtable;
         RLEConvexQuad<struct Entity *>_members members;
@@ -4420,7 +4521,7 @@ struct _RTTICompleteObjectLocator
     struct RLEPrimitive<struct Entity *>_members
     {
     };
-    struct RLEPrimitive<struct Entity *>
+    struct RLEPrimitive<struct Entity *> // RLEPrimitive<Entity *>:
     {
         RLEPrimitive<struct Entity *>_vtable *vtable;
         RLEPrimitive<struct Entity *>_members members;
@@ -4433,7 +4534,7 @@ struct _RTTICompleteObjectLocator
     struct ReplyLabel_members
     {
     };
-    struct ReplyLabel
+    struct ReplyLabel // ReplyLabel: GUI::Label, GUI::Window, GUI::Base, GUI::HeapTracker;
     {
         ReplyLabel_vtable *vtable;
         ReplyLabel_members members;
@@ -4446,7 +4547,7 @@ struct _RTTICompleteObjectLocator
     struct Resources_members
     {
     };
-    struct Resources
+    struct Resources // struct Resources: struct IComponent;
     {
         Resources_vtable *vtable;
         Resources_members members;
@@ -4459,7 +4560,7 @@ struct _RTTICompleteObjectLocator
     struct SS::EngineStringSystem_members
     {
     };
-    struct SS::EngineStringSystem
+    struct SS::EngineStringSystem // SS::EngineStringSystem: SS::StringSystem;
     {
         SS::EngineStringSystem_vtable *vtable;
         SS::EngineStringSystem_members members;
@@ -4472,7 +4573,7 @@ struct _RTTICompleteObjectLocator
     struct SS::StringSystem_members
     {
     };
-    struct SS::StringSystem
+    struct SS::StringSystem // SS::StringSystem:
     {
         SS::StringSystem_vtable *vtable;
         SS::StringSystem_members members;
@@ -4485,7 +4586,7 @@ struct _RTTICompleteObjectLocator
     struct SaveSlotOption_members
     {
     };
-    struct SaveSlotOption
+    struct SaveSlotOption // SaveSlotOption:
     {
         SaveSlotOption_vtable *vtable;
         SaveSlotOption_members members;
@@ -4498,7 +4599,7 @@ struct _RTTICompleteObjectLocator
     struct ScriptTrigger_members
     {
     };
-    struct ScriptTrigger
+    struct ScriptTrigger // struct ScriptTrigger: struct Trigger;
     {
         ScriptTrigger_vtable *vtable;
         ScriptTrigger_members members;
@@ -4511,7 +4612,7 @@ struct _RTTICompleteObjectLocator
     struct Script_Small_members
     {
     };
-    struct Script_Small
+    struct Script_Small // struct Script_Small: struct IScript;
     {
         Script_Small_vtable *vtable;
         Script_Small_members members;
@@ -4524,7 +4625,7 @@ struct _RTTICompleteObjectLocator
     struct Scripting_members
     {
     };
-    struct Scripting
+    struct Scripting // struct Scripting: struct IComponent;
     {
         Scripting_vtable *vtable;
         Scripting_members members;
@@ -4537,7 +4638,7 @@ struct _RTTICompleteObjectLocator
     struct Server_members
     {
     };
-    struct Server
+    struct Server // Server: net::server, net::base;
     {
         Server_vtable *vtable;
         Server_members members;
@@ -4550,7 +4651,7 @@ struct _RTTICompleteObjectLocator
     struct Server::Client_members
     {
     };
-    struct Server::Client
+    struct Server::Client // struct Server::Client: struct net::server::client, net::connection;
     {
         Server::Client_vtable *vtable;
         Server::Client_members members;
@@ -4563,7 +4664,7 @@ struct _RTTICompleteObjectLocator
     struct StoreManager_members
     {
     };
-    struct StoreManager
+    struct StoreManager // struct StoreManager:
     {
         StoreManager_vtable *vtable;
         StoreManager_members members;
@@ -4576,7 +4677,7 @@ struct _RTTICompleteObjectLocator
     struct Strings_members
     {
     };
-    struct Strings
+    struct Strings // struct Strings: struct IComponent;
     {
         Strings_vtable *vtable;
         Strings_members members;
@@ -4589,7 +4690,7 @@ struct _RTTICompleteObjectLocator
     struct TaskEntry_members
     {
     };
-    struct TaskEntry
+    struct TaskEntry // TaskEntry: JournalEntry;
     {
         TaskEntry_vtable *vtable;
         TaskEntry_members members;
@@ -4602,7 +4703,7 @@ struct _RTTICompleteObjectLocator
     struct TaskStatus_members
     {
     };
-    struct TaskStatus
+    struct TaskStatus // TaskStatus:
     {
         TaskStatus_vtable *vtable;
         TaskStatus_members members;
@@ -4615,7 +4716,7 @@ struct _RTTICompleteObjectLocator
     struct TransitionTrigger_members
     {
     };
-    struct TransitionTrigger
+    struct TransitionTrigger // struct TransitionTrigger: struct Trigger;
     {
         TransitionTrigger_vtable *vtable;
         TransitionTrigger_members members;
@@ -4628,7 +4729,7 @@ struct _RTTICompleteObjectLocator
     struct Trigger_members
     {
     };
-    struct Trigger
+    struct Trigger // struct Trigger:
     {
         Trigger_vtable *vtable;
         Trigger_members members;
@@ -4641,7 +4742,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_BASE_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_BASE_Struct
+    struct VFXEFFECTTYPE_BASE_Struct // struct VFXEFFECTTYPE_BASE_Struct:
     {
         VFXEFFECTTYPE_BASE_Struct_vtable *vtable;
         VFXEFFECTTYPE_BASE_Struct_members members;
@@ -4654,7 +4755,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_COLLISION_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_COLLISION_Struct
+    struct VFXEFFECTTYPE_COLLISION_Struct // struct VFXEFFECTTYPE_COLLISION_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_COLLISION_Struct_vtable *vtable;
         VFXEFFECTTYPE_COLLISION_Struct_members members;
@@ -4667,7 +4768,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_LIGHTNING_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_LIGHTNING_Struct
+    struct VFXEFFECTTYPE_LIGHTNING_Struct // struct VFXEFFECTTYPE_LIGHTNING_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_LIGHTNING_Struct_vtable *vtable;
         VFXEFFECTTYPE_LIGHTNING_Struct_members members;
@@ -4680,7 +4781,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_LIGHT_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_LIGHT_Struct
+    struct VFXEFFECTTYPE_LIGHT_Struct // struct VFXEFFECTTYPE_LIGHT_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_LIGHT_Struct_vtable *vtable;
         VFXEFFECTTYPE_LIGHT_Struct_members members;
@@ -4693,7 +4794,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_MODELEFFECT_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_MODELEFFECT_Struct
+    struct VFXEFFECTTYPE_MODELEFFECT_Struct // struct VFXEFFECTTYPE_MODELEFFECT_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_MODELEFFECT_Struct_vtable *vtable;
         VFXEFFECTTYPE_MODELEFFECT_Struct_members members;
@@ -4706,7 +4807,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_MODEL_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_MODEL_Struct
+    struct VFXEFFECTTYPE_MODEL_Struct // struct VFXEFFECTTYPE_MODEL_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_MODEL_Struct_vtable *vtable;
         VFXEFFECTTYPE_MODEL_Struct_members members;
@@ -4719,7 +4820,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_MOTIONBLUR_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_MOTIONBLUR_Struct
+    struct VFXEFFECTTYPE_MOTIONBLUR_Struct // struct VFXEFFECTTYPE_MOTIONBLUR_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_MOTIONBLUR_Struct_vtable *vtable;
         VFXEFFECTTYPE_MOTIONBLUR_Struct_members members;
@@ -4732,7 +4833,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_PARTICLESYSTEM_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_PARTICLESYSTEM_Struct
+    struct VFXEFFECTTYPE_PARTICLESYSTEM_Struct // struct VFXEFFECTTYPE_PARTICLESYSTEM_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_PARTICLESYSTEM_Struct_vtable *vtable;
         VFXEFFECTTYPE_PARTICLESYSTEM_Struct_members members;
@@ -4745,7 +4846,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_RAIN_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_RAIN_Struct
+    struct VFXEFFECTTYPE_RAIN_Struct // struct VFXEFFECTTYPE_RAIN_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_RAIN_Struct_vtable *vtable;
         VFXEFFECTTYPE_RAIN_Struct_members members;
@@ -4759,7 +4860,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_SNOW_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_SNOW_Struct
+    struct VFXEFFECTTYPE_SNOW_Struct // struct VFXEFFECTTYPE_SNOW_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_SNOW_Struct_vtable *vtable;
         VFXEFFECTTYPE_SNOW_Struct_members members;
@@ -4772,7 +4873,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_SOUND_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_SOUND_Struct
+    struct VFXEFFECTTYPE_SOUND_Struct // struct VFXEFFECTTYPE_SOUND_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_SOUND_Struct_vtable *vtable;
         VFXEFFECTTYPE_SOUND_Struct_members members;
@@ -4785,7 +4886,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_SPRITE_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_SPRITE_Struct
+    struct VFXEFFECTTYPE_SPRITE_Struct // struct VFXEFFECTTYPE_SPRITE_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_SPRITE_Struct_vtable *vtable;
         VFXEFFECTTYPE_SPRITE_Struct_members members;
@@ -4798,7 +4899,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_TRAIL_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_TRAIL_Struct
+    struct VFXEFFECTTYPE_TRAIL_Struct // struct VFXEFFECTTYPE_TRAIL_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_TRAIL_Struct_vtable *vtable;
         VFXEFFECTTYPE_TRAIL_Struct_members members;
@@ -4811,7 +4912,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_WATER_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_WATER_Struct
+    struct VFXEFFECTTYPE_WATER_Struct // struct VFXEFFECTTYPE_WATER_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_WATER_Struct_vtable *vtable;
         VFXEFFECTTYPE_WATER_Struct_members members;
@@ -4824,7 +4925,7 @@ struct _RTTICompleteObjectLocator
     struct VFXEFFECTTYPE_WIND_Struct_members
     {
     };
-    struct VFXEFFECTTYPE_WIND_Struct
+    struct VFXEFFECTTYPE_WIND_Struct // struct VFXEFFECTTYPE_WIND_Struct: struct VFXEFFECTTYPE_BASE_Struct;
     {
         VFXEFFECTTYPE_WIND_Struct_vtable *vtable;
         VFXEFFECTTYPE_WIND_Struct_members members;
@@ -4837,7 +4938,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Collision_members
     {
     };
-    struct VFX_Collision
+    struct VFX_Collision // VFX_Collision: VFX_EffectInstance;
     {
         VFX_Collision_vtable *vtable;
         VFX_Collision_members members;
@@ -4850,7 +4951,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Effect_members
     {
     };
-    struct VFX_Effect
+    struct VFX_Effect // VFX_Effect: VFX_ParameterHolder;
     {
         VFX_Effect_vtable *vtable;
         VFX_Effect_members members;
@@ -4863,7 +4964,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_EffectInstance_members
     {
     };
-    struct VFX_EffectInstance
+    struct VFX_EffectInstance // VFX_EffectInstance:
     {
         VFX_EffectInstance_vtable *vtable;
         VFX_EffectInstance_members members;
@@ -4876,7 +4977,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_FormatManager_members
     {
     };
-    struct VFX_FormatManager
+    struct VFX_FormatManager // VFX_FormatManager:
     {
         VFX_FormatManager_vtable *vtable;
         VFX_FormatManager_members members;
@@ -4889,7 +4990,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Light_members
     {
     };
-    struct VFX_Light
+    struct VFX_Light // VFX_Light: VFX_EffectInstance;
     {
         VFX_Light_vtable *vtable;
         VFX_Light_members members;
@@ -4902,7 +5003,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Lightning_members
     {
     };
-    struct VFX_Lightning
+    struct VFX_Lightning // VFX_Lightning: VFX_EffectInstance;
     {
         VFX_Lightning_vtable *vtable;
         VFX_Lightning_members members;
@@ -4915,7 +5016,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Model_members
     {
     };
-    struct VFX_Model
+    struct VFX_Model // VFX_Model: VFX_EffectInstance;
     {
         VFX_Model_vtable *vtable;
         VFX_Model_members members;
@@ -4928,7 +5029,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_ModelEffect_methods
     {
     };
-    struct VFX_ModelEffect
+    struct VFX_ModelEffect // VFX_ModelEffect: VFX_EffectInstance;
     {
         VFX_ModelEffect_vtable *vtable;
         VFX_ModelEffect_members members;
@@ -4941,7 +5042,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_MotionBlur_members
     {
     };
-    struct VFX_MotionBlur
+    struct VFX_MotionBlur // VFX_MotionBlur: VFX_EffectInstance;
     {
         VFX_MotionBlur_vtable *vtable;
         VFX_MotionBlur_members members;
@@ -4954,7 +5055,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Parameter_members
     {
     };
-    struct VFX_Parameter
+    struct VFX_Parameter // VFX_Parameter:
     {
         VFX_Parameter_vtable *vtable;
         VFX_Parameter_members members;
@@ -4967,7 +5068,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_ParameterHolder_members
     {
     };
-    struct VFX_ParameterHolder
+    struct VFX_ParameterHolder // VFX_ParameterHolder:
     {
         VFX_ParameterHolder_vtable *vtable;
         VFX_ParameterHolder_members members;
@@ -4980,7 +5081,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_ParameterInfo_members
     {
     };
-    struct VFX_ParameterInfo
+    struct VFX_ParameterInfo // VFX_ParameterInfo: VFX_Parameter;
     {
         VFX_ParameterInfo_vtable *vtable;
         VFX_ParameterInfo_members members;
@@ -4993,7 +5094,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_ParticleSystem_members
     {
     };
-    struct VFX_ParticleSystem
+    struct VFX_ParticleSystem // VFX_ParticleSystem: VFX_EffectInstance;
     {
         VFX_ParticleSystem_vtable *vtable;
         VFX_ParticleSystem_members members;
@@ -5006,7 +5107,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Rain_members
     {
     };
-    struct VFX_Rain
+    struct VFX_Rain // VFX_Rain: VFX_EffectInstance;
     {
         VFX_Rain_vtable *vtable;
         VFX_Rain_members members;
@@ -5019,7 +5120,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Snow_members
     {
     };
-    struct VFX_Snow
+    struct VFX_Snow // VFX_Snow: VFX_EffectInstance;
     {
         VFX_Snow_vtable *vtable;
         VFX_Snow_members members;
@@ -5032,7 +5133,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Sound_members
     {
     };
-    struct VFX_Sound
+    struct VFX_Sound // VFX_Sound: VFX_EffectInstance;
     {
         VFX_Sound_vtable *vtable;
         VFX_Sound_members members;
@@ -5045,7 +5146,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Sprite_members
     {
     };
-    struct VFX_Sprite
+    struct VFX_Sprite // VFX_Sprite: VFX_EffectInstance;
     {
         VFX_Sprite_vtable *vtable;
         VFX_Sprite_members members;
@@ -5058,7 +5159,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_System_members
     {
     };
-    struct VFX_System
+    struct VFX_System // VFX_System:
     {
         VFX_System_vtable *vtable;
         VFX_System_members members;
@@ -5071,7 +5172,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Trail_methods
     {
     };
-    struct VFX_Trail
+    struct VFX_Trail // VFX_Trail: VFX_EffectInstance;
     {
         VFX_Trail_vtable *vtable;
         VFX_Trail_members members;
@@ -5084,7 +5185,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_VEG_members
     {
     };
-    struct VFX_VEG
+    struct VFX_VEG // VFX_VEG: VFX_ParameterHolder;
     {
         VFX_VEG_vtable *vtable;
         VFX_VEG_members members;
@@ -5097,7 +5198,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_VEGCache_members
     {
     };
-    struct VFX_VEGCache
+    struct VFX_VEGCache // VFX_VEGCache:
     {
         VFX_VEGCache_vtable *vtable;
         VFX_VEGCache_members members;
@@ -5110,7 +5211,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_VEGInstance_members
     {
     };
-    struct VFX_VEGInstance
+    struct VFX_VEGInstance // VFX_VEGInstance:
     {
         VFX_VEGInstance_vtable *vtable;
         VFX_VEGInstance_members members;
@@ -5123,7 +5224,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Water_members
     {
     };
-    struct VFX_Water
+    struct VFX_Water // VFX_Water: VFX_EffectInstance;
     {
         VFX_Water_vtable *vtable;
         VFX_Water_members members;
@@ -5136,7 +5237,7 @@ struct _RTTICompleteObjectLocator
     struct VFX_Wind_members
     {
     };
-    struct VFX_Wind
+    struct VFX_Wind // VFX_Wind: VFX_EffectInstance;
     {
         VFX_Wind_vtable *vtable;
         VFX_Wind_members members;
@@ -5149,7 +5250,7 @@ struct _RTTICompleteObjectLocator
     struct Video_members
     {
     };
-    struct Video
+    struct Video // struct Video:
     {
         Video_vtable *vtable;
         Video_members members;
@@ -5162,7 +5263,7 @@ struct _RTTICompleteObjectLocator
     struct VideoInterface_members
     {
     };
-    struct VideoInterface
+    struct VideoInterface // VideoInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
     {
         VideoInterface_vtable *vtable;
         VideoInterface_members members;
@@ -5175,7 +5276,7 @@ struct _RTTICompleteObjectLocator
     struct VisualEffect_members
     {
     };
-    struct VisualEffect
+    struct VisualEffect // struct VisualEffect: struct DynamicObject;
     {
         VisualEffect_vtable *vtable;
         VisualEffect_members members;
@@ -5188,7 +5289,7 @@ struct _RTTICompleteObjectLocator
     struct Water_members
     {
     };
-    struct Water
+    struct Water // struct Water: struct DynamicObject;
     {
         Water_vtable *vtable;
         Water_members members;
@@ -5201,7 +5302,7 @@ struct _RTTICompleteObjectLocator
     struct WaterTileModelInstance_members
     {
     };
-    struct WaterTileModelInstance
+    struct WaterTileModelInstance // WaterTileModelInstance: ModelInstance;
     {
         WaterTileModelInstance_vtable *vtable;
         WaterTileModelInstance_members members;
@@ -5214,7 +5315,7 @@ struct _RTTICompleteObjectLocator
     struct WayPoint_members
     {
     };
-    struct WayPoint
+    struct WayPoint // WayPoint:
     {
         WayPoint_vtable *vtable;
         WayPoint_members members;
@@ -5227,7 +5328,7 @@ struct _RTTICompleteObjectLocator
     struct World_members
     {
     };
-    struct World
+    struct World // struct World: struct IComponent, struct IWorldServer, struct IWorld, struct IWorldClient, struct IWorld;
     {
         World_vtable *vtable;
         World_members members;
@@ -5240,7 +5341,7 @@ struct _RTTICompleteObjectLocator
     struct WorldMap_members
     {
     };
-    struct WorldMap
+    struct WorldMap // struct WorldMap:
     {
         WorldMap_vtable *vtable;
         WorldMap_members members;
