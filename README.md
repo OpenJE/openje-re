@@ -29,3 +29,8 @@ Getting Started
     - Guide to using the plugins together: http://www.macromonkey.com/bb/index.php/topic,20.0.html
 
 - Reverse engineered C++ source code is located in the c++ directory, where header/interface files are located in the c++/headers directory, and source/implementation files are locates in the c++/source directory.
+
+Documentation
+-------------
+
+- The docs directory provides in-depth information about the projects current state and its goals.
