@@ -6,18 +6,15 @@
 //: Project Headers
 #include "c++/headers/Action.hpp"
 
-class ActionAnim : public Action
+struct ActionAnim : Action
 {
     //: Constructors
-    public:
         ActionAnim();
 
     //: Destructors
-    public:
         ~ActionAnim();
 
     //: Methods
-    public:
         void f_a() override;
         void f_b() override;
         void f_d( int a2 ) override;
