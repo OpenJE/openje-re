@@ -18,12 +18,10 @@ class ActionDie : public Action
 
     //: Methods
     public:
-        virtual void v_a() {}
-        virtual void v_b() {}
-        virtual void v_c() {}
-        virtual void v_d() {}
-        virtual void v_e() {}
-        virtual void v_f() {}
+        void v_a() override;
+        void v_d() override;
+        void v_e() override;
+        void v_f() override;
 };
 
 #endif // CPP_HEADERS_ACTIONDIE_HPP_

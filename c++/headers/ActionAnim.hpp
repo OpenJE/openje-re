@@ -10,20 +10,19 @@ class ActionAnim : public Action
 {
     //: Constructors
     public:
-        ActionAnim() : Action() {}
+        ActionAnim();
 
     //: Destructors
     public:
-        ~ActionAnim() {}
+        ~ActionAnim();
 
     //: Methods
     public:
-        virtual void v_a() {}
-        virtual void v_b() {}
-        virtual void v_c() {}
-        virtual void v_d() {}
-        virtual void v_e() {}
-        virtual void v_f() {}
+        void v_a() override;
+        void v_b() override;
+        void v_d() override;
+        void v_e() override;
+        void v_f() override;
 };
 
 #endif // CPP_HEADERS_ACTIONANIM_HPP_
