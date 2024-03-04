@@ -15,6 +15,6 @@
 //: Methods
     void ActionAnim::f_a() {}
     void ActionAnim::f_b() {}
-    void ActionAnim::f_d() {}
-    void ActionAnim::f_e() {}
-    void ActionAnim::f_f() {}
+    void ActionAnim::f_d( int a2 ) {}
+    void ActionAnim::f_e( unsigned int a2, int a3 ) {}
+    void ActionAnim::f_f( int a2 ) {}
