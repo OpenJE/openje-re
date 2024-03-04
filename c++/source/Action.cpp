@@ -2,3 +2,9 @@
 
 //: This Headers
 #include "c++/headers/Action.hpp"
+
+//: Constructors
+    Action::Action() {}
+
+//: Destructors
+    Action::~Action() {}
