@@ -1,2 +1,2 @@
-# openvb-re
-Open source, reverse engineered Fallout: Van Buren
+# openje-re
+Open source, reverse engineered Jefferson Engine
