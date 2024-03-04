@@ -7,20 +7,20 @@ class Action
 {
     //: Constructors
     public:
-        Action() {}
+        Action();
 
     //: Destructors
     public:
-        ~Action() {}
+        ~Action();
 
     //: Methods
     public:
-        virtual void f_a() = 0;
-        virtual void f_b() = 0;
-        virtual void f_c() = 0;
-        virtual void f_d() = 0;
-        virtual void f_e() = 0;
-        virtual void f_f() = 0;
+        virtual void v_a() = 0;
+        virtual void v_b() = 0;
+        virtual void v_c() = 0;
+        virtual void v_d() = 0;
+        virtual void v_e() = 0;
+        virtual void v_f() = 0;
 };
 
 #endif // CPP_HEADERS_ACTION_HPP_
