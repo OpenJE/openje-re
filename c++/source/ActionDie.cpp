@@ -1,4 +1,4 @@
-// Copyright 2024 Shane Mulcahy
+// Copyright 2024 OpenJE
 
 //: Project Headers
 #include "c++/headers/Action.hpp"
@@ -13,7 +13,7 @@
     ActionDie::~ActionDie() {}
 
 //: Methods
-    void ActionDie::v_a() {}
-    void ActionDie::v_d() {}
-    void ActionDie::v_e() {}
-    void ActionDie::v_f() {}
+    void ActionDie::f_a() {}
+    void ActionDie::f_d() {}
+    void ActionDie::f_e() {}
+    void ActionDie::f_f() {}
