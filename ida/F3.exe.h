@@ -2189,10 +2189,6 @@ struct _RTTICompleteObjectLocator
     */
     struct CFloatingTextInterface_vtable
     {
-        char (__stdcall *sub_435F50)(int a1, int a2, int a3);
-        void (__stdcall *sub_439320)(int a1, int a2, int a3, int a4, int a5, int a6);
-        int (__stdcall *sub_438F70)(int a1, int a2, int a3, int a4, int a5);
-        _DWORD *(__stdcall *sub_438F80)(_DWORD *a1, int a2, int a3, int a4, int a5);
     };
     struct CFloatingTextInterface_members
     {
