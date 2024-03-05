@@ -1,0 +1,30 @@
+{
+    "tasks":
+    [
+        {
+            "label": "build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-std=c++23",
+                "-fdiagnostics-color=always",
+                "-mcpu=corei7",
+                "-mtune=corei7",
+                "-O3",
+                "-funroll-loops",
+                "-ffp-contract=fast",
+                "-ftree-vectorize",
+                "-g",
+                "${workspaceFolder}/c++/tools/class_extractor/source/parser.cpp",
+                "${workspaceFolder}/c++/tools/class_extractor/tests/test.cpp",
+                "-o",
+                "${workspaceFolder}/c++/tools/class_extractor/tests/test.elf",
+                "-I${workspaceFolder}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
