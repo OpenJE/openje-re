@@ -945,6 +945,17 @@ struct _RTTICompleteObjectLocator
 };
 
 //: Action
+    /*
+        struct Action:
+            const Action::`vftable'
+                dd offset sub_4010E0
+                dd offset __purecall
+                dd offset __purecall
+                dd offset Action__wrap_purecall_0
+                dd offset __purecall
+                dd offset __purecall
+                dd offset __purecall
+    */
     struct Action_vtable
     {
         Action *(__thiscall *sub_4010E0)(Action *Block, char a2); // Constructor
@@ -965,6 +976,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionAnim
+    /*
+        struct ActionAnim: struct Action;
+            const ActionAnim::`vftable'
+                dd offset sub_405350
+                dd offset ActionAnim__sub_5A9260
+                dd offset ActionAnim__sub_5A9270
+                dd offset Action__wrap_purecall_0
+                dd offset ActionAnim__sub_5A9280
+                dd offset ActionAnim__sub_5A92F0
+                dd offset ActionAnim__sub_5A9310
+    */
     struct ActionAnim_vtable
     {
         ActionAnim *(__thiscall *sub_405350)(ActionAnim *Block, char a2);
@@ -985,6 +1007,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionDie
+    /*
+        struct ActionDie: struct Action;
+            const ActionDie::`vftable'
+                dd offset sub_405350
+                dd offset sub_404B60
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_55FB30
+                dd offset sub_5638D0
+                dd offset sub_404BB0
+    */
     struct ActionDie_vtable
     {
         ActionDie *(__thiscall *sub_405350)(ActionDie *Block, char a2);
@@ -1005,8 +1038,20 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionEquip
+    /*
+        struct ActionEquip: struct Action;
+            const ActionEquip::`vftable'
+                dd offset sub_405350
+                dd offset sub_404B60
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_404BB0
+                dd offset sub_5638D0
+                dd offset sub_404BB0
+    */
     struct ActionEquip_vtable
     {
+        _DWORD *(__thiscall *sub_405350)(int Block, char a2);
         ActionEquip *(__thiscall *sub_404B60)(ActionEquip *Block, char a2);
         void (__thiscall *nullsub_2)(void *this);
         char (__thiscall *Action::wrap_purecall_0)(ActionEquip *this);
@@ -1024,6 +1069,18 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionFloatingSpeechText
+    /*
+        struct ActionFloatingSpeechText: struct Action;
+            const ActionFloatingSpeechText::`vftable'
+                dd offset sub_405350
+                dd offset sub_55FBA0
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_404BB0
+                dd offset sub_55FBB0
+                dd offset sub_404BB0
+                dd offset nullsub_2
+    */
     struct ActionFloatingSpeechText_vtable
     {
         ActionFloatingSpeechText *(__thiscall *sub_405350)(ActionFloatingSpeechText *Block, char a2);
@@ -1045,6 +1102,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionIdle
+    /*
+        struct ActionIdle: struct Action;
+            const ActionIdle::`vftable'
+                dd offset sub_405350
+                dd offset sub_404B60
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_404BB0
+                dd offset sub_5A9070
+                dd offset sub_404BB0
+    */
     struct ActionIdle_vtable
     {
         ActionIdle *(__thiscall *sub_405350)(ActionIdle *Block, char a2);
@@ -1065,6 +1133,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionMessage
+    /*
+        struct ActionMessage: struct Action;
+            const ActionMessage::`vftable'
+                dd offset sub_405350
+                dd offset sub_404B60
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_5A9080
+                dd offset sub_5A9070
+                dd offset sub_404BB0
+    */
     struct ActionMessage_vtable
     {
         ActionMessage *(__thiscall *sub_405350)(ActionMessage *Block, char a2);
@@ -1085,6 +1164,23 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionMoveTo
+    /*
+        struct ActionMoveTo: struct Action;
+            const ActionMoveTo::`vftable'
+                dd offset sub_55B5E0
+                dd offset sub_55B440
+                dd offset sub_55B450
+                dd offset Action__wrap_purecall_0
+                dd offset sub_55B4F0
+                dd offset sub_55B600
+                dd offset sub_55B3F0
+                dd offset sub_55B340
+                dd offset sub_406E90
+                dd offset sub_406E90
+                dd offset sub_55B370
+                dd offset sub_55B3B0
+                dd offset nullsub_2
+    */
     struct ActionMoveTo_vtable
     {
         _DWORD *(__thiscall *sub_55B5E0)(_DWORD *Block, char a2);
@@ -1111,6 +1207,21 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionPickUp
+    /*
+        struct ActionPickUp: struct Action;
+            const ActionPickUp::`vftable'
+                dd offset sub_405350
+                dd offset sub_407200
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_404BB0
+                dd offset sub_563550
+                dd offset sub_404BB0
+                dd offset sub_406E90
+                dd offset sub_406E90
+                dd offset sub_406E90
+                dd offset sub_406E90
+    */
     struct ActionPickUp_vtable
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
@@ -1135,6 +1246,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionSetActiveWeapon
+    /*
+        struct ActionSetActiveWeapon: struct Action;
+            const ActionSetActiveWeapon::`vftable'
+                dd offset sub_405350
+                dd offset sub_404B60
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_404BB0
+                dd offset sub_5638D0
+                dd offset sub_404BB0
+    */
     struct ActionSetActiveWeapon_vtable
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
@@ -1155,6 +1277,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionUnequip
+    /*
+        struct ActionUnequip: struct Action;
+            const ActionUnequip::`vftable'
+                dd offset sub_405350
+                dd offset sub_404B60
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_404BB0
+                dd offset sub_5638D0
+                dd offset sub_404BB0
+    */
     struct ActionUnequip_vtable
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
@@ -1175,6 +1308,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionWait
+    /*
+        struct ActionWait: struct Action;
+            const ActionWait::`vftable'
+                dd offset sub_405350
+                dd offset sub_404B60
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_5601C0
+                dd offset sub_5601D0
+                dd offset sub_404BB0
+    */
     struct ActionWait_vtable
     {
         _DWORD *(__thiscall *sub_405350)(int Block, char a2);
@@ -1195,6 +1339,17 @@ struct _RTTICompleteObjectLocator
     };
 
 //: ActionWander
+    /*
+        struct ActionWander: struct Action;
+            const ActionWander::`vftable'
+                dd offset sub_405350
+                dd offset ?do_always_noconv@codecvt_base@std@@MBE_NXZ
+                dd offset nullsub_2
+                dd offset Action__wrap_purecall_0
+                dd offset sub_5A28E0
+                dd offset sub_5A28F0
+                dd offset sub_404BB0
+    */
     struct ActionWander_vtable
     {
         int _DWORD *(__thiscall *sub_405350)(int Block, char a2);
@@ -1215,6 +1370,18 @@ struct _RTTICompleteObjectLocator
     };
 
 //: AnimationCache
+    /*
+        class AnimationCache: struct IComponent;
+            dd 0, offset const AnimationCache::`RTTI Complete Object Locator'
+            const AnimationCache::`vftable'
+                dd offset sub_59BCA0
+                dd offset sub_59B1E0
+                dd offset sub_59AFE0
+                dd offset nullsub_2
+                dd offset sub_59B120
+                dd offset nullsub_2
+                dd offset nullsub_2
+    */
     struct AnimationCache_vtable
     {
         void *(__thiscall *sub_59BCA0)(void *Block, char a2);
@@ -1235,6 +1402,15 @@ struct _RTTICompleteObjectLocator
     };
 
 //: AreaMap
+    /*
+        class AreaMap:
+            dd offset AreaMap__sub_57C8D0
+            dd offset const AreaMap::`RTTI Complete Object Locator'
+            const AreaMap::`vftable'
+                dd offset AreaMap__sub_57FCD0
+                dd offset AreaMap__sub_57FF40
+                dd offset AreaMap__sub_57C140
+    */
     struct AreaMap_vtable
     {
         size_t (__thiscall *sub_57C8D0)(AreaMap **this, FILE *Stream);
@@ -1252,6 +1428,13 @@ struct _RTTICompleteObjectLocator
     };
 
 //: AreaMapIcon
+    /*
+        class AreaMapIcon:
+            class GUI::HeapTracker: [MI]
+            const AreaMapIcon::`vftable'
+                dd offset sub_421690
+                dd offset const AreaMapWindow::`RTTI Complete Object Locator'{for `GUI::HeapTracker'}
+    */
     struct AreaMapIcon_vtable
     {
         _DWORD *__thiscall sub_421690(_DWORD *Block, char a2);
@@ -1266,6 +1449,11 @@ struct _RTTICompleteObjectLocator
     };
 
 //: AreaMapNote
+    /*
+        struct AreaMapNote:
+            const AreaMapNote::`vftable'
+                dd offset sub_57D440
+    */
     struct AreaMapNote_vtable
     {
         int __thiscall sub_57D440(_DWORD *this, FILE *Stream);
@@ -1280,6 +1468,92 @@ struct _RTTICompleteObjectLocator
     };
 
 //: AreaMapWindow
+    /*
+        class AreaMapWindow: GUI::Picture, GUI::Window, GUI::Base, GUI::HeapTracker;  [MI] (#classinformer)
+            const AreaMapWindow::`vftable'{for `GUI::HeapTracker'}
+                dd offset sub_4209C0
+                dd offset const AreaMapWindow::`RTTI Complete Object Locator'
+            const AreaMapWindow::`vftable'
+                dd offset sub_421720
+                dd offset j_GUI__Base__sub_4AF060
+                dd offset j_GUI__Base__sub_4B2750
+                dd offset sub_4AF830
+                dd offset sub_4AF080
+                dd offset GUI__Base__sub_4B27C0
+                dd offset sub_4AF170
+                dd offset sub_4AB190
+                dd offset sub_4AB160
+                dd offset sub_4AFC70
+                dd offset sub_423D40
+                dd offset sub_421740
+                dd offset sub_41F3D0
+                dd offset sub_41D200
+                dd offset sub_41D340
+                dd offset sub_4AF020
+                dd offset sub_4AF040
+                dd offset GUI__Base__sub_4AF060
+                dd offset j_GUI__Base__sub_4B2750
+                dd offset sub_4B02C0
+                dd offset sub_4AF890
+                dd offset sub_4AF190
+                dd offset sub_4AF1A0
+                dd offset sub_4AF1B0
+                dd offset sub_4AF1E0
+                dd offset sub_4AF1F0
+                dd offset sub_4AF250
+                dd offset sub_4AF260
+                dd offset sub_4AF270
+                dd offset sub_4AF290
+                dd offset sub_4AF2D0
+                dd offset sub_4AF280
+                dd offset sub_5C0350
+                dd offset sub_4AF2E0
+                dd offset sub_4AF2F0
+                dd offset sub_4AF300
+                dd offset sub_4AF310
+                dd offset sub_4AF320
+                dd offset sub_4AF380
+                dd offset sub_4AF390
+                dd offset sub_4AF460
+                dd offset sub_4B0CA0
+                dd offset sub_4AFF30
+                dd offset sub_4AF8A0
+                dd offset sub_4B0000
+                dd offset sub_4B02E0
+                dd offset sub_4AF470
+                dd offset sub_4AF8F0
+                dd offset sub_4B0D50
+                dd offset sub_4AF480
+                dd offset sub_4AA9B0
+                dd offset sub_4AB490
+                dd offset sub_4B06A0
+                dd offset sub_4B13F0
+                dd offset sub_4B0520
+                dd offset sub_4B05A0
+                dd offset sub_4AF980
+                dd offset sub_4AF4C0
+                dd offset sub_4AF4D0
+                dd offset sub_4AF4E0
+                dd offset sub_4AF9C0
+                dd offset sub_4AF4F0
+                dd offset sub_4AF580
+                dd offset sub_4B0640
+                dd offset sub_4AF590
+                dd offset sub_4B0660
+                dd offset sub_4B0680
+                dd offset sub_4B0040
+                dd offset sub_4B0160
+                dd offset sub_4B0280
+                dd offset nullsub_5
+                dd offset sub_41F410
+                dd offset sub_4AF810
+                dd offset sub_4AF820
+                dd offset sub_420990
+                dd offset sub_4AAB20
+                dd offset sub_4AB1F0
+                dd offset sub_4AA8F0
+                dd offset sub_4AB530
+    */
     struct AreaMapWindow_vtable
     {
         int (__thiscall *sub_4209C0)(char *this, char a2);
@@ -1373,6 +1647,15 @@ struct _RTTICompleteObjectLocator
     };
 
 //: Audio
+    /*
+        struct Audio:    (#classinformer)
+            dd 0, offset const Audio::`RTTI Complete Object Locator'
+            const Audio::`vftable'
+                dd offset Audio__sub_5915B0
+                dd offset Audio__sub_590BE0
+                dd offset Audio__sub_590B50
+                dd offset Audio__sub_591110
+    */
     struct Audio_vtable
     {
         void *(__thiscall *sub_5915B0)(void *Block, char a2);
@@ -1390,6 +1673,19 @@ struct _RTTICompleteObjectLocator
     };
 
 //: BuildingTrigger
+    /*
+        struct BuildingTrigger: struct Trigger;
+            const BuildingTrigger::`vftable'
+                dd offset sub_5B1D50
+                dd offset Trigger__sub_56E3F0
+                dd offset sub_5B1C70
+                dd offset sub_5B1DE0
+                dd offset sub_5B1F00
+                dd offset sub_5B1D40
+                dd offset Trigger__sub_5B1520
+                dd offset Trigger__sub_5B1750
+                dd offset Trigger__sub_5B1880
+    */
     struct BuildingTrigger_vtable
     {
         void *(__thiscall *sub_5B1D50)(void *Block, char a2);
@@ -1412,6 +1708,15 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CActionbarInterface
+    /*
+        class CActionbarInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CActionbarInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_4172A0
+                dd offset sub_4953C0
+                dd offset sub_41CFE0
+                dd offset sub_4172B0
+                dd offset nullsub_2
+    */
     struct CActionbarInterface_vtable
     {
         char *(__thiscall *sub_4172A0)(_DWORD *this, char a2);
@@ -1430,6 +1735,16 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CCharacterGenerationInterface
+    /*
+        class CCharacterGenerationInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CCharacterGenerationInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_42C690
+                dd offset sub_4953C0
+                dd offset sub_430750
+                dd offset sub_42C6C0
+                dd offset sub_42C6A0
+                dd offset sub_42C6B0
+    */
     struct CCharacterGenerationInterface_vtable
     {
         char *(__thiscall *sub_42C690)(_DWORD *this, char a2);
@@ -1449,6 +1764,16 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CConsoleInterface
+    /*
+        class CConsoleInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CConsoleInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_59DCE0
+                dd offset sub_4953C0
+                dd offset sub_59EC10
+                dd offset nullsub_2
+                dd offset nullsub_2
+                dd offset Video__sub_580360
+    */
     struct CConsoleInterface_vtable
     {
         char *(__thiscall *sub_59DCE0)(_DWORD *this, char a2);
@@ -1468,6 +1793,16 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CDebugInterface
+    /*
+        class CDebugInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CDebugInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_557D40
+                dd offset sub_4953C0
+                dd offset sub_558DC0
+                dd offset nullsub_2
+                dd offset nullsub_2
+                dd offset Video__sub_580360
+    */
     struct CDebugInterface_vtable
     {
         char *(__thiscall *sub_557D40)(_DWORD *this, char a2);
@@ -1487,6 +1822,16 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CDebugToolsInterface
+    /*
+        class CDebugToolsInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CDebugToolsInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_5B5D20
+                dd offset sub_4953C0
+                dd offset sub_5B7750
+                dd offset nullsub_2
+                dd offset nullsub_2
+                dd offset Video__sub_580360
+    */
     struct CDebugToolsInterface_vtable
     {
         char *(__thiscall *sub_5B5D20)(_DWORD *this, char a2);
@@ -1506,6 +1851,16 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CEngineInterface
+    /*
+        class CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CEngineInterface::`vftable'
+                dd offset sub_5803C0
+                dd offset sub_4953C0
+                dd offset sub_5803E0
+                dd offset nullsub_2
+                dd offset nullsub_2
+                dd offset Video__sub_580360
+    */
     struct CEngineInterface_vtable
     {
         void *(__thiscall *sub_5803C0)(void *Block, char a2);
@@ -1525,6 +1880,16 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CEscapeMenuInterface
+    /*
+        class CEscapeMenuInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CEscapeMenuInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_433910
+                dd offset sub_4953C0
+                dd offset sub_434110
+                dd offset nullsub_2
+                dd offset nullsub_2
+                dd offset sub_433920
+    */
     struct CEscapeMenuInterface_vtable
     {
         char *(__thiscall *sub_433910)(_DWORD *this, char a2);
@@ -1544,8 +1909,24 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CFeedbackInterface
+    /*
+        class CFeedbackInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            const CFeedbackInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_434470
+                dd offset sub_4953C0
+                dd offset sub_434480
+                dd offset nullsub_2
+                dd offset nullsub_2
+                dd offset sub_434490
+    */
     struct CFeedbackInterface_vtable
     {
+        _DWORD *(__thiscall *sub_434470)(_DWORD *this, char a2);
+        double (__thiscall *sub_4953C0)(_DWORD *this, int a2, int a3);
+        int (__stdcall *sub_434480)(int a1, int a2);
+        void (__thiscall *nullsub_2)(void *this);
+        void (__thiscall *nullsub_2_1)(void *this);
+        char (__stdcall *sub_434490)(int a1, int a2, int a3);
     };
     struct CFeedbackInterface_members
     {
@@ -1557,8 +1938,227 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CFloatingLabel
+    /*
+        class CFloatingLabel: GUI::Label, GUI::Window, GUI::Base, GUI::HeapTracker;  [MI] (#classinformer)
+            const CFloatingLabel::`vftable'{for `GUI::HeapTracker'}
+                dd offset sub_58FC60
+                dd offset const CFloatingLabel::`RTTI Complete Object Locator'
+            const CFloatingLabel::`vftable'
+                dd offset sub_58FCA0
+                dd offset j_GUI__Base__sub_4AF060
+                dd offset j_GUI__Base__sub_4B2750
+                dd offset sub_4A7940
+                dd offset sub_4AA3C0
+                dd offset GUI__Base__sub_4B27C0
+                dd offset sub_4AF170
+                dd offset sub_4AA640
+                dd offset sub_4AA3E0
+                dd offset sub_4A7990
+                dd offset sub_4AFA90
+                dd offset sub_4A80D0
+                dd offset sub_4A7B30
+                dd offset sub_4AF5A0
+                dd offset sub_4A7BC0
+                dd offset sub_4AF020
+                dd offset sub_4AF040
+                dd offset GUI__Base__sub_4AF060
+                dd offset j_GUI__Base__sub_4B2750
+                dd offset sub_4B02C0
+                dd offset sub_4AF890
+                dd offset sub_4AF190
+                dd offset sub_4AF1A0
+                dd offset sub_4A78D0
+                dd offset sub_4AF1E0
+                dd offset sub_4A7900
+                dd offset sub_4AF250
+                dd offset sub_4AF260
+                dd offset sub_4AF270
+                dd offset sub_4AF290
+                dd offset sub_4AF2D0
+                dd offset sub_4AF280
+                dd offset sub_5C0350
+                dd offset sub_4A7B20
+                dd offset sub_4AF2F0
+                dd offset sub_4AF300
+                dd offset sub_4AF310
+                dd offset sub_4AF320
+                dd offset sub_4AF380
+                dd offset sub_4AF390
+                dd offset sub_4AF460
+                dd offset sub_4B0CA0
+                dd offset sub_4AFF30
+                dd offset sub_4AF8A0
+                dd offset sub_4B0000
+                dd offset sub_4B02E0
+                dd offset sub_4AF470
+                dd offset sub_4AF8F0
+                dd offset sub_4B0D50
+                dd offset sub_4AF480
+                dd offset sub_4B06C0
+                dd offset sub_4A8B00
+                dd offset sub_4B06A0
+                dd offset sub_4B13F0
+                dd offset sub_4B0520
+                dd offset sub_4B05A0
+                dd offset sub_4AF980
+                dd offset sub_4AF4C0
+                dd offset sub_4AF4D0
+                dd offset sub_4AF4E0
+                dd offset sub_4AF9C0
+                dd offset sub_4AF4F0
+                dd offset sub_4AF580
+                dd offset sub_4B0640
+                dd offset sub_4AF590
+                dd offset sub_4B0660
+                dd offset sub_4B0680
+                dd offset sub_4B0040
+                dd offset sub_4B0160
+                dd offset sub_4B0280
+                dd offset nullsub_5
+                dd offset sub_4AFFA0
+                dd offset sub_4AF810
+                dd offset sub_4AF820
+                dd offset sub_420990
+                dd offset sub_4AA250
+                dd offset sub_4AA150
+                dd offset sub_4AA280
+                dd offset nullsub_5
+                dd offset sub_4A8A90
+                dd offset sub_4A7740
+                dd offset sub_4AA2B0
+                dd offset sub_4AA2D0
+                dd offset sub_4A8AB0
+                dd offset sub_4AA310
+                dd offset sub_4A7750
+                dd offset sub_4A7760
+                dd offset sub_4A7770
+                dd offset sub_4A7780
+                dd offset sub_4A7790
+                dd offset sub_4A77A0
+                dd offset sub_4A7810
+                dd offset sub_4AA330
+                dd offset sub_4A7820
+                dd offset sub_4A7860
+                dd offset sub_4A7890
+                dd offset sub_4AA360
+                dd offset sub_4A78A0
+                dd offset sub_4AA380
+                dd offset sub_4A78B0
+                dd offset sub_4AA3A0
+                dd offset sub_4A78C0
+                dd offset sub_4AA130
+                dd offset sub_4A7D40
+                dd offset sub_4588A0
+                dd offset sub_4588B0
+    */
     struct CFloatingLabel_vtable
     {
+        void *(__thiscall *sub_58FCA0)(void *Block, char a2);
+        int (__thiscall *j_GUI::Base::sub_4AF060)(_DWORD *this, int a2, int a3);
+        int (__thiscall *j_GUI::Base::sub_4B2750)(_DWORD *this, _DWORD *a2, _DWORD *a3);
+        int (__thiscall *sub_4A7940)(_DWORD *this, int a2, int dy);
+        int (__thiscall *sub_4AA3C0)(void *this, int a2, int a3);
+        int (__thiscall *GUI::Base::sub_4B27C0)(_DWORD *this, _DWORD *a2, int *a3);
+        bool (__thiscall *sub_4AF170)(void *this, POINT pt);
+        char (__thiscall *sub_4AA640)(int this, _DWORD *a2, int a3);
+        char (__thiscall *sub_4AA3E0)(int this, FILE *Stream, int a3);
+        bool (__thiscall *sub_4A7990)(int this, FILE *Stream);
+        char (__thiscall *sub_4AFA90)(int this);
+        char (__thiscall *sub_4A80D0)(int this);
+        double (__thiscall *sub_4A7B30)(_DWORD *this, int a2, float a3);
+        int (__thiscall *sub_4AF5A0)(_DWORD *this);
+        int (__thiscall *sub_4A7BC0)(int this);
+        int (__thiscall *sub_4AF020)(_DWORD *this, int a2, int a3);
+        int (__thiscall *sub_4AF040)(_DWORD *this, _DWORD *a2, _DWORD *a3);
+        int (__thiscall *GUI::Base::sub_4AF060)(_DWORD *this, int a2, int a3);
+        int (__thiscall *j_GUI::Base::sub_4B2750)(_DWORD *this, _DWORD *a2, _DWORD *a3);
+        int (__thiscall *sub_4B02E0)(_DWORD *this, _DWORD *a2);
+        _DWORD *(__thiscall *sub_4AF890)(_DWORD *this);
+        char (__thiscall *sub_4AF190)(_BYTE *this, char a2);
+        char (__thiscall *sub_4AF1A0)(_BYTE *this);
+        int (__thiscall *sub_4A78D0)(_DWORD *this, int a2);
+        int (__thiscall *sub_4AF1E0)(char *this);
+        int (__thiscall *sub_4A7900)(_DWORD *this, unsigned __int8 a2);
+        unsigned int (__thiscall *sub_4AF250)(char *this);
+        char (__thiscall *sub_4AF260)(_BYTE *this, char a2);
+        char (__thiscall *sub_4AF270)(_BYTE *this);
+        int (__thiscall *sub_4AF290)(_DWORD *this, int a2);
+        int (__thiscall *sub_4AF2D0)(_DWORD *this);
+        char (__thiscall *sub_4AF280)(_BYTE *this, char a2);
+        char (__thiscall *sub_5C0350)(_BYTE *this);
+        int (__thiscall *sub_4A7B20)(void *this);
+        char (__thiscall *sub_4AF310)(_BYTE *this);
+        char (__thiscall *sub_4AF300)(_BYTE *this, char a2);
+        char (__thiscall *sub_4AF310)(_BYTE *this);
+        int (__thiscall *sub_4AF320)(_DWORD *this, int a2);
+        int (__thiscall *sub_4AF380)(_DWORD *this);
+        int (__thiscall *sub_4AF390)(_DWORD *this, int a2);
+        int (__thiscall *sub_4AF460)(_DWORD *this);
+        int (__thiscall *sub_4B0CA0)(_DWORD *this, int a2);
+        _DWORD *(__thiscall *sub_4AFF30)(_DWORD *this, int a2);
+        char (__thiscall *sub_4AF8A0)(_DWORD *this, int a2);
+        _DWORD *(__thiscall *sub_4B0000)(_DWORD *this);
+        int (__thiscall *sub_4B02E0)(_DWORD *this, _DWORD *a2);
+        char *(__thiscall *sub_4AF470)(char *this);
+        int (__fastcall *sub_4AF8F0)(int a1, int a2, int a3, int a4, int a5);
+        _DWORD *(__thiscall *sub_4B0D50)(_DWORD *this, int a2);
+        int (__thiscall *sub_4AF480)(_DWORD *this);
+        int (__thiscall *sub_4B06C0)(void **this, void **a2, int a3);
+        void (__thiscall *sub_4A8B00)(void **this, void **a2);
+        void **(__thiscall *sub_4B06A0)(void **this, void **a2);
+        void **(__thiscall *sub_4B13F0)(_DWORD *this, int a2, void **a3);
+        char *(__thiscall *sub_4B0520)(_DWORD *this, int a2, void **a3);
+        void (__thiscall *sub_4B05A0)(int *this, int a2);
+        int (__thiscall *sub_4AF980)(_DWORD *this, int a2);
+        int (__thiscall *sub_4AF4C0)(_DWORD *this);
+        char (__thiscall *sub_4AF4D0)(_BYTE *this, char a2);
+        char (__thiscall *sub_4AF4E0)(_BYTE *this);
+        unsigned (__int64 __thiscall *sub_4AF9C0)(int this, float a2, float a3);
+        int (__thiscall *sub_4AF4F0)(void *this);
+        int (__thiscall *sub_4AF580)(_DWORD *this, int a2);
+        void **(__thiscall *sub_4B0660)(void **this, void **a2);
+        int (__thiscall *sub_4AF590)(_DWORD *this, int a2);
+        oid **(__thiscall *sub_4B0660)(void **this, void **a2);
+        void **(__thiscall *sub_4B0680)(void **this, void **a2);
+        int (__thiscall *sub_4B0040)(int this, int a2);
+        int (__thiscall *sub_4B0160)(int this, int a2);
+        int (__thiscall *sub_4B0280)(void **this, int a2);
+        void (__stdcall *nullsub_5)(int a1);
+        BOOL (__thiscall *sub_4AFFA0)(_DWORD *this, int *a2);
+        char (__thiscall *sub_4AF810)(_BYTE *this, char a2);
+        char (__thiscall *sub_4AF820)(_BYTE *this);
+        int (*sub_420990)();
+        int (__thiscall *sub_4AA250)(int this, void **a2);
+        void (__thiscall *sub_4AA150)(int this, unsigned int *a2);
+        int (__thiscall *sub_4AA280)(void *this, int a2);
+        void (__stdcall *nullsub_5_1)(int a1);
+        void **(__thiscall *sub_4A8A90)(void **this, void **a2);
+        int (__thiscall *sub_4A7740)(_DWORD *this, _DWORD *a2);
+        int (__thiscall *sub_4AA2B0)(void *this, char a2);
+        int (__thiscall *sub_4AA2D0)(int this, void **a2, int a3, int a4, int a5);
+        _DWORD *(__thiscall *sub_4A8AB0)(int this, void **a2, _DWORD *a3, _DWORD *a4, _DWORD *a5);
+        int (__thiscall *sub_4AA310)(_DWORD *this, int a2);
+        int (__thiscall *sub_4A7750)(_DWORD *this);
+        int (__thiscall *sub_4A7760)(_DWORD *this);
+        int (__thiscall *sub_4A7770)(_DWORD *this)
+        int (__thiscall *sub_4A7780)(_DWORD *this);
+        int (__thiscall *sub_4A7790)(_DWORD *this)
+        unsigned int (__thiscall *sub_4A77A0)(_DWORD *this, int a2);
+        int (__thiscall *sub_4A7810)(_DWORD *this);
+        int (__thiscall *sub_4AA330)(_DWORD *this, int a2, int a3, int a4, int a5);
+        int (__thiscall *sub_4A7820)(_DWORD *this, _DWORD *a2, _DWORD *a3, _DWORD *a4, _DWORD *a5);
+        int (__thiscall *sub_4A7860)(_BYTE *this, char a2);
+        char (__thiscall *sub_4A7890)(_BYTE *this);
+        int (__thiscall *sub_4AA360)(_BYTE *this, char a2);
+        char (__thiscall *sub_4A78A0)(_BYTE *this);
+        int (__thiscall *sub_4AA380)(_DWORD *this, int a2);
+        int (__thiscall *sub_4A78B0)(_DWORD *this);
+        int (__thiscall *sub_4AA3A0)(_DWORD *this, int a2);
+        int (__thiscall *sub_4A78C0)(_DWORD *this);
+        int (__thiscall *sub_4AA130)(_DWORD *this, int a2, int a3);
+        int (__thiscall *sub_4A7D40)(_DWORD *this, _DWORD *a2, _DWORD *a3);
+        int (__thiscall *sub_4588A0)(_DWORD *this, int a2);
+        int (__thiscall *sub_4588B0)(_DWORD *this);
     };
     struct CFloatingLabel_members
     {
@@ -1570,8 +2170,29 @@ struct _RTTICompleteObjectLocator
     };
 
 //: CFloatingTextInterface
+    /*
+        class CFloatingTextInterface: CEngineInterface: GUI::Interface, GUI::HeapTracker;
+            dd offset sub_58FAF0
+            dd offset const CFloatingTextInterface::`RTTI Complete Object Locator'{for `CEngineInterface'}
+            const CFloatingTextInterface::`vftable'{for `CEngineInterface'}
+                dd offset sub_5900C0
+                dd offset sub_4953C0
+                dd offset sub_590120
+                dd offset nullsub_2     ; 131 131
+                dd offset nullsub_2     ; 131 131
+                dd offset Video__sub_580360
+                dd offset const CFloatingTextInterface::`RTTI Complete Object Locator'
+            const CFloatingTextInterface::`vftable'
+                dd offset sub_590750
+                dd offset sub_5907E0
+                dd offset nullsub_6
+    */
     struct CFloatingTextInterface_vtable
     {
+        char (__stdcall *sub_435F50)(int a1, int a2, int a3);
+        void (__stdcall *sub_439320)(int a1, int a2, int a3, int a4, int a5, int a6);
+        int (__stdcall *sub_438F70)(int a1, int a2, int a3, int a4, int a5);
+        _DWORD *(__stdcall *sub_438F80)(_DWORD *a1, int a2, int a3, int a4, int a5);
     };
     struct CFloatingTextInterface_members
     {
