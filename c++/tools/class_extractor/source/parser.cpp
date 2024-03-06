@@ -13,85 +13,408 @@
 
 namespace tools
 {
-    Parser::Parser(const std::string& headerFilename, const std::string& sourceFilename) :
-        header_file(headerFilename, std::ios::out), source_file(sourceFilename, std::ios::out)
+    Parser::Parser( const std::string& headerFilename, const std::string& sourceFilename ) :
+        header_file( headerFilename, std::ios::out ), source_file( sourceFilename, std::ios::out )
     {}
 
-    void Parser::parse(const std::string& filename)
+    void Parser::parse( const std::string& filename )
     {
-        std::cout << "Parsing " << filename << "...\n";
-        std::ifstream file(filename);                                       // Open the file to parse
-        if (!file.is_open())                                                // Check if the file is open
+        std::cout << "Parsing " << filename << "..." << std::endl;
+        std::ifstream file( filename );
+        if ( !file.is_open() )
         {
             std::cerr << "Failed to open file: " << filename << std::endl;
             return;
         }
-        std::string line;                                                   // Declare a string to store the line
-        while (std::getline(file, line))                                    // Read the file line by line
+
+        std::string line;
+        while ( std::getline( file, line ) )
         {
-            std::istringstream iss(line);                                   // Create a string stream from the line
-            std::string token;                                              // Declare a string to store the token
-            while (iss >> token)                                            // Read the tokens from the line
+            std::istringstream iss( line );
+            std::vector<std::string> tokens;
+
+            bool is_structure_start = line.find( "(#classinformer)" ) != std::string::npos;
+
             {
-                                                                            // Parse the token
+                std::string token;
+                while ( iss >> token )
+                {
+                    tokens.push_back( token );
+                }
+            }
+
+            {
+                //std::cout << "Debug: Structure start found:" << is_structure_start << std::endl;
+                if ( is_structure_start )
+                {
+                    //std::cout << "Debug: Structure start found" << std::endl;
+                    if ( tokens[ 0 ] == ";" )
+                    {
+                        bool is_struct = tokens[ 1 ] == "struct";
+                        bool is_class = tokens[ 1 ] == "class";
+                        if ( is_struct || is_class )
+                        {
+                            //std::cout << "Debug: Struct found" << std::endl;
+                            if ( tokens[ 2 ].find( ":" ) != std::string::npos )
+                            {
+                                if ( ( tokens[2].find( "::" ) != std::string::npos ) && ( tokens[ 2 ].find( ":" ) != std::string::npos ) )
+                                {
+                                    std::string struct_namespace_name = tokens[ 2 ].substr(0, tokens[ 2 ].find( ":" ));
+                                    std::string namespace_name = struct_namespace_name.substr( 0, struct_namespace_name.find( "::" ) );
+                                    std::string struct_name = struct_namespace_name.substr( struct_namespace_name.find( "::" ) + 1, struct_namespace_name.find( ":" ) );
+                                    this->structs.insert( std::make_pair( struct_name, Struct() ) );
+                                    this->structs[ struct_name ].name_space = namespace_name;
+                                    this->structs[ struct_name ].type = is_class ? "class" : "struct";
+                                    //std::cout << "Debug: Struct name: " << struct_name << " from namespace: " << namespace_name << "" << std::endl;
+                                    for (int i = 3; i < tokens.size(); i++ )
+                                    {
+                                        if ( tokens[ i ].find( "," ) != std::string::npos )
+                                        {
+                                            if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                            {
+                                                std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                                std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << " from namespace: " << inherited_namespace_name << "" << std::endl;
+                                            }
+                                            else
+                                            {
+                                                std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << "" << std::endl;
+                                            }
+                                        }
+                                        else if ( tokens[ i ].find( ";" ) != std::string::npos )
+                                        {
+                                            if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                            {
+                                                std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                                std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << " from namespace: " << inherited_namespace_name << "" << std::endl;
+                                            }
+                                            else
+                                            {
+                                                std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << "" << std::endl;
+                                            }
+                                            break;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    std::string struct_name = tokens[ 2 ].substr(0, tokens[ 2 ].find( ":" ));
+                                    this->structs.insert( std::make_pair( struct_name, Struct() ) );
+                                    this->structs[ struct_name ].type = is_class ? "class" : "struct";
+                                    //std::cout << "Debug: Struct name: " << struct_name << "" << std::endl;
+                                    for (int i = 3; i < tokens.size(); i++ )
+                                    {
+                                        if ( tokens[ i ].find( "," ) != std::string::npos )
+                                        {
+                                            if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                            {
+                                                std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                                std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << " from namespace: " << inherited_namespace_name << "" << std::endl;
+                                            }
+                                            else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                            {
+                                                std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << "" << std::endl;
+                                            }
+                                        }
+                                        else if ( tokens[ i ].find( ";" ) != std::string::npos )
+                                        {
+                                            if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                            {
+                                                std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                                std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << " from namespace: " << inherited_namespace_name << "" << std::endl;
+                                            }
+                                            else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                            {
+                                                std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                                this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                                //std::cout << "Debug: Inherited struct: " << inherited_struct_name << "" << std::endl;
+                                            }
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
-        std::cout << "Parsing complete\n";                                                 // Write the class definitions to the header file
+        std::cout << "Parsing complete" << std::endl;
     }
 
     void Parser::printCollectedInfo()
     {
-        std::cout << "Collected Information:\n";
+        std::cout << "Collected Information:" << std::endl;
 
-        std::cout << "\nStructs:\n";
+        std::cout << "\nStructures:" << std::endl;
         for (const auto& pair : this->structs)
         {
             const std::string& struct_name = pair.first;
             const Struct& struct_obj = pair.second;
 
-            std::cout << "Struct Name: " << struct_name << "\n";
-            std::cout << "Inheritance: ";
-            for (const auto& inheritance_pair : struct_obj.inheritance)
+            std::cout << struct_obj.type << " ";
+            if (!struct_obj.name_space.empty())
             {
-                std::cout << inheritance_pair.second << " ";
+                std::cout << struct_obj.name_space << "::";
             }
-            std::cout << "\nMethods:\n";
+            std::cout << struct_name;
+            if (!struct_obj.struct_inheritance.empty())
+            {
+                std::cout << " : ";
+                for (const auto& inheritance_pair : struct_obj.struct_inheritance)
+                {
+                    std::cout << inheritance_pair.first << ", ";
+                }
+            }
+            std::cout << "\n{\n";
+            for (const auto& member_pair : struct_obj.members)
+            {
+                const std::string& member_name = member_pair.first;
+                const Member& member_obj = member_pair.second;
+
+                std::cout << "\t" << member_obj.visibility << " " << member_obj.type << " " << member_name << ";\n";
+            }
             for (const auto& method_pair : struct_obj.methods)
             {
                 const std::string& method_name = method_pair.first;
                 const Method& method_obj = method_pair.second;
 
-                std::cout << "Method Name: " << method_name << "\n";
-                std::cout << "Return Type: " << method_obj.return_type << "\n";
+                std::cout << "\t" << method_obj.visibility << " " << method_obj.return_type << " " << method_name << "(";
+                for (const auto& param_pair : method_obj.parameters)
+                {
+                    std::cout << param_pair.second.type << " " << param_pair.first << ", ";
+                }
+                std::cout << ");\n";
             }
-            std::cout << "\n";
-        }
-
-        std::cout << "\nClasses:\n";
-        for (const auto& pair : this->classes)
-        {
-            const std::string& class_name = pair.first;
-            const Class& class_obj = pair.second;
-
-            std::cout << "Class Name: " << class_name << "\n";
-            std::cout << "Inheritance: ";
-            for (const auto& inheritance_pair : class_obj.inheritance)
-            {
-                std::cout << inheritance_pair.second << " ";
-            }
-            std::cout << "\nMethods:\n";
-            for (const auto& method_pair : class_obj.methods)
-            {
-                const std::string& method_name = method_pair.first;
-                const Method& method_obj = method_pair.second;
-
-                std::cout << "Method Name: " << method_name << "\n";
-                std::cout << "Return Type: " << method_obj.return_type << "\n";
-            }
-            std::cout << "\n";
+            std::cout << "};\n\n";
         }
     }
 } // namespace tools
+
+/*
+void Parser::parse( const std::string& filename )
+    {
+        std::cout << "Parsing " << filename << "..." << std::endl;
+        std::ifstream file( filename );
+        if ( !file.is_open() )
+        {
+            std::cerr << "Failed to open file: " << filename << std::endl;
+            return;
+        }
+
+        std::string line;
+        while ( std::getline( file, line ) )
+        {
+            std::istringstream iss( line );
+            std::vector<std::string> tokens;
+
+            bool is_structure_start = line.find( "(#classinformer)" ) != std::string::npos;
+
+            {
+                std::string token;
+                while ( iss >> token )
+                {
+                    tokens.push_back( token );
+                }
+            }
+
+            {
+                if ( is_structure_start )
+                {
+                    if ( tokens[ 0 ] == ";" )
+                    {
+                        if ( tokens[ 1 ] == "struct" )
+                        {
+                            if ( tokens[ 2 ].find( ":" ) != std::string::npos )
+                            {
+                                std::string struct_name = tokens[ 2 ].substr(0, tokens[ 2 ].find( ":" ));
+                                this->structs.insert( std::make_pair( struct_name, Struct() ) );
+                                for (int i = 3; i < tokens.size(); i++ )
+                                {
+                                    if ( tokens[ i ].find( "," ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                            this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                        }
+                                    }
+                                    else if ( tokens[ i ].find( ";" ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                            this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                        }
+                                        break;
+                                    }
+                                }
+                            }
+                            else if ( ( tokens[2].find( "::" ) != std::string::npos ) && ( tokens[ 2 ].find( ":" ) != std::string::npos ) )
+                            {
+                                std::string struct_namespace_name = tokens[ 2 ].substr(0, tokens[ 2 ].find( ":" ));
+                                std::string namespace_name = struct_namespace_name.substr( 0, struct_namespace_name.find( "::" ) );
+                                std::string struct_name = struct_namespace_name.substr( struct_namespace_name.find( "::" ) + 2, struct_namespace_name.find( ":" ) );
+                                this->structs.insert( std::make_pair( struct_name, Struct() ) );
+                                this->structs[ struct_name ].name_space = namespace_name;
+                                for (int i = 3; i < tokens.size(); i++ )
+                                {
+                                    if ( tokens[ i ].find( "," ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                            this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                        }
+                                    }
+                                    else if ( tokens[ i ].find( ";" ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_struct_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                            this->structs[ struct_name ].struct_inheritance[inherited_struct_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_struct_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->structs[ struct_name ].struct_inheritance.insert( std::make_pair( inherited_struct_name, Struct() ) );
+                                        }
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        else if (tokens[1] == "class")
+                        {
+                            if ( tokens[ 2 ].find( ":" ) != std::string::npos )
+                            {
+                                std::string class_name = tokens[ 2 ].substr(0, tokens[ 2 ].find( ":" ));
+                                this->classes.insert( std::make_pair( class_name, Class() ) );
+                                for (int i = 3; i < tokens.size(); i++ )
+                                {
+                                    if ( tokens[ i ].find( "," ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_class_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                            this->classes[ class_name ].class_inheritance[inherited_class_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_class_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                        }
+                                    }
+                                    else if ( tokens[ i ].find( ";" ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_class_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                            this->classes[ class_name ].class_inheritance[inherited_class_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_class_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                        }
+                                        break;
+                                    }
+                                }
+                            }
+                            else if ( ( tokens[2].find( "::" ) != std::string::npos ) && ( tokens[ 2 ].find( ":" ) != std::string::npos ) )
+                            {
+                                std::string class_namespace_name = tokens[ 2 ].substr(0, tokens[ 2 ].find( ":" ));
+                                std::string namespace_name = class_namespace_name.substr( 0, class_namespace_name.find( "::" ) );
+                                std::string class_name = class_namespace_name.substr( class_namespace_name.find( "::" ) + 2, class_namespace_name.find( ":" ) );
+                                this->classes.insert( std::make_pair( class_name, Class() ) );
+                                this->classes[ class_name ].name_space = namespace_name;
+                                for (int i = 3; i < tokens.size(); i++ )
+                                {
+                                    if ( tokens[ i ].find( "," ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_class_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                            this->classes[ class_name ].class_inheritance[inherited_class_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_class_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                        }
+                                    }
+                                    else if ( tokens[ i ].find( ";" ) != std::string::npos )
+                                    {
+                                        if ( tokens[ i ].find( ":" ) != std::string::npos )
+                                        {
+                                            std::string inherited_namespace_name = tokens[ i ].substr( 0, tokens[ i ].find( "::" ) );
+                                            std::string inherited_class_name = tokens[ i ].substr( tokens[ i ].find( "::" ) + 2, tokens[ i ].find( "," ) );
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                            this->classes[ class_name ].class_inheritance[inherited_class_name].name_space = inherited_namespace_name;
+                                        }
+                                        else if ( ( tokens[ i ].find( "::" ) != std::string::npos ) )
+                                        {
+                                            std::string inherited_class_name = tokens[ i ].substr(0, tokens[ i ].find( "," ));
+                                            this->classes[ class_name ].class_inheritance.insert( std::make_pair( inherited_class_name, Class() ) );
+                                        }
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        std::cout << "Parsing complete" << std::endl;
+    }
+*/
 
 /*
 namespace tools
@@ -102,7 +425,7 @@ namespace tools
 
     void Parser::parse(const std::string& filename)
     {
-        std::cout << "Parsing " << filename << "...\n";
+        std::cout << "Parsing " << filename << "..." << std::endl;
         std::ifstream file(filename);                                       // Open the file to parse
         if (!file.is_open())                                                // Check if the file is open
         {
@@ -122,10 +445,10 @@ namespace tools
             lineCount++;                                                    // Increment the line counter
             if (lineCount % 1000 == 0)                                      // Print the line count every 1000 lines
             {
-                std::cout << "Parsed " << lineCount << " lines\n";
+                std::cout << "Parsed " << lineCount << " lines" << std::endl;
             }
         }
-        std::cout << "Parsing complete\n";
+        std::cout << "Parsing complete" << std::endl;
         writeToFile();                                                      // Write the class definitions to the header file
     }
 
@@ -207,15 +530,15 @@ namespace tools
             {
                 headerFile << " : public " << classInheritance[className];  // Write the inheritance information to the header file
             }
-            headerFile << "\n{\n";
+            headerFile << "\n{" << std::endl;
 
             for (const std::string& method : methods)                       // Iterate through the class methods
             {
-                headerFile << "    void " << method << "();\n";             // Write the method declaration to the header file
-                sourceFile << "void " << className << "::" << method << "()\n{\n    // TODO: Implement this function\n}\n\n";
+                headerFile << "    void " << method << "();" << std::endl;             // Write the method declaration to the header file
+                sourceFile << "void " << className << "::" << method << "()\n{\n    // TODO: Implement this function\n}\n" << std::endl;
             }
 
-            headerFile << "};\n\n";
+            headerFile << "};\n" << std::endl;
         }
     }
 } // namespace tools
@@ -230,7 +553,7 @@ namespace tools
 
     void Parser::parse(const std::string& filename)
     {
-        std::cout << "Parsing " << filename << "...\n";
+        std::cout << "Parsing " << filename << "..." << std::endl;
         std::ifstream file(filename);
         if (!file.is_open())
         {
@@ -250,10 +573,10 @@ namespace tools
             lineCount++;
             if (lineCount % 1000 == 0)
             {
-                std::cout << "Parsed " << lineCount << " lines\n";
+                std::cout << "Parsed " << lineCount << " lines" << std::endl;
             }
         }
-        std::cout << "Parsing complete\n";
+        std::cout << "Parsing complete" << std::endl;
     }
 
     void Parser::parseToken(const std::string& token)
@@ -315,7 +638,7 @@ namespace tools
         {
             headerFile << " : public " << baseClass;
         }
-        headerFile << "\n{\n};\n\n";
+        headerFile << "\n{\n};\n" << std::endl;
 
         // Print the struct definition to the terminal
         std::cout << "Generated struct: " << structName;
@@ -323,19 +646,19 @@ namespace tools
         {
             std::cout << " : public " << baseClass;
         }
-        std::cout << "\n{\n};\n\n";
+        std::cout << "\n{\n};\n" << std::endl;
     }
 
     void Parser::createFunction(const std::string& functionName)
     {
         // Write the function declaration to the header file
-        headerFile << "void " << functionName << "();\n\n";
+        headerFile << "void " << functionName << "();\n" << std::endl;
 
         // Write the function definition to the source file
-        sourceFile << "void " << functionName << "()\n{\n    // TODO: Implement this function\n}\n\n";
+        sourceFile << "void " << functionName << "()\n{\n    // TODO: Implement this function\n}\n" << std::endl;
 
         // Print the function declaration to the terminal
-        std::cout << "Generated function: void " << functionName << "();\n\n";
+        std::cout << "Generated function: void " << functionName << "();\n" << std::endl;
     }
 } // namespace tools
 */

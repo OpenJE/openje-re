@@ -13,53 +13,40 @@
 
 namespace tools
 {
-    class Variable
+    struct Variable
     {
-        public:
-            std::string type;
-            std::string mutability;
+        std::string type;
+        std::string mutability;
     };
 
-    class Function
+    struct Function
     {
-        public:
-            std::string return_type;
-            std::map<std::string, Variable> parameters;
-            std::string name_space;
+        std::string return_type;
+        std::map<std::string, Variable> parameters;
+        std::string name_space;
     };
 
-    class Member
+    struct Member
     {
-        public:
-            std::string type;
-            std::string mutability;
-            std::string visibility;
+        std::string type;
+        std::string mutability;
+        std::string visibility;
     };
 
-    class Method
+    struct Method
     {
-        public:
-            std::string return_type;
-            std::map<std::string, Variable> parameters;
-            std::string visibility;
+        std::string return_type;
+        std::map<std::string, Variable> parameters;
+        std::string visibility;
     };
 
-    class Struct
+    struct Struct
     {
-        public:
-            std::string name_space;
-            std::map<std::string, std::string> inheritance;
-            std::map<std::string, Member> members;
-            std::map<std::string, Method> methods;
-    };
-
-    class Class
-    {
-        public:
-            std::string name_space;
-            std::map<std::string, std::string> inheritance;
-            std::map<std::string, Member> members;
-            std::map<std::string, Method> methods;
+        std::string type;
+        std::string name_space;
+        std::map<std::string, Struct> struct_inheritance;
+        std::map<std::string, Member> members;
+        std::map<std::string, Method> methods;
     };
 
     class Parser
@@ -70,7 +57,6 @@ namespace tools
             std::ofstream source_file;
 
             std::map<std::string, Struct> structs;
-            std::map<std::string, Class> classes;
             std::map<std::string, Function> functions;
 
         //: Constructors

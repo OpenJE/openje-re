@@ -101,7 +101,8 @@
         "future": "cpp",
         "ranges": "cpp",
         "regex": "cpp",
-        "*.gypi": "cpp"
+        "*.gypi": "cpp",
+        "filesystem": "cpp"
     },
     "cSpell.words": [
         "csys",
