@@ -7,6 +7,9 @@
 
 int main()
 {
+    // c++/tools/class_extractor/tests/test.cpp
+    // ida/F3.exe.asm
+
     std::filesystem::path currentPath = std::filesystem::current_path();
 
     std::filesystem::path headerPath = currentPath / "test_output.hpp";
@@ -16,6 +19,7 @@ int main()
 
     tools::Parser parser(headerPath.string(), sourcePath.string());
     parser.parse(asmPath.string());
-    parser.printCollectedInfo();
+    parser.printCollectedInfoAsJson();
+    parser.printCollectedInfoAsCpp();
     return 0;
 }
