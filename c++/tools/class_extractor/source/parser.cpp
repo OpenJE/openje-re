@@ -282,68 +282,113 @@ namespace tools
         std::cout << "Parsing complete" << std::endl;
     }
 
+    void Parser::print()
+    {
+        std::cout << "Namespaces:" << std::endl;
+        for ( const auto& namespace_pair : this->namespaces )
+        {
+            std::cout << "\t" << "Namespace-Identifier: " << namespace_pair.first << std::endl;
+            std::cout << "\t\t" << "Namespace-Name: " << namespace_pair.second->name << std::endl;
+            std::map<std::string, std::shared_ptr<tools::Structure>>& structs = namespace_pair.second->structs;
+            std::cout << "\t\tStructs:" << std::endl;
+            for ( const auto& struct_pair : structs )
+            {
+                std::cout << "\t\t\t" << "Structure-Identifier: " << struct_pair.first << std::endl;
+                std::cout << "\t\t\t\t" << "Structure-Name: " << struct_pair.second->name << std::endl;
+                if      ( struct_pair.second->type == StructureType::STRUCT ) { std::cout << "\t\t\t\t" << "Structure-Type: " << "struct " << std::endl; }
+                else if ( struct_pair.second->type == StructureType::CLASS  ) { std::cout << "\t\t\t\t" << "Structure-Type: " << "class "  << std::endl; }
+            }
+        }
+    }
+
     void Parser::printCpp()
     {
         std::cout << "C++:" << std::endl;
         std::cout << "-----" << std::endl;
         std::shared_ptr<Namespace> global_namespace = this->global_namespace;
 
+        this->printNamespaceStructuresCpp( global_namespace, "" );
+
+        for ( const auto& child_namespace : global_namespace->child_namespaces )
+        {
+            this->printNamespaceCpp( child_namespace.second, "" );
+        }
+
         std::cout << "-----" << std::endl;
     }
 
     void Parser::printNamespaceCpp( std::shared_ptr<Namespace> ns, std::string indent )
     {
-        std::cout << indent << ns->name << std::endl;
+        std::cout << indent << "namespace " << ns->name << std::endl;
 
         std::cout << indent << "{" << std::endl;
 
+        this->printNamespaceStructuresCpp( ns, indent + "\t" );
 
+        for ( const auto& child_namespace : ns->child_namespaces )
+        {
+            this->printNamespaceCpp( child_namespace.second, indent + "\t" );
+        }
 
         std::cout << indent << "}" << std::endl;
     }
 
     void Parser::printNamespaceStructuresCpp( std::shared_ptr<Namespace> ns, std::string indent )
     {
+        for ( const auto& structure : ns->structs )
+        {
+            this->printStructureCpp( structure.second, indent );
+        }
     }
 
-    void Parser::printStructureCpp( std::shared_ptr<Structure> structure, std::string indent = "" )
+    void Parser::printStructureCpp( std::shared_ptr<Structure> structure, std::string indent )
     {
         StructureType type = structure->type;
 
-        if ( type == StructureType::STRUCT ) { std::cout << indent << "struct "; }
-        else if ( type == StructureType::CLASS ) { std::cout << indent << "class "; }
+        if      ( type == StructureType::STRUCT ) { std::cout << indent << "struct "; }
+        else if ( type == StructureType::CLASS  ) { std::cout << indent << "class ";  }
 
-        std::cout << structure->name << " : ";
+        std::cout << structure->name;
 
         this->printInheritanceCpp( structure, indent );
         std::cout << std::endl;
 
         std::cout << indent << "{" << std::endl;
-
         std::cout << indent << "}" << std::endl;
     }
 
-    void Parser::printInheritanceCpp( std::shared_ptr<Structure> structure, std::string indent = "" )
+    void Parser::printInheritanceCpp( std::shared_ptr<Structure> structure, std::string indent )
     {
+        if ( structure->struct_inheritance.size() > 0 )
+        {
+            std::cout << " : ";
+        }
+
+        int iterator = 0;
         for ( const auto& inheritance : structure->struct_inheritance )
         {
-            std::vector<std::shared_ptr<Namespace>> inheritance_hierarchy;
+            //: Namespace Hierarchy
+            std::vector<std::string> namespace_hierarchy;
             std::shared_ptr<Namespace> current_parent_namespace = inheritance.second->parent_namespace;
-            while ( current_parent_namespace != nullptr )
+            do
             {
-                inheritance_hierarchy.push_back( current_parent_namespace->parent_namespace );
+                namespace_hierarchy.push_back( current_parent_namespace->parent_namespace->name );
                 current_parent_namespace = current_parent_namespace->parent_namespace;
-            }
+            } while ( current_parent_namespace->parent_namespace != nullptr );
 
-            for ( int i = inheritance_hierarchy.size() - 1; i >= 0; i-- )
+            for ( int i = namespace_hierarchy.size() - 1; i >= 0; i-- )
             {
-                std::cout << inheritance_hierarchy[ i ]->name << "::";
+                std::string namespace_name = namespace_hierarchy[ i ];
+                if ( namespace_name != "global" )
+                {
+                    std::cout << namespace_hierarchy[ i ] << "::";
+                }
             }
             std::cout << inheritance.second->name;
-
-            if ( inheritance != structure->struct_inheritance.rbegin() )
+            if ( iterator < structure->struct_inheritance.size() - 1 )
             {
                 std::cout << ", ";
+                iterator++;
             }
         }
     }

@@ -19,7 +19,6 @@ int main()
 
     tools::Parser parser(headerPath.string(), sourcePath.string());
     parser.parse(asmPath.string());
-    parser.printCollectedInfoAsJson();
-    parser.printCollectedInfoAsCpp();
+    parser.print();
     return 0;
 }

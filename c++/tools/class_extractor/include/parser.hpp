@@ -105,6 +105,7 @@ namespace tools
         //: Methods
         public:
             void parse( const std::string& filename );
+            void print();
             void printCpp();
             void printNamespaceCpp( std::shared_ptr<Namespace> ns, std::string indent = "" );
             void printNamespaceStructuresCpp( std::shared_ptr<Namespace> ns, std::string indent = "" );
