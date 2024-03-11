@@ -1,5 +1,85 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "(gdb) Launch Linux Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/c++/tools/class_extractor/tests/test_debug.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/c++/tools/class_extractor/tests/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-linux"
+        },
+        {
+            "name": "(gdb) Launch Windows Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/c++/tools/class_extractor/tests/test_debug.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/c++/tools/class_extractor/tests/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-windows"
+        },
+        {
+            "name": "(gdb) Launch Linux Release",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/c++/tools/class_extractor/tests/test_release.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/c++/tools/class_extractor/tests/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-linux"
+        },
+        {
+            "name": "(gdb) Launch Windows Release",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/c++/tools/class_extractor/tests/test_release.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/c++/tools/class_extractor/tests/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-windows"
+        }
     ]
 }
