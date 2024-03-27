@@ -15,10 +15,16 @@ Disclaimer
 Current Status
 --------------
 
-This project is currently in early development. So far only classes with virtual functions have been identified, and some functions that contain debugging print information hinting at there function names and functionality.
+This project is currently in early development. So far many classes have been identified via RTTI type information and from static object oriented analysis via OOAnalyzer, and most functions containing strings that directly hint at there name/functionality have been renamed.
+
+This project is focusing most of its reverse engineering work on the use of Ghidra but will use IDA where/when necessary.
 
 Getting Started
 ---------------
+
+- A Ghidra zip file for the F3.exe is located in the ghidra directory along with both an exported header and source file of the up to date reverse engineered code.
+    - OOAnalyzer was used as a bootstrap for finding class information beyond rtti type information.
+        - OOAnalyzer: https://github.com/cmu-sei/pharos
 
 - An IDA database file for the F3.exe is located in the ida directory, along with a header file for ida structure definitions.
     - Plugins that were used with the IDA database:
@@ -28,7 +34,7 @@ Getting Started
         - Function API Usage Commenter: https://sourceforge.net/projects/idawhatapisplugin/
     - Guide to using the plugins together: http://www.macromonkey.com/bb/index.php/topic,20.0.html
 
-- Reverse engineered C++ source code is located in the c++ directory, where header/interface files are located in the c++/headers directory, and source/implementation files are locates in the c++/source directory.
+- Reverse engineered C++ source code is/will be located in the c++ directory, where header/interface files are located in the c++/headers directory, and source/implementation files are locates in the c++/source directory.
 
 Documentation
 -------------
