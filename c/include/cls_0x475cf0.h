@@ -1,0 +1,24 @@
+typedef struct {
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x4;
+    dword mbr_0x8;
+    dword mbr_0xc;
+    dword mbr_0x10;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+} cls_0x475cf0;
+int __thiscall meth_0x475cf0(void);
+undefined __thiscall meth_0x475f1e(int param_1);
+undefined __thiscall meth_0x475f85(int param_1);
+undefined __thiscall meth_0x475fc4(int param_1);
+undefined4 __thiscall meth_0x47a70b(uint param_1, int param_2, char param_3);
+undefined __thiscall meth_0x47a7f7(int param_1);
+uint __thiscall meth_0x47a85c(uint param_1);

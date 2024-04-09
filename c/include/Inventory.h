@@ -1,0 +1,34 @@
+typedef struct {
+    Inventory::vftable_6956a4 * vftptr_0x0;
+    dword mbr_0x4;
+    dword mbr_0x8;
+    dword mbr_0xc;
+    dword mbr_0x10;
+} Inventory;
+undefined __thiscall virt_meth_0x436230(void);
+undefined __thiscall virt_meth_0x55fcd0(int * param_1);
+undefined __thiscall virt_meth_0x55fd10(void);
+undefined __thiscall virt_meth_0x55fd30(int param_1);
+undefined __thiscall virt_meth_0x55fd60(int param_1);
+undefined __thiscall virt_meth_0x55fee0(int * param_1);
+uint __thiscall virt_meth_0x55ff40(int param_1);
+Inventory * __thiscall Inventory(void);
+undefined __thiscall meth_0x560020(void);
+int * __thiscall virt_meth_0x5600e0(byte param_1);
+undefined __thiscall virt_meth_0x560100(int param_1);
+typedef struct {
+    virt_meth_0x5600e0 * virt_meth_0x5600e0_0;
+    virt_meth_0x560100 * virt_meth_0x560100_4;
+    virt_meth_0x55fee0 * virt_meth_0x55fee0_8;
+    virt_meth_0x55fd60 * virt_meth_0x55fd60_12;
+    virt_meth_0x55fd30 * virt_meth_0x55fd30_16;
+    virt_meth_0x55ff40 * virt_meth_0x55ff40_20;
+    virt_meth_0x55fda0 * virt_meth_0x55fda0_24;
+    virt_meth_0x55fe20 * virt_meth_0x55fe20_28;
+    virt_meth_0x5a9320 * virt_meth_0x5a9320_32;
+    virt_meth_0x5a9320 * virt_meth_0x5a9320_36;
+    virt_meth_0x436230 * virt_meth_0x436230_40;
+    virt_meth_0x591690 * virt_meth_0x591690_44;
+    virt_meth_0x55fcd0 * virt_meth_0x55fcd0_48;
+    virt_meth_0x55fd10 * virt_meth_0x55fd10_52;
+} Inventory::vftable_6956a4;

@@ -1,0 +1,27 @@
+typedef struct {
+    dword mbr_0x0;
+    dword mbr_0x4;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x10;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    word mbr_0x18;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x20;
+} cls_0x475cb6;
+cls_0x475cb6 * __thiscall cls_0x475cb6(undefined4 param_1, undefined4 param_2, undefined2 param_3);
+undefined __thiscall meth_0x475cd9(void);

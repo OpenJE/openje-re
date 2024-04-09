@@ -1,0 +1,41 @@
+#include "ActionSetActiveWeapon.h"
+typedef struct {
+    ActionSetActiveWeapon ActionSetActiveWeapon;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+    byte mbr_0x30;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x34;
+    byte mbr_0x38;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x3c;
+    byte mbr_0x40;
+    byte mbr_0x41;
+} GameActionSetActiveWeapon;
+GameActionSetActiveWeapon * __thiscall GameActionSetActiveWeapon(void);
+GameActionSetActiveWeapon * __thiscall ~GameActionSetActiveWeapon(void);
+undefined __thiscall virt_meth_0x407620(undefined param_1, undefined4 param_2);
+undefined __thiscall meth_0x407710(void);
+undefined __thiscall meth_0x4077b0(void);
+undefined __thiscall virt_meth_0x407850(void);
+undefined4 * __thiscall virt_meth_0x4078f0(byte param_1);
+undefined4 __thiscall virt_meth_0x407910(uint param_1);
+typedef struct {
+    virt_meth_0x4078f0 * virt_meth_0x4078f0_0;
+    virt_meth_0x404b60 * virt_meth_0x404b60_4;
+    virt_meth_0x407850 * virt_meth_0x407850_8;
+    virt_meth_0x4010d0 * virt_meth_0x4010d0_12;
+    virt_meth_0x407620 * virt_meth_0x407620_16;
+    virt_meth_0x407910 * virt_meth_0x407910_20;
+    virt_meth_0x404bb0 * virt_meth_0x404bb0_24;
+} GameActionSetActiveWeapon::vftable_64afc4;

@@ -1,0 +1,34 @@
+typedef struct {
+    Gfx_BasePacketData::vftable_6510c8 * vftptr_0x0;
+    byte mbr_0x4;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x8;
+    dword mbr_0xc;
+    dword mbr_0x10;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+    dword mbr_0x30;
+    dword mbr_0x34;
+    dword mbr_0x38;
+    dword mbr_0x3c;
+    byte mbr_0x40;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x44;
+    dword mbr_0x48;
+    dword mbr_0x4c;
+} Gfx_BasePacketData;
+Gfx_BasePacketData * __thiscall ~Gfx_BasePacketData(void);
+uint __thiscall meth_0x4b7660(void);
+Gfx_BasePacketData * __thiscall Gfx_BasePacketData(undefined4 param_1);
+typedef struct {
+    virt_meth_0x6162e5 * virt_meth_0x6162e5_0;
+} Gfx_BasePacketData::vftable_6510c8;

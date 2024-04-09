@@ -1,0 +1,45 @@
+#include "Effect.h"
+typedef struct {
+    Effect Effect;
+    dword mbr_0x48;
+    dword mbr_0x4c;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x5c;
+    dword mbr_0x60;
+    dword mbr_0x64;
+    dword mbr_0x68;
+    byte mbr_0x6c;
+    byte mbr_0x6d;
+} Condition;
+undefined4 __thiscall RunScript(void);
+Condition * __thiscall Condition(undefined4 param_1);
+Condition * __thiscall ~Condition(void);
+uint __thiscall virt_meth_0x5a8dc0(void);
+undefined4 * __thiscall virt_meth_0x5a8eb0(byte param_1);
+typedef struct {
+    virt_meth_0x5a8c40 * virt_meth_0x5a8c40_0;
+    virt_meth_0x5a8d70 * virt_meth_0x5a8d70_4;
+    pointer 8;
+    virt_meth_0x5a8eb0 * virt_meth_0x5a8eb0_12;
+    virt_meth_0x5a8c00 * virt_meth_0x5a8c00_16;
+    virt_meth_0x5a8f20 * virt_meth_0x5a8f20_20;
+    virt_meth_0x5a8c20 * virt_meth_0x5a8c20_24;
+    FUN_00408d30 * FUN_00408d30_28;
+    FUN_00408d30 * FUN_00408d30_32;
+    FUN_00404b70 * FUN_00404b70_36;
+    virt_meth_0x5a8dc0 * virt_meth_0x5a8dc0_40;
+    FUN_00404b70 * FUN_00404b70_44;
+    virt_meth_0x5a8e00 * virt_meth_0x5a8e00_48;
+    FUN_00408d30 * FUN_00408d30_52;
+} Condition::vftable_6a5adc;

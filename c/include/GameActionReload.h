@@ -1,0 +1,47 @@
+#include "Action.h"
+typedef struct {
+    Action Action;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    byte mbr_0x10;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    byte mbr_0x2c;
+    byte mbr_0x2d;
+    byte mbr_0x2e;
+    undefined None;
+    dword mbr_0x30;
+    byte mbr_0x34;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x38;
+} GameActionReload;
+GameActionReload * __thiscall GameActionReload(void);
+int __thiscall meth_0x407250(void);
+uint __thiscall OnServerUpdate(undefined4 param_1, undefined4 param_2, uint param_3, uint param_4);
+typedef struct {
+    FUN_00405350 * FUN_00405350_0;
+    virt_meth_0x407200 * virt_meth_0x407200_4;
+    FUN_00404b70 * FUN_00404b70_8;
+    virt_meth_0x4010d0 * virt_meth_0x4010d0_12;
+    virt_meth_0x407210 * virt_meth_0x407210_16;
+    virt_meth_0x407270 * virt_meth_0x407270_20;
+    virt_meth_0x404bb0 * virt_meth_0x404bb0_24;
+} GameActionReload::vftable_64a99c;

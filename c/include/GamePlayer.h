@@ -1,0 +1,40 @@
+#include "GameCreature.h"
+typedef struct {
+    GameCreature GameCreature;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+} GamePlayer;
+GamePlayer * __thiscall GamePlayer(int param_1);
+typedef struct {
+    virt_meth_0x4080c0 * virt_meth_0x4080c0_0;
+} GamePlayer::vftable_64e970;

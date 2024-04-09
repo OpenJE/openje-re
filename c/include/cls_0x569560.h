@@ -1,0 +1,35 @@
+#include "cls_0x401b00.h"
+typedef struct {
+    cls_0x401b00 cls_0x401b00;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+} cls_0x569560;
+cls_0x569560 * __thiscall cls_0x569560(void);
+undefined __thiscall meth_0x5695e0(void);
+cls_0x569560 * __thiscall cls_0x569560(int param_1);

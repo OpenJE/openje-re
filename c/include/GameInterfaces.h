@@ -1,0 +1,48 @@
+#include "Interfaces.h"
+typedef struct {
+    Interfaces Interfaces;
+    dword mbr_0x4;
+    dword mbr_0x8;
+    dword mbr_0xc;
+    dword mbr_0x10;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+    dword mbr_0x30;
+    dword mbr_0x34;
+    dword mbr_0x38;
+    dword mbr_0x3c;
+    dword mbr_0x40;
+    dword mbr_0x44;
+    dword mbr_0x48;
+    dword mbr_0x4c;
+    dword mbr_0x50;
+    dword mbr_0x54;
+    dword mbr_0x58;
+    dword mbr_0x5c;
+    dword mbr_0x60;
+} GameInterfaces;
+GameInterfaces * __thiscall ~GameInterfaces(void);
+undefined __thiscall virt_meth_0x4396c0(void);
+undefined __thiscall virt_meth_0x439720(char param_1);
+undefined __thiscall virt_meth_0x4397e0(void);
+undefined __thiscall virt_meth_0x439810(void);
+undefined4 * __thiscall virt_meth_0x4398c0(byte param_1);
+GameInterfaces * __thiscall GameInterfaces(void);
+typedef struct {
+    virt_meth_0x4398c0 * virt_meth_0x4398c0_0;
+    virt_meth_0x4396c0 * virt_meth_0x4396c0_4;
+    virt_meth_0x4396f0 * virt_meth_0x4396f0_8;
+    virt_meth_0x404b70 * virt_meth_0x404b70_12;
+    virt_meth_0x439720 * virt_meth_0x439720_16;
+    virt_meth_0x439770 * virt_meth_0x439770_20;
+    virt_meth_0x4397e0 * virt_meth_0x4397e0_24;
+    virt_meth_0x439810 * virt_meth_0x439810_28;
+    virt_meth_0x439850 * virt_meth_0x439850_32;
+    virt_meth_0x404b70 * virt_meth_0x404b70_36;
+    virt_meth_0x404b70 * virt_meth_0x404b70_40;
+} GameInterfaces::vftable_656650;

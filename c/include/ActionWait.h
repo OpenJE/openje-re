@@ -1,0 +1,40 @@
+#include "Action.h"
+typedef struct {
+    Action Action;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    byte mbr_0x10;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    byte mbr_0x18;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+} ActionWait;
+ActionWait * __thiscall ActionWait(void);
+undefined4 __thiscall Set_mbr_0x1c_to_param_1(undefined4 param_1);
+typedef struct {
+    FUN_00405350 * FUN_00405350_0;
+    virt_meth_0x404b60 * virt_meth_0x404b60_4;
+    FUN_00404b70 * FUN_00404b70_8;
+    virt_meth_0x4010d0 * virt_meth_0x4010d0_12;
+    virt_meth_0x5601c0 * virt_meth_0x5601c0_16;
+    virt_meth_0x5601d0 * virt_meth_0x5601d0_20;
+    virt_meth_0x404bb0 * virt_meth_0x404bb0_24;
+} ActionWait::vftable_695f34;

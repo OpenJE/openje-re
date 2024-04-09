@@ -1,0 +1,44 @@
+#include "GameItem.h"
+typedef struct {
+    GameItem GameItem;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+} GameAmmo;
+GameAmmo * __thiscall GameAmmo(int param_1);
+typedef struct {
+    virt_meth_0x4080c0 * virt_meth_0x4080c0_0;
+} GameAmmo::vftable_64c5a8;

@@ -1,0 +1,30 @@
+typedef struct {
+    CSoundFile::vftable_671450 * vftptr_0x0;
+    dword mbr_0x4;
+    dword mbr_0x8;
+    dword mbr_0xc;
+    dword mbr_0x10;
+    byte mbr_0x14;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x24;
+    dword mbr_0x28;
+} CSoundFile;
+CSoundFile * __thiscall CSoundFile(void);
+typedef struct {
+    virt_meth_0x4c8540 * virt_meth_0x4c8540_0;
+    virt_meth_0x6162e5 * virt_meth_0x6162e5_4;
+} CSoundFile::vftable_671450;

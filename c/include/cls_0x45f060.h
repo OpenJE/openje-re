@@ -1,0 +1,21 @@
+typedef struct {
+    dword mbr_0x0;
+    byte mbr_0x4;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x14;
+} cls_0x45f060;
+cls_0x45f060 * __thiscall ~cls_0x45f060(void);

@@ -1,0 +1,30 @@
+#include "CEngineInterface.h"
+typedef struct {
+    dword mbr_0x0;
+    dword mbr_0x4;
+    dword mbr_0x8;
+    dword mbr_0xc;
+    dword mbr_0x10;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+    dword mbr_0x30;
+    byte mbr_0x34;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    CEngineInterface CEngineInterface;
+} cls_0x5b6400;
+undefined __thiscall meth_0x5b5cb0(int param_1, int param_2);
+undefined __thiscall meth_0x5b5d60(int param_1);
+undefined __thiscall meth_0x5b5eb0(int * param_1, int * param_2);
+undefined __thiscall meth_0x5b6270(char param_1);
+cls_0x5b6400 * __thiscall cls_0x5b6400(undefined4 param_1, int param_2);

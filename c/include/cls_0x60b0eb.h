@@ -1,0 +1,28 @@
+typedef struct {
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x4;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x14;
+    dword mbr_0x18;
+} cls_0x60b0eb;
+undefined __thiscall meth_0x60b0eb(char param_1);
+undefined __thiscall meth_0x60b197(void);
+bool __thiscall meth_0x60cf38(uint param_1, char param_2);
+_String_base * __thiscall meth_0x60ed0b(uint param_1, uint param_2);
+undefined4 __thiscall meth_0x60ee42(undefined4 * param_1);
+_String_base * __thiscall meth_0x60f178(_String_base * param_1, uint param_2, uint param_3);
+_String_base * __thiscall meth_0x6105ce(uint param_1, uint param_2, undefined2 param_3);
