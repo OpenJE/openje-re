@@ -1,0 +1,47 @@
+#include "G3D_PointLight.h"
+typedef struct {
+    G3D_PointLight G3D_PointLight;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x88;
+    dword mbr_0x8c;
+    dword mbr_0x90;
+    dword mbr_0x94;
+    dword mbr_0x98;
+    dword mbr_0x9c;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0xb0;
+    dword mbr_0xb4;
+    dword mbr_0xb8;
+    dword mbr_0xbc;
+} G3D_SpotLight;
+G3D_SpotLight * __thiscall G3D_SpotLight(void);
+undefined __thiscall virt_meth_0x4cb950(FILE * param_1);
+undefined __thiscall virt_meth_0x4d1e50(FILE * param_1);
+undefined __thiscall virt_meth_0x4d1ff0(int param_1, int * param_2);
+undefined __thiscall virt_meth_0x4d64e0(void);
+typedef struct {
+    FUN_004cb170 * FUN_004cb170_0;
+    virt_meth_0x4d64e0 * virt_meth_0x4d64e0_4;
+    virt_meth_0x4cb950 * virt_meth_0x4cb950_8;
+    virt_meth_0x4d1ff0 * virt_meth_0x4d1ff0_12;
+    virt_meth_0x4d1e50 * virt_meth_0x4d1e50_16;
+    virt_meth_0x4ced80 * virt_meth_0x4ced80_20;
+} G3D_SpotLight::vftable_671da8;

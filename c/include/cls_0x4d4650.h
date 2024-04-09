@@ -1,0 +1,31 @@
+#include "G3D_Transform.h"
+typedef struct {
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    byte mbr_0x4;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    G3D_Transform G3D_Transform;
+} cls_0x4d4650;
+cls_0x4d4650 * __thiscall cls_0x4d4650(_String_base * param_1);

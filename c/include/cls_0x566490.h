@@ -1,0 +1,23 @@
+typedef struct {
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x4;
+    dword mbr_0x8;
+} cls_0x566490;
+undefined __thiscall meth_0x566490(int * * param_1);
+undefined __thiscall meth_0x566880(void);
+undefined __thiscall meth_0x566950(int * * param_1, char param_2, int * * param_3, _String_base * param_4);
+undefined __thiscall meth_0x566b30(undefined4 * param_1, int * * param_2);
+undefined __thiscall meth_0x566c20(int * * param_1, int * * param_2, int * * param_3);
+int __thiscall meth_0x566ce0(_String_base * param_1);
+undefined __thiscall meth_0x5a4610(int * param_1);
+undefined __thiscall meth_0x5a4670(int * param_1);
+undefined __thiscall meth_0x5a60f0(int * * param_1);
+undefined __thiscall meth_0x5a64e0(void);
+undefined __thiscall meth_0x5a7410(int * * param_1, char param_2, int * * param_3, _String_base * param_4);
+undefined __thiscall meth_0x5a76c0(undefined4 * param_1, int * * param_2);
+undefined __thiscall meth_0x5a7820(int * * param_1, int * * param_2, int * * param_3);
+int __thiscall meth_0x5a7900(_String_base * param_1);
+undefined __thiscall meth_0x5a7df0(void);

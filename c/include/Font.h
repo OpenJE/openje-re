@@ -1,0 +1,33 @@
+typedef struct {
+    Font::vftable_66f2d4 * vftptr_0x0;
+    dword mbr_0x4;
+    dword mbr_0x8;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+    dword mbr_0x30;
+    dword mbr_0x34;
+} Font;
+Font * __thiscall Font(void);
+undefined4 * __thiscall virt_meth_0x4b5580(byte param_1);
+Font * __thiscall ~Font(void);
+undefined __thiscall meth_0x51e970(void);
+undefined __thiscall meth_0x51ebd0(_String_base * param_1, undefined4 param_2, undefined4 param_3, undefined4 param_4);
+typedef struct {
+    virt_meth_0x4b5580 * virt_meth_0x4b5580_0;
+} Font::vftable_66f2d4;

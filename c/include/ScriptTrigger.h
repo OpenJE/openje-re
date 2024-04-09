@@ -1,0 +1,48 @@
+#include "Trigger.h"
+typedef struct {
+    Trigger Trigger;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x30;
+    dword mbr_0x34;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x44;
+    dword mbr_0x48;
+    dword mbr_0x4c;
+} ScriptTrigger;
+uint __thiscall meth_0x5b23d0(void);
+ScriptTrigger * __thiscall ScriptTrigger(void);
+ScriptTrigger * __thiscall ~ScriptTrigger(void);
+int * __thiscall virt_meth_0x5b26b0(byte param_1);
+undefined __thiscall virt_meth_0x5b26d0(int * param_1);
+typedef struct {
+    virt_meth_0x5b26b0 * virt_meth_0x5b26b0_0;
+    virt_meth_0x56e3f0 * virt_meth_0x56e3f0_4;
+    virt_meth_0x5b26d0 * virt_meth_0x5b26d0_8;
+    virt_meth_0x5b23f0 * virt_meth_0x5b23f0_12;
+    virt_meth_0x5b2460 * virt_meth_0x5b2460_16;
+    virt_meth_0x5b24d0 * virt_meth_0x5b24d0_20;
+    virt_meth_0x5b1520 * virt_meth_0x5b1520_24;
+    virt_meth_0x5b1750 * virt_meth_0x5b1750_28;
+    virt_meth_0x5b1880 * virt_meth_0x5b1880_32;
+} ScriptTrigger::vftable_6aa644;

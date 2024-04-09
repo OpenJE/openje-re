@@ -1,0 +1,48 @@
+#include "Trigger.h"
+typedef struct {
+    Trigger Trigger;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x30;
+    dword mbr_0x34;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x44;
+    dword mbr_0x48;
+    dword mbr_0x4c;
+} TransitionTrigger;
+TransitionTrigger * __thiscall TransitionTrigger(void);
+int * __thiscall virt_meth_0x56e400(byte param_1);
+TransitionTrigger * __thiscall ~TransitionTrigger(void);
+undefined __thiscall meth_0x5b1680(uint param_1);
+undefined4 __thiscall virt_meth_0x5b1980(int param_1);
+typedef struct {
+    virt_meth_0x56e400 * virt_meth_0x56e400_0;
+    virt_meth_0x56e3f0 * virt_meth_0x56e3f0_4;
+    virt_meth_0x5b1980 * virt_meth_0x5b1980_8;
+    virt_meth_0x5a9320 * virt_meth_0x5a9320_12;
+    virt_meth_0x5a9320 * virt_meth_0x5a9320_16;
+    virt_meth_0x5b1a60 * virt_meth_0x5b1a60_20;
+    virt_meth_0x5b1520 * virt_meth_0x5b1520_24;
+    virt_meth_0x5b1750 * virt_meth_0x5b1750_28;
+    virt_meth_0x5b1880 * virt_meth_0x5b1880_32;
+} TransitionTrigger::vftable_699d8c;

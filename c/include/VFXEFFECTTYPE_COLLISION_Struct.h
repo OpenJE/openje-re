@@ -1,0 +1,8 @@
+#include "VFXEFFECTTYPE_BASE_Struct.h"
+typedef struct {
+    VFXEFFECTTYPE_BASE_Struct VFXEFFECTTYPE_BASE_Struct;
+} VFXEFFECTTYPE_COLLISION_Struct;
+VFXEFFECTTYPE_COLLISION_Struct * __thiscall VFXEFFECTTYPE_COLLISION_Struct(void);
+typedef struct {
+    FUN_004e8020 * FUN_004e8020_0;
+} VFXEFFECTTYPE_COLLISION_Struct::vftable_6731e4;

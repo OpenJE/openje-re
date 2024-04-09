@@ -1,0 +1,38 @@
+typedef struct {
+    Network::vftable_69118c * vftptr_0x0;
+    dword mbr_0x4;
+    word mbr_0x8;
+    undefined None;
+    undefined None;
+    dword mbr_0xc;
+    dword mbr_0x10;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    word mbr_0x1c;
+    undefined None;
+    undefined None;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+} Network;
+Network * __thiscall ~Network(void);
+undefined __thiscall virt_meth_0x543730(void);
+undefined __thiscall virt_meth_0x543770(void);
+undefined4 * __thiscall virt_meth_0x5437b0(void);
+undefined4 * __thiscall virt_meth_0x543820(void);
+Network * __thiscall Network(void);
+undefined4 * __thiscall virt_meth_0x543910(byte param_1);
+undefined __thiscall meth_0x543930(uint param_1);
+undefined __thiscall virt_meth_0x543a40(void);
+undefined __thiscall virt_meth_0x5441f0(void);
+typedef struct {
+    virt_meth_0x543910 * virt_meth_0x543910_0;
+    virt_meth_0x543a40 * virt_meth_0x543a40_4;
+    virt_meth_0x543730 * virt_meth_0x543730_8;
+    virt_meth_0x543770 * virt_meth_0x543770_12;
+    virt_meth_0x5437b0 * virt_meth_0x5437b0_16;
+    virt_meth_0x543820 * virt_meth_0x543820_20;
+    virt_meth_0x543ac0 * virt_meth_0x543ac0_24;
+    virt_meth_0x5441f0 * virt_meth_0x5441f0_28;
+} Network::vftable_69118c;
