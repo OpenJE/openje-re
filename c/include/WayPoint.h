@@ -1,0 +1,36 @@
+typedef struct {
+    WayPoint::vftable_6aaa8c * vftptr_0x0;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x8;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+    dword mbr_0x30;
+    dword mbr_0x34;
+    dword mbr_0x38;
+    dword mbr_0x3c;
+} WayPoint;
+WayPoint * __thiscall WayPoint(void);
+WayPoint * __thiscall ~WayPoint(void);
+undefined4 * __thiscall virt_meth_0x5b2c60(byte param_1);
+typedef struct {
+    virt_meth_0x5b2c60 * virt_meth_0x5b2c60_0;
+} WayPoint::vftable_6aaa8c;

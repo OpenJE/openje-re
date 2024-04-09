@@ -1,0 +1,41 @@
+#include "Action.h"
+typedef struct {
+    Action Action;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    byte mbr_0x10;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x14;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    byte mbr_0x2c;
+    byte mbr_0x2d;
+} ActionPickUp;
+ActionPickUp * __thiscall ActionPickUp(void);
+typedef struct {
+    FUN_00405350 * FUN_00405350_0;
+    virt_meth_0x407200 * virt_meth_0x407200_4;
+    FUN_00404b70 * FUN_00404b70_8;
+    virt_meth_0x4010d0 * virt_meth_0x4010d0_12;
+    virt_meth_0x404bb0 * virt_meth_0x404bb0_16;
+    virt_meth_0x563550 * virt_meth_0x563550_20;
+    virt_meth_0x404bb0 * virt_meth_0x404bb0_24;
+    virt_meth_0x406e90 * virt_meth_0x406e90_28;
+    virt_meth_0x406e90 * virt_meth_0x406e90_32;
+    virt_meth_0x406e90 * virt_meth_0x406e90_36;
+    virt_meth_0x406e90 * virt_meth_0x406e90_40;
+} ActionPickUp::vftable_6967d4;

@@ -1,0 +1,48 @@
+#include "Gfx_BaseObject.h"
+typedef struct {
+    Gfx_BaseObject Gfx_BaseObject;
+    dword mbr_0x40;
+    dword mbr_0x44;
+    byte mbr_0x48;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x4c;
+    dword mbr_0x50;
+    dword mbr_0x54;
+    dword mbr_0x58;
+    dword mbr_0x5c;
+    dword mbr_0x60;
+    dword mbr_0x64;
+    dword mbr_0x68;
+    dword mbr_0x6c;
+    dword mbr_0x70;
+    dword mbr_0x74;
+    dword mbr_0x78;
+    dword mbr_0x7c;
+    dword mbr_0x80;
+    dword mbr_0x84;
+    dword mbr_0x88;
+    dword mbr_0x8c;
+    dword mbr_0x90;
+    dword mbr_0x94;
+    dword mbr_0x98;
+    dword mbr_0x9c;
+    dword mbr_0xa0;
+    dword mbr_0xa4;
+    dword mbr_0xa8;
+    dword mbr_0xac;
+    dword mbr_0xb0;
+} Gfx_Light;
+undefined __thiscall meth_0x4245b0(void);
+Gfx_Light * __thiscall Gfx_Light(undefined4 * param_1, undefined4 param_2);
+Gfx_Light * __thiscall Gfx_Light(undefined4 param_1);
+typedef struct {
+    virt_meth_0x4b9050 * virt_meth_0x4b9050_0;
+    virt_meth_0x49cb90 * virt_meth_0x49cb90_4;
+    virt_meth_0x424590 * virt_meth_0x424590_8;
+    virt_meth_0x424840 * virt_meth_0x424840_12;
+    virt_meth_0x424620 * virt_meth_0x424620_16;
+    virt_meth_0x4245c0 * virt_meth_0x4245c0_20;
+    FUN_00404b70 * FUN_00404b70_24;
+} Gfx_Light::vftable_651b54;

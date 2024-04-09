@@ -1,0 +1,35 @@
+typedef struct {
+    CStore::vftable_6a37ac * vftptr_0x0;
+    dword mbr_0x4;
+    dword mbr_0x8;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    dword mbr_0x20;
+    dword mbr_0x24;
+    dword mbr_0x28;
+    dword mbr_0x2c;
+    dword mbr_0x30;
+    dword mbr_0x34;
+    dword mbr_0x38;
+} CStore;
+undefined __thiscall meth_0x5a1f10(void);
+CStore * __thiscall ~CStore(void);
+int * __thiscall virt_meth_0x5a21b0(byte param_1);
+CStore * __thiscall CStore(void);
+undefined __thiscall virt_meth_0x5a24a0(undefined4 * param_1);
+typedef struct {
+    virt_meth_0x5a21b0 * virt_meth_0x5a21b0_0;
+    virt_meth_0x5a24a0 * virt_meth_0x5a24a0_4;
+} CStore::vftable_6a37ac;

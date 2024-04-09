@@ -1,0 +1,52 @@
+#include "cls_0x502110.h"
+#include "cls_0x50db20.h"
+typedef struct {
+    VFXEFFECTTYPE_BASE_Struct::vftable_672548 * vftptr_0x0;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x8;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    dword mbr_0x18;
+    dword mbr_0x1c;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    cls_0x502110 cls_0x502110;
+    undefined None;
+    undefined None;
+    undefined None;
+    undefined None;
+    cls_0x50db20 cls_0x50db20;
+} VFXEFFECTTYPE_BASE_Struct;
+VFXEFFECTTYPE_BASE_Struct * __thiscall VFXEFFECTTYPE_BASE_Struct(void);
+VFXEFFECTTYPE_BASE_Struct * __thiscall ~VFXEFFECTTYPE_BASE_Struct(void);
+undefined4 * __thiscall virt_meth_0x4e17a0(byte param_1);
+void * __thiscall meth_0x4e3d10(int param_1);
+VFXEFFECTTYPE_BASE_Struct * __thiscall ~VFXEFFECTTYPE_BASE_Struct(void);
+void * __thiscall meth_0x4f10c0(int param_1);
+void * __thiscall meth_0x4f2ab0(int param_1);
+typedef struct {
+    virt_meth_0x4e17a0 * virt_meth_0x4e17a0_0;
+} VFXEFFECTTYPE_BASE_Struct::vftable_672548;
