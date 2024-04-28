@@ -5,14 +5,17 @@
 
 #include "openje-re/c++/include/openje_types.hpp"
 
-class Action
+namespace F3
 {
-    public:
-        byte    mbr_0x4;
+    class Action
+    {
+        public:
+            byte mbr_0x4;
 
-    public:
-        Action();
-        ~Action();
-};
+        public:
+            Action();
+            ~Action();
+    };
+} // namespace F3
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTION_HPP_
