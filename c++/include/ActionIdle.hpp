@@ -7,34 +7,37 @@
 
 #include "openje-re/c++/include/Action.hpp"
 
-class ActionIdle
+namespace F3
 {
-    public:
-        Action      Action;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x10;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x18;
+    class ActionIdle
+    {
+        public:
+            Action Action;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x10;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x18;
 
-    public:
-        ActionIdle();
-        ~ActionIdle();
-};
+        public:
+            ActionIdle();
+            ~ActionIdle();
+    };
+}
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTIONIDLE_HPP_

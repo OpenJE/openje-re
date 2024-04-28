@@ -7,40 +7,43 @@
 
 #include "openje-re/c++/include/Action.hpp"
 
-class ActionMessage
+namespace F3
 {
-    public:
-        Action      Action;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x10;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        dword       mbr_0x14;
-        byte        mbr_0x18;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        dword       mbr_0x1c;
-        dword       mbr_0x20;
-        dword       mbr_0x24;
-        dword       mbr_0x28;
-        dword       mbr_0x2c;
-        dword       mbr_0x30;
+    class ActionMessage
+    {
+        public:
+            Action Action;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x10;
+            undefined None;
+            undefined None;
+            undefined None;
+            dword mbr_0x14;
+            byte mbr_0x18;
+            undefined None;
+            undefined None;
+            undefined None;
+            dword mbr_0x1c;
+            dword mbr_0x20;
+            dword mbr_0x24;
+            dword mbr_0x28;
+            dword mbr_0x2c;
+            dword mbr_0x30;
 
-    public:
-        ActionMessage();
-        ~ActionMessage();
-};
+        public:
+            ActionMessage();
+            ~ActionMessage();
+    };
+}
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTIONMESSAGE_HPP_

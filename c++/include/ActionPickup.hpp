@@ -7,37 +7,40 @@
 
 #include "openje-re/c++/include/Action.hpp"
 
-class ActionPickUp
+namespace F3
 {
-    public:
-        Action      Action;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x10;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        dword       mbr_0x14;
-        dword       mbr_0x18;
-        dword       mbr_0x1c;
-        dword       mbr_0x20;
-        dword       mbr_0x24;
-        dword       mbr_0x28;
-        byte        mbr_0x2c;
-        byte        mbr_0x2d;
+    class ActionPickUp
+    {
+        public:
+            Action Action;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x10;
+            undefined None;
+            undefined None;
+            undefined None;
+            dword mbr_0x14;
+            dword mbr_0x18;
+            dword mbr_0x1c;
+            dword mbr_0x20;
+            dword mbr_0x24;
+            dword mbr_0x28;
+            byte mbr_0x2c;
+            byte mbr_0x2d;
 
-    public:
-        ActionPickUp();
-        ~ActionPickUp();
-};
+        public:
+            ActionPickUp();
+            ~ActionPickUp();
+    };
+}
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTIONPICKUP_HPP_

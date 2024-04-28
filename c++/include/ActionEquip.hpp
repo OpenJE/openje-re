@@ -7,34 +7,37 @@
 
 #include "openje-re/c++/include/Action.hpp"
 
-class ActionEquip
+namespace F3
 {
-    public:
-        Action      Action;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x10;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x18;
+    class ActionEquip
+    {
+        public:
+            Action Action;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x10;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x18;
 
-    public:
-        ActionEquip();
-        ~ActionEquip();
-};
+        public:
+            ActionEquip();
+            ~ActionEquip();
+    };
+}
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTIONEQUIP_HPP_

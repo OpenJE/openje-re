@@ -7,34 +7,37 @@
 
 #include "openje-re/c++/include/Action.hpp"
 
-class ActionUnequip
+namespace F3
 {
-    public:
-        Action      Action;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x10;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x18;
+    class ActionUnequip
+    {
+        public:
+            Action Action;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x10;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x18;
 
-    public:
-        ActionUnequip();
-        ~ActionUnequip();
-};
+        public:
+            ActionUnequip();
+            ~ActionUnequip();
+    };
+} // namespace F3
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTIONUNEQUIP_HPP_

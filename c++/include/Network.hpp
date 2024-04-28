@@ -1,0 +1,35 @@
+// Copyright 2024 OpenJE
+
+#ifndef OPENJE_RE_CPP_INCLUDE_NETWORK_HPP_
+#define OPENJE_RE_CPP_INCLUDE_NETWORK_HPP_
+
+#include "openje-re/c++/include/openje_types.hpp"
+
+namespace F3
+{
+    class Network
+    {
+        public:
+            dword mbr_0x4;
+            word mbr_0x8;
+            undefined None;
+            undefined None;
+            dword mbr_0xc;
+            dword mbr_0x10;
+            dword mbr_0x14;
+            dword mbr_0x18;
+            word mbr_0x1c;
+            undefined None;
+            undefined None;
+            dword mbr_0x20;
+            dword mbr_0x24;
+            dword mbr_0x28;
+            dword mbr_0x2c;
+
+        public:
+            Network();
+            ~Network();
+    };
+} // namespace F3
+
+#endif // OPENJE_RE_CPP_INCLUDE_NETWORK_HPP_
