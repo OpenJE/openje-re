@@ -7,34 +7,37 @@
 
 #include "openje-re/c++/include/Action.hpp"
 
-class ActionSetActiveWeapon
+namespace F3
 {
-    public:
-        Action      Action;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x10;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x18;
+    class ActionSetActiveWeapon
+    {
+        public:
+            Action Action;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x10;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x18;
 
-    public:
-        ActionSetActiveWeapon();
-        ~ActionSetActiveWeapon();
-};
+        public:
+            ActionSetActiveWeapon();
+            ~ActionSetActiveWeapon();
+    };
+}
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTIONSETACTIVEWEAPON_HPP_

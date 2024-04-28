@@ -7,31 +7,34 @@
 
 #include "openje-re/c++/include/Action.hpp"
 
-class ActionDie
+namespace F3
 {
-    public:
-        Action      Action;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        byte        mbr_0x10;
-        undefined   None;
-        undefined   None;
-        undefined   None;
-        dword       mbr_0x14;
-        byte        mbr_0x18;
+    class ActionDie
+    {
+        public:
+            Action Action;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            undefined None;
+            byte mbr_0x10;
+            undefined None;
+            undefined None;
+            undefined None;
+            dword mbr_0x14;
+            byte mbr_0x18;
 
-    public:
-        ActionDie();
-        ~ActionDie();
-};
+        public:
+            ActionDie();
+            ~ActionDie();
+    };
+} // namespace F3
 
 #endif // OPENJE_RE_CPP_INCLUDE_ACTIONDIE_HPP_

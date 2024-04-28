@@ -4,6 +4,7 @@
         "cstddef": "cpp",
         "exception": "c",
         "xiosbase": "c",
-        "stdexcept": "c"
+        "stdexcept": "c",
+        "cstdint": "cpp"
     }
 }
