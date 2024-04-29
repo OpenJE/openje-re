@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class GameActionIdle
+    class GameActionIdle : public ActionIdle
     {
         public:
-            ActionIdle action_idle;
             undefined None;
             undefined None;
             undefined None;
@@ -21,7 +20,14 @@ namespace F3
 
         public:
             GameActionIdle();
-            ~GameActionIdle();
+
+        public:
+            virtual ~GameActionIdle();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 } // namespace F3
 

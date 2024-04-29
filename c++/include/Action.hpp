@@ -9,12 +9,20 @@ namespace F3
 {
     class Action
     {
-        public:
+        protected:
             byte mbr_0x4;
 
         public:
             Action();
-            ~Action();
+
+        public:
+            virtual ~Action();
+            virtual byte vf_a() = 0;
+            virtual void vf_b() = 0;
+            virtual byte Get_mbr_0x4();
+            virtual void vf_d( dword param ) = 0;
+            virtual void vf_e() = 0;
+            virtual void vf_f() = 0;
     };
 } // namespace F3
 

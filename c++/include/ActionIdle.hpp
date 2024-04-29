@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class ActionIdle
+    class ActionIdle : public Action
     {
         public:
-            Action Action;
             undefined None;
             undefined None;
             undefined None;
@@ -36,7 +35,14 @@ namespace F3
 
         public:
             ActionIdle();
-            ~ActionIdle();
+
+        public:
+            virtual ~ActionIdle();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 }
 

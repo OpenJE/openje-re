@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class GameActionGive
+    class GameActionGive : public Action
     {
         public:
-            Action action;
             undefined None;
             undefined None;
             undefined None;
@@ -41,7 +40,14 @@ namespace F3
 
         public:
             GameActionGive();
-            ~GameActionGive();
+
+        public:
+            virtual ~GameActionGive();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 } // namespace F3
 

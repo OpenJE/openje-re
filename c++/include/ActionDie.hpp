@@ -6,13 +6,13 @@
 #include "openje-re/c++/include/openje_types.hpp"
 
 #include "openje-re/c++/include/Action.hpp"
+#include "openje-re/c++/include/Entity.hpp"
 
 namespace F3
 {
-    class ActionDie
+    class ActionDie : public Action
     {
         public:
-            Action Action;
             undefined None;
             undefined None;
             undefined None;
@@ -28,12 +28,19 @@ namespace F3
             undefined None;
             undefined None;
             undefined None;
-            dword mbr_0x14;
+            Entity * entity;
             byte mbr_0x18;
 
         public:
             ActionDie();
-            ~ActionDie();
+
+        public:
+            virtual ~ActionDie();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 } // namespace F3
 
