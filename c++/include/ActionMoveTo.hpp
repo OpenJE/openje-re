@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class ActionMoveTo
+    class ActionMoveTo : public Action
     {
         public:
-            Action Action;
             undefined None;
             undefined None;
             undefined None;
@@ -50,7 +49,20 @@ namespace F3
 
         public:
             ActionMoveTo();
-            ~ActionMoveTo();
+
+        public:
+            virtual ~ActionMoveTo();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
+            virtual float10 vf_g();
+            virtual void vf_h();
+            virtual void vf_i();
+            virtual void vf_j();
+            virtual void vf_k();
+            virtual void vf_l();
     };
 }
 

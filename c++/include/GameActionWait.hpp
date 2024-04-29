@@ -9,14 +9,18 @@
 
 namespace F3
 {
-    class GameActionWait
+    class GameActionWait : public ActionWait
     {
         public:
-            ActionWait action_wait;
+            GameActionWait();
 
         public:
-            GameActionWait();
-            ~GameActionWait();
+            virtual ~GameActionWait();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 } // namespace F3
 

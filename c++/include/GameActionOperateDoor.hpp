@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class GameActionOperateDoor
+    class GameActionOperateDoor : public Action
     {
         public:
-            Action action;
             undefined None;
             undefined None;
             undefined None;
@@ -37,7 +36,14 @@ namespace F3
 
         public:
             GameActionOperateDoor();
-            ~GameActionOperateDoor();
+
+        public:
+            virtual ~GameActionOperateDoor();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 } // namespace F3
 

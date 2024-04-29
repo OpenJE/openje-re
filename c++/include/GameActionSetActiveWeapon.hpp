@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class GameActionSetActiveWeapon
+    class GameActionSetActiveWeapon : public ActionSetActiveWeapon
     {
         public:
-            ActionSetActiveWeapon action_set_active_weapon;
             undefined None;
             undefined None;
             undefined None;
@@ -36,7 +35,14 @@ namespace F3
 
         public:
             GameActionSetActiveWeapon();
-            ~GameActionSetActiveWeapon();
+
+        public:
+            virtual ~GameActionSetActiveWeapon();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 } // namespace F3
 

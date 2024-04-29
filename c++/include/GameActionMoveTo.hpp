@@ -9,14 +9,25 @@
 
 namespace F3
 {
-    class GameActionMoveTo
+    class GameActionMoveTo : public ActionMoveTo
     {
         public:
-            ActionMoveTo action_move_to;
+            GameActionMoveTo();
 
         public:
-            GameActionMoveTo();
-            ~GameActionMoveTo();
+            virtual ~GameActionMoveTo();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
+            float10 vf_g() override;
+            void vf_h() override;
+            void vf_i() override;
+            void vf_j() override;
+            void vf_k() override;
+            void vf_l() override;
+
     };
 } // namespace F3
 

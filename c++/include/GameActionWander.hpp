@@ -9,14 +9,21 @@
 
 namespace F3
 {
-    class GameActionWander
+    class GameActionWander : public ActionWander
     {
         public:
-            ActionWander action_wander;
+            GameActionWander();
 
         public:
-            GameActionWander();
-            ~GameActionWander();
+            virtual ~GameActionWander();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
+            virtual void vf_g();
+            virtual void vf_h();
+            virtual void vf_i();
     };
 } // namespace F3
 

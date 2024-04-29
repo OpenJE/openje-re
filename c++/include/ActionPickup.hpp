@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class ActionPickUp
+    class ActionPickUp : public Action
     {
         public:
-            Action Action;
             undefined None;
             undefined None;
             undefined None;
@@ -39,7 +38,18 @@ namespace F3
 
         public:
             ActionPickUp();
-            ~ActionPickUp();
+
+        public:
+            virtual ~ActionPickUp();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
+            virtual void vf_g();
+            virtual void vf_h();
+            virtual void vf_i();
+            virtual void vf_j();
     };
 }
 

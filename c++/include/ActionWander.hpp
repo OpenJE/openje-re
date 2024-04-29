@@ -1,4 +1,4 @@
-// Copyright 2024 OpenJE
+    // Copyright 2024 OpenJE
 
 #ifndef OPENJE_RE_CPP_INCLUDE_ACTIONWANDER_HPP_
 #define OPENJE_RE_CPP_INCLUDE_ACTIONWANDER_HPP_
@@ -9,10 +9,9 @@
 
 namespace F3
 {
-    class ActionWander
+    class ActionWander : public Action
     {
         public:
-            Action Action;
             undefined None;
             undefined None;
             undefined None;
@@ -43,7 +42,14 @@ namespace F3
 
         public:
             ActionWander();
-            ~ActionWander();
+
+        public:
+            virtual ~ActionWander();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
     };
 } // namespace F3
 
