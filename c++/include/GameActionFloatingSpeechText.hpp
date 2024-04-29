@@ -9,14 +9,19 @@
 
 namespace F3
 {
-    class GameActionFloatingSpeechText
+    class GameActionFloatingSpeechText : public ActionFloatingSpeechText
     {
         public:
-            ActionFloatingSpeechText action_floating_speech_text;
+            GameActionFloatingSpeechText();
 
         public:
-            GameActionFloatingSpeechText();
-            ~GameActionFloatingSpeechText();
+            virtual ~GameActionFloatingSpeechText();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
+            virtual void vf_g() = 0;
     };
 } // namespace F3
 

@@ -9,14 +9,22 @@
 
 namespace F3
 {
-    class GameActionPickUp
+    class GameActionPickUp : public ActionPickUp
     {
         public:
-            ActionPickUp action_pick_up;
+            GameActionPickUp();
 
         public:
-            GameActionPickUp();
-            ~GameActionPickUp();
+            virtual ~GameActionPickUp();
+            byte vf_a() override;
+            void vf_b() override;
+            void vf_d( dword param ) override;
+            void vf_e() override;
+            void vf_f() override;
+            void vf_g() override;
+            void vf_h() override;
+            void vf_i() override;
+            void vf_j() override;
     };
 } // namespace F3
 
