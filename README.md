@@ -26,10 +26,11 @@ Getting Started
     - OOAnalyzer was used as a bootstrap for finding class information beyond rtti type information.
         - OOAnalyzer: https://github.com/cmu-sei/pharos
 
-- Ghidra pseudo code is is located in the c++ directory, where header/interface files are located in the c/headers directory, and source/implementation files are located in the c/source directory.
+- Ghidra pseudo code is located in the c directory, where header/interface files are located in the c/headers directory, and source/implementation files are located in the c/source directory.
 - Reverse engineered C++ source code is located in the c++ directory, where header/interface files are located in the c++/headers directory, and source/implementation files are located in the c++/source directory.
 
 Documentation
 -------------
 
-- The docs directory provides in-depth information about the projects current state and its goals.
+- [`OpenJE-RE`](/docs/OpenJE-RE.md) - provides in-depth information about the projects current state and its goals.
+- [`F3`](/docs/F3.md) - documentation for the structs, classes, and functions of the Jefferson Engine.
