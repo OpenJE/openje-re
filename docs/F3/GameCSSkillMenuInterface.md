@@ -9,7 +9,7 @@
 
 ## References
 
-- [`F3::GUI::HeapTracker`](/docs/F3/GUI/HeapTracker.md)
+- [`F3::HeapTracker`](/docs/F3/HeapTracker.md)
 - [`F3::GUI::Interface`](/docs/F3/GUI/Interface.md)
 - [`F3::CEngineInterface`](/docs/F3/CEngineInterface.md)
 - [`F3::CSMenuInterface`](/docs/F3/CSMenuInterface.md)
@@ -19,7 +19,7 @@
 
 ```mermaid
 graph TD;
-    F3::GUI::HeapTracker --> F3::GUI::Interface
+    F3::HeapTracker --> F3::GUI::Interface
     F3::GUI::Interface --> F3::CEngineInterface
     F3::CEngineInterface --> F3::CSMenuInterface
     F3::CEngineInterface --> F3::CGameInterface
