@@ -5,6 +5,7 @@
         "exception": "c",
         "xiosbase": "c",
         "stdexcept": "c",
-        "cstdint": "cpp"
+        "cstdint": "cpp",
+        "random": "cpp"
     }
 }
