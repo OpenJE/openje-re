@@ -6,13 +6,14 @@
             [
                 "${default}",
                 "${workspaceFolder}/../",
+                "${workspaceFolder}/msvc/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
             "compilerArgs": [],
             "cStandard": "gnu23",
             "cppStandard": "gnu++23",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "windows-msvc-x86"
         }
     ],
     "version": 4

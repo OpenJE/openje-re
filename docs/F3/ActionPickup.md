@@ -15,7 +15,7 @@
 
 ```mermaid
 graph TD;
-    F3::Action --> F3::ActionPickup;
+    F3::Action --> F3::ActionPickup
 ```
 
 [Return to `F3`](/docs/F3.md)
