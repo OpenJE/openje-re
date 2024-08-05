@@ -15,7 +15,7 @@
 
 ```mermaid
 graph TD;
-    F3::IComponent --> F3::AnimationCache;
+    F3::IComponent --> F3::AnimationCache
 ```
 
 [Return to `F3`](/docs/F3.md)

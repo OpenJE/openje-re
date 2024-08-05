@@ -15,7 +15,7 @@
 
 ```mermaid
 graph TD;
-    F3::Action --> F3::ActionSetActiveWeapon;
+    F3::Action --> F3::ActionSetActiveWeapon
 ```
 
 [Return to `F3`](/docs/F3.md)

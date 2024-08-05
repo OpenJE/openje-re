@@ -15,7 +15,7 @@
 
 ```mermaid
 graph TD;
-    F3::Action --> F3::ActionMessage;
+    F3::Action --> F3::ActionMessage
 ```
 
 [Return to `F3`](/docs/F3.md)

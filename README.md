@@ -19,6 +19,8 @@ This project is currently in early development. So far many classes have been id
 
 This project is focusing most of its reverse engineering work on the use of Ghidra but will use IDA where/when necessary.
 
+Re-Implementation of the F3 executable is currently in progress.
+
 Getting Started
 ---------------
 
@@ -28,6 +30,7 @@ Getting Started
 
 - Ghidra pseudo code is located in the c directory, where header/interface files are located in the c/headers directory, and source/implementation files are located in the c/source directory.
 - Reverse engineered C++ source code is located in the c++ directory, where header/interface files are located in the c++/headers directory, and source/implementation files are located in the c++/source directory.
+- Re-Implementation of the F3 executable is located in the re-implementation directory.
 
 Documentation
 -------------
