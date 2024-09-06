@@ -12,6 +12,11 @@ Disclaimer
 - This project is completely open source and no commercial use is intended.
 - All copyrights belong to their respective owners.
 
+Implementation
+--------------
+
+- [`OpenVB`](https://github.com/OpenJE/openvb) - The implementation repository of the reverse engineered code.
+
 Current Status
 --------------
 
