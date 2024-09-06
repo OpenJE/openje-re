@@ -5,8 +5,7 @@
             "includePath":
             [
                 "${default}",
-                "${workspaceFolder}/../",
-                "${workspaceFolder}/msvc/"
+                "${workspaceFolder}/re-implementation/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
