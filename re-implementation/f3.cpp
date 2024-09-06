@@ -135,47 +135,47 @@ namespace f3 {
 
 	// 0x56b000
 	void SetupSaveDirectory() {
-		HRESULT result;
-		int path_index;
-		undefined4 *puVar1;
-		uint unaff_retaddr;
-		uint in_stack_00000004;
-		char *possible_file_path;
-		undefined4 folder_path [64];
-		uint local_4;
-		char current_path_char;
+        HRESULT result;
+        int path_index;
+        undefined4 *puVar1;
+        uint unaff_retaddr;
+        uint in_stack_00000004;
+        char *possible_file_path;
+        char folder_path [64];
+        char current_path_char;
 
-		parse_file_path = FUN_0061b067((uint *)&DAT_0070bfa8,0x104);
-		if (parse_file_path == 0) {
-			FailWithError("Unable to retrieve current working directory.");
-		}
-		result = SHGetFolderPathA((HWND)0x0,0x8005,(HANDLE)0x0,0,folder_path);
-		if (result != 0) {
-			FailWithError("Unable to retrieve personal folder.");
-		}
-		path_index = 0;
-		do {
-			current_path_char = folder_path[path_index];
-			(&some_directory_path)[path_index] = current_path_char;
-			++path_index;
-		} while (current_path_char != '\0');
-		FUN_0061adfa(possible_file_path,(char *)0x0,(char *)0x0,folder_path,(char *)0x0);
-		parse_file_path = 0;
-		do {
-			current_path_char = folder_path[parse_file_path];
-			(&some_directory_path_2)[parse_file_path] = current_path_char;
-			parse_file_path = parse_file_path + 1;
-		} while (current_path_char != '\0');
-		puVar1 = (undefined4 *)get_some_directory_path_2();
-		FUN_004c58a0(&some_directory_path,puVar1);
-		current_path_char = FUN_004c56b0(&some_directory_path);
-		if (current_path_char == '\0') {
-			current_path_char = FUN_004c5750(&some_directory_path);
-			if (current_path_char == '\0') {
-			FailWithError("Unable to create save folder.");
-			}
-		}
-		return;
+        path_index = FUN_0061b067((uint *)&UINT_0070bfa8,0x104);
+        if (path_index == 0) {
+            FailWithError("Unable to retrieve current working directory.");
+        }
+        result = SHGetFolderPathA((HWND)0x0,0x8005,(HANDLE)0x0,0,folder_path);
+        if (result != 0) {
+            FailWithError("Unable to retrieve personal folder.");
+        }
+        path_index = 0;
+        do {
+            current_path_char = folder_path[path_index];
+            some_directory_path[path_index] = current_path_char;
+            path_index = path_index + 1;
+        } while (current_path_char != '\0');
+        FUN_0061adfa(possible_file_path,(char *)0x0,(char *)0x0,folder_path,(char *)0x0);
+        path_index = 0;
+        do {
+            current_path_char = folder_path[path_index];
+            (&some_directory_path_2)[path_index] = current_path_char;
+            path_index = path_index + 1;
+        } while (current_path_char != '\0');
+        puVar1 = (undefined4 *)get_some_directory_path_2();
+        FUN_004c58a0(some_directory_path,puVar1);
+        current_path_char = FUN_004c56b0(some_directory_path);
+        if (current_path_char == '\0') {
+            current_path_char = FUN_004c5750(some_directory_path);
+            if (current_path_char == '\0') {
+            FailWithError("Unable to create save folder.");
+            }
+        }
+        __security_check_cookie(unaff_retaddr ^ in_stack_00000004);
+        return;
 	}
 
 	// 0x56b220
@@ -189,4 +189,33 @@ namespace f3 {
 	// 0x48cca0
 	void SetStartupTime( time_t time32 ) {
 	}
+
+    // 0x61b067
+    undefined4 FUN_0061b067 (uint * param_1, size_t param_2) {
+
+    }
+
+    // 0x61adfa
+    void FUN_0061adfa (char * some_string, char * drive_letter, char * directory_path, char * folder_path, char * file_extension) {
+
+    }
+
+    // 0x4c58a0
+    undefined FUN_004c58a0 (char * param_1, undefined4 * param_2) {
+
+    }
+
+    // 0x4c56b0
+    undefined FUN_004c56b0 (LPCSTR param_1) {
+
+    }
+
+    // 0x4c5750
+    undefined FUN_004c5750 (char * param_1) {
+
+    }
+
+    char* get_some_directory_path_2(void) {
+        return &some_directory_path_2;
+    }
 }
